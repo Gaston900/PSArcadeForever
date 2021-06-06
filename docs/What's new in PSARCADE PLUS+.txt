@@ -1,0 +1,59 @@
+﻿What's new in PSARCADE PLUS+
+====================
+
+2021-06-02
+
+- The PSARCADE PLUS + source of code is made public 
+
+
+
+2021-01-01
+
+- Latest version to be published.
+- The latest update of HBMAME, ARCADE, MESS has been implemented. 
+
+New Games
+---------------------------------
+- [captcommla01]             Captain Commando (Masters Competition Edition 2020-10-19)
+- [captcommla02]             Captain Commando (Nightmare Edition Update 2020-11-05)
+- [dinola01]                 Cadillacs and Dinosaurs (JD Versión 2020-10-20)
+- [dinola02]                 Cadillacs and Dinosaurs (Commemorative Edition 2020-10-20)
+- [dinola03]                 Cadillacs and Dinosaurs (God of War Edition Update 2020-11-05)
+- [dinola04]                 Cadillacs and Dinosaurs (God of War Edition Update 2020-11-05)
+- [dinola05]                 Cadillacs and Dinosaurs (Triassic Edition 2020-11-09)
+- [dinola06]                 Cadillacs and Dinosaurs (Commemorative Edition 2020-11-09)
+- [ffightla01]               Final Fight (1VS2 Enhanced Version 2020-11-09)
+- [grdiansla01]              Guardians (Warriors Edition 2020-11-09)
+- [kf2k5unila01]             Kof 10th Anniversary 2005 Unique (Edition Optimized Original 2019 2020-11-09)
+- [kf2k5unila02]             Kof 10th Anniversary 2005 Unique (Edition Optimized Simplify 2019 2020-11-09)
+- [kof2k2la01]               Kof2002 (Come Back 2017 2020-10-22)
+- [kof97la01]                Kof'97 (Is Invincible Original 2019 2.3 2020-11-05)
+- [kof97la02]                Kof'97 (Is Invincible Simplified 2019 2.3 2020-11-05)
+- [kov2la01]                 Knights of Valour 2 (Green Edition 2020-11-09)
+- [kov2p204la01]             Knights of Valour 2 Plus (Flying Dragon 2017-06-22)
+- [kov2p204la02]             Knights of Valour 2 Plus (Evil Phoenix Tianchi 2020-10-21)
+- [kov2p204la03]             Knights of Valour 2 Plus (Great Britain 2020-10-24)
+- [kov2p204la04]             Knights of Valour 2 Plus (Great Britain 2020-11-05)
+- [kov2p204la05]             Knights of Valour 2 Plus (Great Britain 2020-11-09)
+- [kovplusla01]              Knights of Valour Plus 2012 (Ranbu 2020 Special Edition 2 2020-10-21)[NOT WORKING]
+- [kovplusla02]              Knights of Valour Plus 2012 (Warriors Edition 2020-11-05)
+- [kovplusla03]              Knights of Valour Plus 2010 (World Unification 2020-11-07)
+- [kovshola01]               Knights of Valour Super Heroes Plus (Chaos Manor Lotus 2020-10-22)
+- [kovshola02]               Knights of Valour Super Heroes Plus (Unification Of Central Plains Warriors 2020-10-31)
+- [kovshola03]               Knights of Valour Super Heroes Plus (Unification Of Central Plains Warriors Edition Super 2020-11-05)
+- [kovshola04]               Knights of Valour Super Heroes Plus (Unify the Central Plains Warriors-The World's Chaotic World of Gods 2020-11-09)
+- [mk2la01]                  Mortal Kombat II (Friendly Kaillera SP3 2020-12-02)
+- [mk2la02]                  Ultimate Mortal Kombat II (Tournament Edition 2020-12-02)
+- [mk3la01]                  Mortal Kombat 3 (Revision 2.1 Kaillera Friendly 2020-12-03)
+- [mkla01]                   Mortal Kombat (Kaillera Friendly SP3 2020-12-02)
+- [olds100asla01]            Oriental Legend (Shi E Chuan Moves Modified Version 2020-10-22)
+- [olds100asla02]            Oriental Legend (Shi E Chuan Moves Modified Version 2020-10-30)
+- [olds100asla03]            Oriental Legend (Modified Move 2020-11-04)
+- [oldsplusla01]             Oriental Legend 2 (New Group Demon Flurry 215 2020-10-20)
+- [orlegendcla01]            Oriental Legend Special (Wu Zhi Shuang Mo 2020-10-20)[NOT WORKING]
+- [orlegendcla02]            Oriental Legend Special (Wu Zhi Shuang Mo 2020-10-22)[NOT WORKING]
+- [orlegendcla03]            Oriental Legend Special (Wu Zhi Shuang Mo 2020-11-09)[NOT WORKING]
+- [umk3uc20201203]           Ultimate Mortal Kombat 3 (Ultimate Cup Edition 2020-12-03)
+- [wwfmaniala01]             WWF: Wrestlemania (Acid Clown Edition SP2 2020-12-03)
+
+
