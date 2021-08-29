@@ -1,9 +1,8 @@
 ﻿What's new in PSARCADE PLUS+
 ====================
 
-2021-08-25
+2021-08-28
 
-- All code related to MESS has been removed.
 - Updated all current roms Metal Slug by PSMame Plus Forever. 
 - Updated all current roms HBMame and Arcade.
 
@@ -11,19 +10,46 @@ New Games
 ---------------------------------
 - [brkrevla01]               Breakers Revenge (Extra Mode 2018)    
 - [captcommla03]             Captain Commando (Unlimited Bullet 2021-02-24)
+- [captcommla04]             Captain Commando (Masters Competition Edition 2020-12-17)
+- [captcommla05]             Captain Commando (Nightmare Edition Update 2021-06-05)
+- [captcommla06]             Captain Commando (Infinite Bullet Update 2021-04-28)
+- [captcommla07]             Captain Commando (God Of War Edition Update 2020-12-17)
+- [captcommla08]             Captain Commando (99 Fighter Edition Update 2020-12-12)
+- [captcommla09]             Captain Commando (Unknown Description Gotvg 2020-12-11)
 - [dinola07]                 Cadillacs and Dinosaurs (God of War Edition Update 2021-04-08)
 - [dinola08]                 Cadillacs and Dinosaurs (10th Anniversary Edition 2021-03-03)
 - [dinola09]                 Cadillacs and Dinosaurs (28th Anniversary Edition 2021-03-25)
+- [dinola10]                 Cadillacs and Dinosaurs (Random Edition 2020-11-26)
+- [dinola11]                 Cadillacs and Dinosaurs (Three Forbidden Version 2021-03-21)
+- [dinola12]                 Cadillacs and Dinosaurs (The Warriors Edition Update 2021-02-28)
+- [dinola13]                 Cadillacs and Dinosaurs (Unknown Description Gotvg 2021-06-29)
+- [dinola14]                 Cadillacs and Dinosaurs (JD Versión 2021-06-22)
+- [dinola15]                 Cadillacs and Dinosaurs (Fighting God Version 2021-04-17)
+- [dinola16]                 Cadillacs and Dinosaurs (Triassic Edition 2021-08-22)
+- [dinola17]                 Cadillacs and Dinosaurs (28th Anniversary Edition 2021-08-15)
+- [dinola18]                 Cadillacs and Dinosaurs (Tianjiang Edition 2021-05-12)
+- [dinola19]                 Cadillacs and Dinosaurs (Unknown Description Gotvg 2021-04-11)
+- [dinola20]                 Cadillacs and Dinosaurs (Unknown Description Gotvg 2021-04-15)
+- [dinola21]                 Cadillacs and Dinosaurs (Sky King 2021-05-19)
+- [dinola22]                 Cadillacs and Dinosaurs (The Warriors Edition Update 2020-06-06)
 - [grdiansla02]              Guardians (Kerron Edition 2021-04-12)
 - [grdiansla03]              Guardians (LBS Edition 2021-04-04)
 - [grdiansla04]              Guardians (Field Edition 2021-04-12)
 - [grdiansla05]              Guardians (Shen Yue Edition 2021-04-02)
+- [grdiansla06]              Guardians (Kerron Edition 2021-04-28)
+- [grdiansla07]              Guardians (LBS Edition 2021-07-19)
+- [grdiansla08]              Guardians (Field Edition 2021-04-28)
+- [grdiansla09]              Guardians (Plus 2021-03-27)
+- [hookla01]                 Hook (Unknown Description Gotvg 2021-08-12)
+- [hookla02]                 Hook (Unknown Description Gotvg 2021-05-21)
+- [hookla03]                 Hook (Unknown Description Gotvg 2021-08-25)
 - [jojola01]                 JoJo's Bizarre Adventure (Rainbow Edition v1.0.1 2021)
 - [kof2000la01]              Kof2000 (Special Edition Final Version 2021)
 - [kov2p204la06]             Knights of Valour 2 Plus (Extend Magic Plus 2020-09-07)
 - [kov2p204la07]             Knights of Valour 2 Plus (Evil Phoenix Tianchi 2019-12-16)
 - [kovplusla04]              Knights of Valour Plus 2012 (Heroes Dance 2020 2021-03-31)[NOT WORKING]
 - [nbbatmanla01]             Ninja Baseball Bat Man (One Key Edition 2020-09-06)
+- [nbbatmanla02]             Ninja Baseball Bat Man (1V8 2020-01-08)
 - [olds100asla04]            Oriental Legend Special (Hack of Xi You Shi E Zhuan Super 2020-01-11)
 - [oldsplusla02]             Oriental Legend 2 (One Key Edition 215 2020-12-10)
 - [sfiii3la01]               Street Fighter III 3rd Strike: Fight for the Future (THIRD update 2021)
