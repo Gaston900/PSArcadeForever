@@ -11,3 +11,7 @@ It has been very complex to be able to assemble all this system in one, to begin
 At one point they tried to give new support to the console system, they began to implement the new hacks roms in the Megadrive console system which unfortunately I had to discontinue due to the maximum incompatibility with the Mess system, anyway I will be sharing with you all the progress that has been made.
  
 The emulator programs will be compiled for the Windows 64-bit operating system only.
+
+!Clarification!
+
+In order to compile we will need the code source of the "HBMAME" emulator. 
