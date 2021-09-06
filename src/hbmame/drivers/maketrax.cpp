@@ -258,6 +258,20 @@ void puckman_state::init_maketrax()
  *
  *************************************/
 
+ROM_START( 100doors )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "100doors.6e",  0x0000, 0x1000, CRC(b8c27195) SHA1(0f5eab4fa3f5cb44ee5cfff58e57b5694bc18645) )
+	ROM_LOAD( "100doors.6f",  0x1000, 0x1000, CRC(8f936d42) SHA1(e94d8c24096c45bdf9c0c434883ee4a068340d30) )
+	ROM_LOAD( "100doors.6h",  0x2000, 0x1000, CRC(10068710) SHA1(d3830a095bbd40673b83d58723e4aaafbb0e557d) )
+	ROM_LOAD_OPTIONAL( "100doors.6j",  0x3000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) ) // empty
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "100doors.5e",  0x0000, 0x1000, CRC(1a2bc077) SHA1(7e8f64c284d711ebcd26b83fa6d0c8b283b45fe6) )
+	ROM_LOAD( "ghohunt.5f",   0x1000, 0x1000, CRC(3ad83b13) SHA1(d2ce7ab45cb540f35cb23264e7628ac0ee6b8559) )
+
+	PACMAN_PROMS
+ROM_END
+
 ROM_START( aa )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "aa.1",         0x0000, 0x1000, CRC(7b73ff28) SHA1(3b05c9ecaa418291b9b3501fbfd4a1e48be7281e) )
@@ -325,8 +339,24 @@ ROM_START( alienres )
 	ROM_LOAD( "alienres.5e",  0x0000, 0x1000, CRC(57ae12e7) SHA1(5c9de2cf75b183484c6d22b999ba823d69da7268) )
 	ROM_LOAD( "alienres.5f",  0x1000, 0x1000, CRC(097eca05) SHA1(f863108e2cc5419b239e3cf02854438701f3ef28) )
 
-	//ROM_REGION( 0x0400, "user1", 0 ) // unused
-	//ROM_LOAD( "alienres.1k",  0x0000, 0x0400, CRC(b9d2e5e6) SHA1(82546b7ecf9e46374b1af1ad32f582b4d35bddd1) )
+	ROM_REGION( 0x0400, "user1", 0 ) // unused
+	ROM_LOAD_OPTIONAL( "alienres.1k",  0x0000, 0x0400, CRC(b9d2e5e6) SHA1(82546b7ecf9e46374b1af1ad32f582b4d35bddd1) )
+
+	PACMAN_PROMS
+ROM_END
+
+// Alien Rescue, stuck at first screen. Assumed to be a non-working prototype.
+ROM_START( alienresp )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "alienresp.6e",  0x0000, 0x1000, CRC(4d94ce2a) SHA1(c36f60b046f45da03f1a6218195d7ca0b2eb8ef8) )
+	ROM_LOAD( "alienresp.6f",  0x1000, 0x1000, CRC(5f81d441) SHA1(dd8035fff171306f90ab382f1decca322a3223f3) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "alienresp.5e",  0x0000, 0x1000, CRC(ab38f274) SHA1(bf623e0a2ac855186319be6f2e96fd1ecabab84a) )
+	ROM_LOAD( "alienresp.5f",  0x1000, 0x1000, CRC(ce1c6cb2) SHA1(fae57b9105a3768536b71c9b07a33fdcea91df10) )
+
+	ROM_REGION( 0x0400, "user1", 0 ) // unused
+	ROM_LOAD_OPTIONAL( "alienres.1k",  0x0000, 0x0400, CRC(b9d2e5e6) SHA1(82546b7ecf9e46374b1af1ad32f582b4d35bddd1) )
 
 	PACMAN_PROMS
 ROM_END
@@ -886,10 +916,11 @@ GAME( 2012, tinyworld, 0,        pacman,   mspacman, puckman_state, empty_init, 
 /* Other Misc Hacks */
 
 GAME( 2002, alienres,  0,        pacman,   pacman,   puckman_state, empty_init,          ROT90,  "MonstersGoBoom", "Alien Rescue", MACHINE_SUPPORTS_SAVE )
+GAME( 2002, alienresp, alienres, pacman,   pacman,   puckman_state, empty_init,          ROT90,  "MonstersGoBoom", "Alien Rescue (non-working prototype)", MACHINE_SUPPORTS_SAVE )
 GAME( 2002, crashh,    0,        woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "hack", "Crash (Pac-Man)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, mtturbo,   0,        maketrax, maketrax, puckman_state, init_maketrax,   ROT270, "Tim Arcadecollecting", "Make Trax (Turbo Hack)", MACHINE_SUPPORTS_SAVE ) // http://www.arcadecollecting.com/hacks/maketrax
+GAME( 1981, mtturbo,   0,        maketrax, maketrax, puckman_state, init_maketrax,       ROT270, "Tim Arcadecollecting", "Make Trax (Turbo Hack)", MACHINE_SUPPORTS_SAVE ) // http://www.arcadecollecting.com/hacks/maketrax
 GAME( 1999, tst_pacm,  0,        pacman,   mspacpls, puckman_state, empty_init,          ROT90,  "David Caldwell", "Test - Pacman Hardware", MACHINE_SUPPORTS_SAVE ) // http://www.porkrind.org/arcade/
-GAME( 1982, eyesb,     eyes,     pacman,   eyes,     puckman_state, init_eyes,       ROT90,  "bootleg", "Eyes (unknown bootleg)", MACHINE_SUPPORTS_SAVE )
+GAME( 1982, eyesb,     eyes,     pacman,   eyes,     puckman_state, init_eyes,           ROT90,  "bootleg", "Eyes (unknown bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 2016, ghohunt,   puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "Ghost Hunt", MACHINE_SUPPORTS_SAVE )
 GAME( 2012, pactetris, puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Ben Leperchey", "Tetris on Pacman hardware (incomplete)", MACHINE_SUPPORTS_SAVE )
 GAME( 2017, deathstar, puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Death Star", MACHINE_SUPPORTS_SAVE )
@@ -897,6 +928,7 @@ GAME( 2019, deathstar2,puckman,  pacman,   pacman0,  puckman_state, empty_init, 
 GAME( 2017, scroller,  puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "Scroller", MACHINE_SUPPORTS_SAVE )
 GAME( 2017, snakes,    puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Snakes", MACHINE_SUPPORTS_SAVE )
 GAME( 2019, snakes2,   puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Snakes v2", MACHINE_SUPPORTS_SAVE )
+GAME( 2021, 100doors,  puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "100 doors", MACHINE_SUPPORTS_SAVE )
 
 
 /*************************************************************************************************************************/
@@ -989,6 +1021,52 @@ GAME( 1999, theglobpb, 0, pacman, theglobp, puckman_state,  empty_init,    ROT90
  /********************************************
         Proyecto Shadows Arcade Plus
 **********************************************/
+
+static INPUT_PORTS_START( paintrlr )
+	PORT_START("IN0")
+	PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_JOYSTICK_UP ) PORT_4WAY
+	PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_JOYSTICK_LEFT ) PORT_4WAY
+	PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_JOYSTICK_RIGHT ) PORT_4WAY
+	PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_JOYSTICK_DOWN ) PORT_4WAY
+	PORT_DIPNAME( 0x10, 0x00, DEF_STR( Cabinet ) )
+	PORT_DIPSETTING(    0x00, DEF_STR( Upright ) )
+	PORT_DIPSETTING(    0x10, DEF_STR( Cocktail ) )
+	PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_COIN1 )
+	PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_COIN2 )
+	PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_SERVICE1 )
+
+	PORT_START("IN1")
+	PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_JOYSTICK_UP ) PORT_4WAY PORT_COCKTAIL
+	PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_JOYSTICK_LEFT ) PORT_4WAY PORT_COCKTAIL
+	PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_JOYSTICK_RIGHT ) PORT_4WAY PORT_COCKTAIL
+	PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_JOYSTICK_DOWN ) PORT_4WAY PORT_COCKTAIL
+	PORT_BIT( 0x10, IP_ACTIVE_HIGH, IPT_UNUSED )  /* Protection in Make Trax */
+	PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_START1 )
+	PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_START2 )
+	PORT_BIT( 0x80, IP_ACTIVE_HIGH, IPT_UNUSED )  /* Protection in Make Trax */
+
+	PORT_START("DSW1")
+	PORT_DIPNAME( 0x03, 0x01, DEF_STR( Coinage ) )
+	PORT_DIPSETTING(    0x03, DEF_STR( 2C_1C ) )
+	PORT_DIPSETTING(    0x01, DEF_STR( 1C_1C ) )
+	PORT_DIPSETTING(    0x02, DEF_STR( 1C_2C ) )
+	PORT_DIPSETTING(    0x00, DEF_STR( Free_Play ) )
+	PORT_DIPNAME( 0x0c, 0x00, DEF_STR( Lives ) )
+	PORT_DIPSETTING(    0x00, "3" )
+	PORT_DIPSETTING(    0x04, "4" )
+	PORT_DIPSETTING(    0x08, "5" )
+	PORT_DIPSETTING(    0x0c, "6" )
+	PORT_DIPNAME( 0x10, 0x10, DEF_STR( Unknown ) )
+	PORT_DIPSETTING(    0x10, DEF_STR( Off ) )
+	PORT_DIPSETTING(    0x00, DEF_STR( On ) )
+	PORT_DIPNAME( 0x20, 0x20, DEF_STR( Unknown ) )
+	PORT_DIPSETTING(    0x20, DEF_STR( Off ) )
+	PORT_DIPSETTING(    0x00, DEF_STR( On ) )
+	PORT_BIT( 0xc0, IP_ACTIVE_HIGH, IPT_UNUSED )  /* Protection in Make Trax */
+
+	PORT_START("DSW2")
+	PORT_BIT( 0xff, IP_ACTIVE_HIGH, IPT_UNUSED )
+INPUT_PORTS_END
 
 ROM_START( crush )
 	ROM_REGION( 0x10000, "maincpu", 0 )
@@ -1304,6 +1382,26 @@ ROM_START( mspacmab3 ) // main PCB with GDP-02 auxiliary card
 	ROM_LOAD( "82s141.i14", 0x0000, 0x0200, CRC(8d43d0a6) SHA1(be4e0d86ce4c6f1833cc0efc18277b4e04dc458f) ) // 1ST AND 2ND HALF IDENTICAL
 ROM_END
 
+ROM_START( painter )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "pain1.6e",           0x0000, 0x1000, CRC(fb2eb6dc) SHA1(377075cb64c7ccc0bd2b0185848d4798428bceb2) )
+	ROM_LOAD( "pain2.6f",           0x1000, 0x1000, CRC(39f92fb0) SHA1(2b58429664eadb8bb5100289182b274cc7e4688c) )
+	ROM_LOAD( "pain3.6h",           0x2000, 0x1000, CRC(f80435b1) SHA1(7f41ecc2a91f8bdf0969f4f3fe96b48adb1010ba) )
+	ROM_LOAD( "pain4-pennello2.6j", 0x3000, 0x1000, CRC(0cb678dc) SHA1(b1b9eadf22dc7985b39d414438092a7fc6c58955) ) // has strange strings in the second half, but seems to work fine
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "pain5.5e", 0x0000, 0x1000, CRC(bd819afc) SHA1(2e8762c3c480aa669f7e87651ddfdbb965ea4211) )
+	ROM_LOAD( "pain6.5f", 0x1000, 0x1000, BAD_DUMP CRC(014e5ed3) SHA1(8e01c640457515da89723215b19684ceb4556997) ) // BADADDR            xx-xxxxxxxxx, dumped with 3 different programmers with same result, but probably damaged ROM
+
+	ROM_REGION( 0x0120, "proms", 0 )
+	ROM_LOAD( "mb7051.7f",   0x0000, 0x0020, CRC(ff344446) SHA1(45eb37533da8912645a089b014f3b3384702114a) )
+	ROM_LOAD( "n82s129n.4a", 0x0020, 0x0100, CRC(63efb927) SHA1(5c144a613fc4960a1dfd7ead89e7fee258a63171) )
+
+	ROM_REGION( 0x0200, "namco", 0 )
+	ROM_LOAD( "mb7052.1m", 0x0000, 0x0100, CRC(a9cc86bf) SHA1(bbcec0570aeceb582ff8238a4bc8546a23430081) )
+	ROM_LOAD( "mb7052.3m", 0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) )    // Timing - not used
+ROM_END
+
 /*    YEAR  NAME            PARENT    MACHINE        INPUT       INIT             MONITOR COMPANY                 FULLNAME FLAGS */
 GAME( 1981, crush,    0,        maketrax, maketrax, puckman_state,  init_maketrax, ROT90,  "Alpha Denshi Co. / Kural Samno Electric, Ltd.", "Crush Roller (set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, crush2,   crush,    pacman,   maketrax, puckman_state,  empty_init,    ROT90,  "Alpha Denshi Co. / Kural Esco Electric, Ltd.", "Crush Roller (set 2)", MACHINE_SUPPORTS_SAVE )
@@ -1318,3 +1416,4 @@ GAME( 1982, eyesb2,   eyes,     pacman,   eyes,     puckman_state,  init_eyes,  
 GAME( 1981, maketrax, crush,    maketrax, maketrax, puckman_state,  init_maketrax, ROT270, "Alpha Denshi Co. / Kural (Williams license)", "Make Trax (US set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, maketrxb, crush,    maketrax, maketrax, puckman_state,  init_maketrax, ROT270, "Alpha Denshi Co. / Kural (Williams license)", "Make Trax (US set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, mspacmab3,puckman,  piranha,  mspacman, puckman_state,  init_eyes,     ROT90,  "bootleg", "Ms. Pac-Man (bootleg, set 3)", MACHINE_SUPPORTS_SAVE )
+GAME( 1984, painter,  crush,    pacman,   paintrlr, puckman_state,  empty_init,    ROT90,  "hack (Monshine Ent. Co.)",                      "Painter (hack of Crush Roller)",         MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE ) // currently shows Paintei due to bad sprite ROM

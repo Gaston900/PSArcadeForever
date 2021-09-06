@@ -1169,6 +1169,7 @@ static const struct CPS1config cps1_config_table[]=
 	{"gulunpa",     CPS_B_21_DEF, mapper_gulunpa }, // wrong
 	{"varthb2",     HACK_B_3,     mapper_sfzch, 0, 0, 0, 0x80 },
 	{"forgottnj",   CPS_B_01,     mapper_LWCHR },
+	{"sf2mkot",     CPS_B_21_DEF, mapper_S9263B, 0x36, 0, 0, 1 },
 	
 	/* CPS Changer */
 

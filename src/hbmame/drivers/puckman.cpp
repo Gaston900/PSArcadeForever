@@ -667,6 +667,20 @@ ROM_START( baby4 )
 	PACMAN_PROMS
 ROM_END
 
+ROM_START( bacman )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "bacman.6e",    0x0000, 0x1000, CRC(12f22a11) SHA1(212f72ce9e8b999f00a0a8a31683e723b82c626a) )
+	ROM_LOAD( "bacman.6f",    0x1000, 0x1000, CRC(6ed094e0) SHA1(b8a9df2526275a993c9e5f67b2dc72a45c882f60) )
+	ROM_LOAD( "bacman.6h",    0x2000, 0x1000, CRC(373f007b) SHA1(a2b5067db2a19129fed16511ea18d2e7e49092e4) )
+	ROM_LOAD( "bacman.6j",    0x3000, 0x1000, CRC(e060d3e2) SHA1(43b30a23c3b9b4370038bdfff8fe7ab0686b6a28) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "pacman.5e",    0x0000, 0x1000, CRC(0c944964) SHA1(06ef227747a440831c9a3a613b76693d52a2f0a9) )
+	ROM_LOAD( "pacman.5f",    0x1000, 0x1000, CRC(958fedf9) SHA1(4a937ac02216ea8c96477d4a15522070507fb599) )
+
+	PACMAN_PROMS
+ROM_END
+
 ROM_START( brakman )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "pacman.6e",    0x0000, 0x1000, CRC(c1e6ab10) SHA1(e87e059c5be45753f7e9f33dff851f16d6751181) )
@@ -3631,7 +3645,8 @@ GAME( 1981, puckmodx, puckmanx, pacmanx,  pacman,   puckman_state, empty_init,  
 /* Misc Pacman Hacks */
 
 GAME( 2001, abortman, puckman,  pacman,   pacman,   puckman_state, empty_init,   ROT90, "Paul Copeland",  "Abortman", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, bucaneerx, puckman,  pacman,   pacman,   puckman_state, empty_init,   ROT90, "Bucco", "Buccaneer", MACHINE_SUPPORTS_SAVE ) //The roms of the aristmk6 system have the same name.
+GAME( 2015, bacman,   puckman,  pacman,   pacman,   puckman_state, empty_init,   ROT90, "George Phillips",  "Bac-man (2015-08-22)", MACHINE_SUPPORTS_SAVE )
+GAME( 1981, bucaneerx,puckman,  pacman,   pacman,   puckman_state, empty_init,   ROT90, "Bucco", "Buccaneer", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, caterpil, puckman,  pacman,   mspacman, puckman_state, empty_init,   ROT90, "Phi", "Caterpillar", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, chtpac,   puckman,  pacman,   pacman0,  puckman_state, empty_init,   ROT90, "[Midway]", "Pacman [c]", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, chtpman2, puckman,  pacman,   pacman0,  puckman_state, empty_init,   ROT90, "[Namco]", "New Puck2 [c]", MACHINE_SUPPORTS_SAVE )
@@ -3733,7 +3748,6 @@ GAME( 2000, xensrev,  puckman,  pacman,   pacman,   puckman_state, empty_init,  
 #include "mspacman.cpp"
 #include "multipac.cpp"
 #include "maketrax.cpp"
-
 
 
  /********************************************
@@ -3975,6 +3989,32 @@ ROM_START( pacmanug )
 	ROM_LOAD( "mmi63s141j.3m", 0x0100, 0x0100, CRC(deadc015) SHA1(751029630dcfef61dc834203eaffaf6afc7d83fc) )
 ROM_END
 
+// PCB marked KPM-II
+// Dumper's note: The PROMs are identical to regular Pac-Man. The board they were dumped from had a cut trace in the 4A prom circuit
+// which caused altered palettes to appear in-game. Although these palettes were unique and set it apart from being a simple sprite hack of Hanglyman,
+// the cut trace was likely accidental and there's no way to verify it was an intentional modification made by the bootleggers.
+ROM_START( baracuda )
+	ROM_REGION( 0x10000, "maincpu", 0 ) // all 2732
+	ROM_LOAD( "bcuda_prg1.bin", 0x0000, 0x1000, CRC(5fe8610a) SHA1(d63eaebd85e10aa6c27bb7f47642dd403eeb6934) )
+	ROM_LOAD( "bcuda_prg2.bin", 0x1000, 0x1000, CRC(61d38c6c) SHA1(1406aacdc9c8a3776e5853d214380ad3124408f4) )
+	ROM_LOAD( "bcuda_prg3.bin", 0x2000, 0x1000, CRC(4e7ef99f) SHA1(bd42e68b29b4d654dc817782ba00db69b7d2dfe2) )
+	ROM_LOAD( "bcuda_prg4.bin", 0x3000, 0x1000, CRC(55e86c2b) SHA1(ddbd98a585e38abda868c2ebc4494231aef00382) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 ) // all 2716
+	ROM_LOAD( "bcuda_gfx1.bin", 0x0000, 0x0800, CRC(3fc4030c) SHA1(5e45f0c19cf96daa17afd2fa1c628d7ac7f4a79c) )
+	ROM_LOAD( "bcuda_gfx2.bin", 0x1000, 0x0800, CRC(f3e9c9d5) SHA1(709a75b2457f21f0f1a3d9e7f4c8579468ee5cad) )
+	ROM_LOAD( "bcuda_gfx3.bin", 0x0800, 0x0800, CRC(ea7fba5e) SHA1(3e9fde897037309e8dedda95e7bbdd1f0885f3ca) )
+	ROM_LOAD( "bcuda_gfx4.bin", 0x1800, 0x0800, CRC(133d720d) SHA1(8af75ed9e115a996379acedd44d0c09332ec5a03) )
+
+	ROM_REGION( 0x0120, "proms", 0 )
+	ROM_LOAD( "82s123.7f", 0x0000, 0x0020, CRC(2fc650bd) SHA1(8d0268dee78e47c712202b0ec4f1f51109b1f2a5) )
+	ROM_LOAD( "82s126.4a", 0x0020, 0x0100, CRC(3eb3a8e4) SHA1(19097b5f60d1030f8b82d9f1d3a241f93e5c75d6) )
+
+	ROM_REGION( 0x0200, "namco", 0 ) // Sound PROMs
+	ROM_LOAD( "82s126.1m", 0x0000, 0x0100, CRC(a9cc86bf) SHA1(bbcec0570aeceb582ff8238a4bc8546a23430081) )
+	ROM_LOAD( "82s126.3m", 0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) )    // Timing - not used
+ROM_END
+
 /*    YEAR  NAME            PARENT    MACHINE        INPUT       INIT             MONITOR COMPANY                 FULLNAME FLAGS */
 GAME( 1980, pacmanfm, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "bootleg (FAMARE S.A.)", "Pac Man (FAMARE S.A. bootleg of Puck Man)", MACHINE_SUPPORTS_SAVE )
 GAME( 1980, pacmanso, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "Namco (Sonic license)", "Pac-Man (SegaSA / Sonic)", MACHINE_SUPPORTS_SAVE ) // from SegaSA / Sonic, could be licensed, could be bootleg - it ignores the service mode credit settings despite listing them which is suspicious
@@ -3985,5 +4025,4 @@ GAME( 198?, bucaner,  puckman,  pacman,   pacman,   puckman_state,  empty_init, 
 GAME( 1980, crockman, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "bootleg (Rene Pierre)", "Crock-Man", MACHINE_SUPPORTS_SAVE )
 GAME( 1980, crockmnf, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "bootleg (Marti Colls)", "Crock-Man (Marti Colls bootleg of Rene Pierre Crock-Man)", MACHINE_SUPPORTS_SAVE )
 GAME( 1980, pacmanug, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "bootleg (U.G.)", "Pac Man (U.G. bootleg of Puck Man)", MACHINE_SUPPORTS_SAVE )
-
-
+GAME( 1981, baracuda, puckman,  pacman,   pacman,   puckman_state,  empty_init,    ROT90,  "hack (Coinex)",  "Barracuda",                                                MACHINE_SUPPORTS_SAVE )

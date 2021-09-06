@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!--
+license:CC0
+-->
+<mamelayout version="2">
+	<element name="L0" defstate="1">
+		<rect>
+			<color red="0.70" green="0.70" blue="0.0" />
+		</rect>
+		<text string="CRAPS" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L1" defstate="1">
+		<rect>
+			<color red="0.70" green="0.70" blue="0.0" />
+		</rect>
+		<text string="6 OR LESS" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L2" defstate="1">
+		<rect>
+			<color red="0.70" green="0.0" blue=".0" />
+		</rect>
+		<text string="SEVEN" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L3" defstate="1">
+		<rect>
+			<color red="0.70" green="0.0" blue="0.0" />
+		</rect>
+		<text string="8 OR MORE" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L4" defstate="1">
+		<rect>
+			<color red="0.70" green="0.0" blue="0.0" />
+		</rect>
+		<text string="FIELD" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L5" defstate="1">
+		<rect>
+			<color red="0.70" green="0.0" blue="0.0" />
+		</rect>
+		<text string="ELEVEN" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L6" defstate="1">
+		<rect>
+			<color red="0.70" green="0.0" blue="0.0" />
+		</rect>
+		<text string="TWELVE" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L7" defstate="1">
+		<rect>
+			<color red="0.70" green="0.70" blue="0.0" />
+		</rect>
+		<text string="TAKE" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L8" defstate="1">
+		<disk>
+			<color red="0.70" green="0.0" blue="0.0" />
+		</disk>
+		<text string="BET" state="1">
+			<color red="0.0" green="0.0" blue="0.0" />
+			<bounds x="0" y="0.25" width="1" height="0.5" />
+		</text>
+	</element>
+
+	<element name="L9" defstate="0">
+		<rect state="1">
+			<color red="0.00" green="0.80" blue="0.0" />
+		</rect>
+	</element>
+
+	<element name="L10" defstate="0">
+		<rect state ="1">
+			<color red="0.80" green="0.00" blue="0.0" />
+		</rect>
+	</element>
+
+	<element name="L11" defstate="0">
+		<rect STATE="1">
+			<color red="0.80" green="0.80" blue="0.0" />
+		</rect>
+	</element>
+
+	<element name="LX" defstate="1">
+		<rect>
+			<color red="0.00" green="0.0" blue="0.0" />
+		</rect>
+	</element>
+
+	<element name="Dig1" defstate="1">
+		<led7seg>
+			<color red="1" green="1" blue="1" />
+		</led7seg>
+	</element>
+
+	<view name="Button Lamps">
+		<screen index="0">
+			<bounds left="0" top="0" right="4" bottom="3" />
+		</screen>
+
+		<element name="lamp3" ref="L8">
+			<bounds x="0.0" y="3.00" width="0.01" height="0.50" />
+		</element>
+		<element name="lamp3" ref="L8">
+			<bounds x="0.022" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp2" ref="L0">
+			<bounds x="0.382" y="3.16" width="0.449" height="0.315" />
+		</element>
+		<element name="lamp0" ref="L1">
+			<bounds x="0.876" y="3.16" width="0.449" height="0.315" />
+		</element>
+		<element name="lamp1" ref="L2">
+			<bounds x="1.371" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp1" ref="L3">
+			<bounds x="1.730" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp1" ref="L4">
+			<bounds x="2.090" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp1" ref="L5">
+			<bounds x="2.449" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp1" ref="L6">
+			<bounds x="2.809" y="3.16" width="0.315" height="0.315" />
+		</element>
+		<element name="lamp3" ref="L7">
+			<bounds x="3.169" y="3.16" width="0.449" height="0.315" />
+		</element>
+
+		<element name="TOP_1" ref="L9">
+			<bounds x="1.75" y="3.01" width="0.5" height="0.04" />
+		</element>
+		<element name="TOP_2" ref="L10">
+			<bounds x="1.75" y="3.06" width="0.5" height="0.04" />
+		</element>
+		<element name="TOP_3" ref="L11">
+			<bounds x="1.75" y="3.11" width="0.5" height="0.04" />
+		</element>
+
+		<repeat count="4">
+			<param name="s" start="0" increment="7" />
+			<param name="y" start="3.16" increment="0.079" />
+			<repeat count="7">
+				<param name="n" start="~s~" increment="1" />
+				<param name="x" start="3.933" increment="-0.045" />
+				<element name="digit~n~" ref="Dig1">
+					<bounds x="~x~" y="~y~" width="0.045" height="0.065625" />
+				</element>
+			</repeat>
+		</repeat>
+
+	</view>
+</mamelayout>
