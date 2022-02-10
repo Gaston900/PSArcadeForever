@@ -1,6 +1,41 @@
 ﻿What's new in PSARCADE PLUS+
 ====================
 
+2022-01-10
+
+- Updated all current roms Metal Slug by PSMame Plus Forever. 
+- Updated all current roms HBMame and Arcade64.
+- It has been possible to update the fcrash drivers with the current MAME codes.
+- Added +100 remaining roms from previous Arcade64 versions. 
+
+New Games
+---------------------------------
+- [captcommla10]             Captain Commando (Pjy Version 2022-01-19)
+- [captcommla11]             Captain Commando (Nightmare Edition Update 2022-01-01)
+- [dinola23]                 Cadillacs and Dinosaurs (Random Edition 2021-09-23)
+- [dinola24]                 Cadillacs and Dinosaurs (H Version 2021-12-24)
+- [dinola25]                 Cadillacs and Dinosaurs (JD Versión 2022-01-09)
+- [dinola26]                 Cadillacs and Dinosaurs (Fighting God Version 2021-10-06)
+- [dinola27]                 Cadillacs and Dinosaurs (Plus Edition 2021-12-26)
+- [dinola28]                 Cadillacs and Dinosaurs (Triassic Edition 2022-01-12)
+- [dinola29]                 Cadillacs and Dinosaurs (28th Anniversary Edition 2022-01-05)
+- [dinola30]                 Cadillacs and Dinosaurs (U2022q Version 2021-09-13)
+- [dinola31]                 Cadillacs and Dinosaurs (Ufr1v3 Version 2021-09-23)
+- [dinola32]                 Cadillacs and Dinosaurs (Sky King 2021-10-28)
+- [dinola33]                 Cadillacs and Dinosaurs (The Warriors Edition Update 2022-01-15)
+- [grdiansla10]              Guardians (Ds Version 2021-06-28)
+- [grdiansla11]              Guardians (LBS Edition 2022-01-24)
+- [grdiansla12]              Guardians (Shen Yue Edition 2022-01-25)
+- [hookla04]                 Hook (Jls Version 2021-11-13)
+- [hookla05]                 Hook (Swan Version 2022-01-10)
+- [hookla06]                 Hook (XX Version 2022-01-13)
+- [mk2la03]                  Mortal Kombat II (Friendly Kaillera SP3 2021-08-05)
+- [mk3la02]                  Mortal Kombat 3 (Revision 2.1 Kaillera Friendly 2021-08-05)
+- [umk3uk20220119]           Ultimate Mortal Kombat 3 (UK Edition 2021-07-27)
+- [umk3tm20210821]           Ultimate Mortal Kombat 3 (Team Edition 2 2021-08-21)
+
+
+
 2021-08-28
 
 - Updated all current roms Metal Slug by PSMame Plus Forever. 

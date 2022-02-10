@@ -156,6 +156,7 @@ CPUS["KS0164"] = true
 --CPUS["COPS1"] = true
 CPUS["MEG"] = true
 CPUS["F2MC16"] = true
+CPUS["M68HC16"] = true
 
 --------------------------------------------------
 -- specify available sound cores
@@ -302,6 +303,7 @@ SOUNDS["TT5665"] = true
 --SOUNDS["UDA1344"] = true
 SOUNDS["SWP30"] = true
 SOUNDS["XT446"] = true
+--SOUNDS["LYNX"] = true
 
 --------------------------------------------------
 -- specify available video cores
@@ -381,7 +383,6 @@ VIDEOS["PWM_DISPLAY"] = true
 --VIDEOS["SED1500"] = true
 --VIDEOS["SED1520"] = true
 VIDEOS["SNES_PPU"] = true
-VIDEOS["STVVDP"] = true
 --VIDEOS["T6963C"] = true
 --VIDEOS["T6A04"] = true
 VIDEOS["TLC34076"] = true
@@ -414,6 +415,7 @@ MACHINES["ALPHA_8921"] = true
 --MACHINES["AM2901B"] = true
 MACHINES["ARM_IOMD"] = true
 MACHINES["AUTOCONFIG"] = true
+MACHINES["BITMAP_PRINTER"] = true
 MACHINES["BUSMOUSE"] = true
 MACHINES["CR511B"] = true
 MACHINES["DMAC"] = true
@@ -656,6 +658,7 @@ MACHINES["SMC91C9X"] = true
 MACHINES["SEGA_SCU"] = true
 MACHINES["SMPC"] = true
 --MACHINES["SPG2XX"] = true
+--MACHINES["SPISDCARD"] = true
 MACHINES["STVCD"] = true
 --MACHINES["SUN4C_MMU"] = true
 MACHINES["SWTPC8212"] = true
@@ -681,6 +684,7 @@ MACHINES["TSB12LV01A"] = true
 --MACHINES["TTL7474"] = true
 --MACHINES["UCB1200"] = true
 MACHINES["UPD1990A"] = true
+--MACHINES["UPD4991A"] = true
 MACHINES["UPD4992"] = true
 MACHINES["UPD4701"] = true
 MACHINES["UPD7001"] = true
@@ -867,3 +871,4 @@ FORMATS["NASLITE_DSK"] = true
 FORMATS["BASICDSK"] = true
 FORMATS["IBMXDF_DSK"] = true
 FORMATS["IPF_DSK"] = true
+FORMATS["TZX_CAS"] = true
