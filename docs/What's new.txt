@@ -31,7 +31,7 @@ New Games
 - [hookla06]                 Hook (XX Version 2022-01-13)
 - [mk2la03]                  Mortal Kombat II (Friendly Kaillera SP3 2021-08-05)
 - [mk3la02]                  Mortal Kombat 3 (Revision 2.1 Kaillera Friendly 2021-08-05)
-- [umk3uk20220119]           Ultimate Mortal Kombat 3 (UK Edition 2021-07-27)
+- [umk3uk20220119]           Ultimate Mortal Kombat 3 (UK Edition 2022-01-19)
 - [umk3tm20210821]           Ultimate Mortal Kombat 3 (Team Edition 2 2021-08-21)
 
 
