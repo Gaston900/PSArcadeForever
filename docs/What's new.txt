@@ -1,6 +1,12 @@
 ﻿What's new in PSARCADE PLUS+
 ====================
 
+2022-00-00
+
+-Added compatibility to the .exe batch with gui
+
+
+
 2022-01-10
 
 - Updated all current roms Metal Slug by PSMame Plus Forever. 
