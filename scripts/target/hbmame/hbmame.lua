@@ -777,7 +777,7 @@ files {
 
 createHBMAMEProjects(_target, _subtarget, "amiga")
 files {
-	MAME_DIR .. "src/mame/drivers/alg.cpp",   --It is implemented in the Arcade system.
+--	MAME_DIR .. "src/mame/drivers/alg.cpp",   --It is implemented in the Arcade system.
 	MAME_DIR .. "src/mame/drivers/amiga.cpp", --It is implemented in the Mame system.
 	MAME_DIR .. "src/mame/machine/amiga.cpp",
 	MAME_DIR .. "src/mame/video/amiga.cpp",
