@@ -2,7 +2,7 @@
 
 What is PSARCADEPLUS+?
 
-Is named  Project Shadow Arcade Plus + (PSARCADE PLUS +), it started in 2019, it is a complete project that has all the features at the same time of the Arcade system, HBMame, Mess.
+Is named  Project Shadow Arcade Plus +, it started in 2019, it is a complete project that has all the features at the same time of the Arcade system, HBMame, Mess.
  
 So you can enjoy all arcade game systems in a single version, including all the hacks that currently exist, instead the console systems have been selected the most popular and stable systems of operation, thus being able to give all of you a greater complete collection.
  
