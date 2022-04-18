@@ -1302,9 +1302,7 @@ static void cps2_decrypt(running_machine &machine, u16 *rom, u16 *dec, int lengt
 
 		if ((i & 0xff) == 0)
 		{
-			char loadingMessage[256]; // for displaying with UI
-			sprintf(loadingMessage, "Decrypting %d%%", i*100/0x10000);
-			machine.ui().set_startup_text(loadingMessage,false);
+
 		}
 
 
