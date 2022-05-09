@@ -2801,9 +2801,9 @@ GAME( 1981, rpatrolb,    rpatrol,  rpatrol,   rpatrol,   cclimber_state, empty_i
 GAME( 1981, silvland,    rpatrol,  rpatrol,   rpatrol,   cclimber_state, empty_init,     ROT0,   "Falcon",  "Silver Land",                       MACHINE_SUPPORTS_SAVE )
 
 // see pacman.cpp for parent
-GAME( 1985, cannonb,     cannonb,  cannonb,   cannonb,   cclimber_state, init_cannonb,   ROT90,  "bootleg (Soft)",              "Cannon Ball (bootleg on Crazy Kong hardware) (set 1, buggy)" ,        MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE ) // bootleggers missed protection after bonus game
-GAME( 1985, cannonb2,    cannonb,  cannonb,   cannonb,   cclimber_state, init_cannonb2,  ROT90,  "bootleg (TV Game Gruenberg)", "Cannon Ball (bootleg on Crazy Kong hardware) (set 2, buggy)",         MACHINE_SUPPORTS_SAVE ) // bootleggers missed protection after bonus game
-GAME( 1985, cannonb3,    cannonb,  cannonb,   cannonb,   cclimber_state, init_cannonb2,  ROT90,  "bootleg (Soft)",              "Cannon Ball (bootleg on Crazy Kong hardware) (set 3, no bonus game)", MACHINE_SUPPORTS_SAVE ) // the bonus game is patched out, thus avoiding the protection issue
+GAME( 1985, cannonb,     0,        cannonb,   cannonb,   cclimber_state, init_cannonb,   ROT90,  "bootleg (Soft)",              "Cannon Ball (bootleg on Crazy Kong hardware) (set 1, buggy)" ,        MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE ) // bootleggers missed protection after bonus game
+GAME( 1985, cannonb2,    0,        cannonb,   cannonb,   cclimber_state, init_cannonb2,  ROT90,  "bootleg (TV Game Gruenberg)", "Cannon Ball (bootleg on Crazy Kong hardware) (set 2, buggy)",         MACHINE_SUPPORTS_SAVE ) // bootleggers missed protection after bonus game
+GAME( 1985, cannonb3,    0,        cannonb,   cannonb,   cclimber_state, init_cannonb2,  ROT90,  "bootleg (Soft)",              "Cannon Ball (bootleg on Crazy Kong hardware) (set 3, no bonus game)", MACHINE_SUPPORTS_SAVE ) // the bonus game is patched out, thus avoiding the protection issue
 
 GAME( 1982, swimmer,     0,        swimmer,   swimmer,   cclimber_state, empty_init,     ROT0,   "Tehkan", "Swimmer (set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1982, swimmera,    swimmer,  swimmer,   swimmer,   cclimber_state, empty_init,     ROT0,   "Tehkan", "Swimmer (set 2)", MACHINE_SUPPORTS_SAVE )

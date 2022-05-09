@@ -9797,7 +9797,7 @@ kof98k                          // 0242 (c) 1998 SNK
 kof98ka                         // 0242 (c) 1998 SNK
 kof99e                          // 0251 (c) 1999 SNK
 kof99h                          // 0251 (c) 1999 SNK
-kof99k                          // 0152 (c) 1999 SNK
+kof99ka                         // 0152 (c) 1999 SNK
 kof99p                          // 0251 (c) 1999 SNK
 kog                             // bootleg of kof97
 kotm2p                          // 0039 (c) 1992 SNK (prototype)
@@ -9814,9 +9814,11 @@ marukodq                        // 0206 (c) 1995 Takara
 matrimbl                        // bootleg
 ms4plus                         // bootleg
 ms5plus                         // bootleg
+mslug3a                         //
 mslug3b6                        // bootleg
 mslug3h                         // 0256 (c) 2000 SNK
 mslug4h                         // 0263 (c) 2002 Mega Enterprise
+mslug5b                         //
 mslug5h                         // 0268 (c) 2003 Playmore
 ncombath                        // 0009 (c) 1990 Alpha Denshi Co.
 neomrdo                         // 0207 (c) 1996 Visco
@@ -9839,6 +9841,7 @@ ridheroh                        // 0006 (c) 1990 SNK
 samsh5sph                       // 0272 (c) 2004 Playmore
 samsh5spho                      // 0272 (c) 2004 Playmore
 samsho2k                        // 0063 (c) 1994 SNK (Korean hack)
+samsho2ka                       //
 samsho3h                        // 0087 (c) 1995 SNK
 samsho4k                        // Censored Korean release of samsho4
 samsho5b                        // bootleg
@@ -9875,15 +9878,16 @@ rbff1k                          // 0095 (c) 1995 SNK
 rbff1ka                         // 0095 (c) 1995 SNK
 roboarma                        // 0032 (c) 1991 SNK
 rotdh                           // 0264 (c) 2002 Evoga
-kof99knv
+kof99k                          //
 kotm2a                          // 0039 (c) 1992 SNK
 bjourneyh                       //
 burningfpa                      // 0018 (c) 1991 SNK (prototype)
 burningfpb                      // 0018 (c) 1991 SNK (prototype)
 garouha                         // 0253 (c) 1999 SNK
 gpilotsp                        // prototype
-pnyaanv
+pnyaanv                         //
 viewpoinp                       //
+froman2b                        //
 
 @source:bionicc.cpp
 bionicc                         // 3/1987 (c) 1987 (Euro)
@@ -21322,13 +21326,12 @@ ms5pcbd
 mslug5nd
 mslug5d
 mslug5d1
-mslug5b
+mslug5b1
 ms5plusd
 mslug5n
 mslug5ba
 mslug5n2
 mslug5hd
-mslug5b2
 ms5plusc
 mslug5hacks01
 mslug5hacks02
