@@ -592,6 +592,28 @@ ROM_START( mrmrspac )
 	PACMAN_PROMS
 ROM_END
 
+ROM_START( manpac )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "manpac.1",     0x0000, 0x1000, CRC(298cbceb) SHA1(8ffa56f7ee233402df05b1c3f742d2f144c5ec64) )
+	ROM_LOAD( "manpac.2",     0x1000, 0x1000, CRC(df8d352e) SHA1(5f7cf8337e50439daefd2ff662863d8c660e724e) )
+	ROM_LOAD( "manpac.3",     0x2000, 0x1000, CRC(b5dd5136) SHA1(b8b7ca513950abdb8d5bf09909f9f63f95d95209) )
+	ROM_LOAD( "manpac.4",     0x3000, 0x1000, CRC(1ca7a831) SHA1(dd4ef06984f94167b0fc620701c11b9d2e3b3291) )
+	ROM_LOAD( "manpac.5",     0x8000, 0x1000, CRC(6c48990a) SHA1(ae9d3a39c9c9d0faaf1745d4e32e4081c8a377e8) )
+	ROM_LOAD( "manpac.6",     0x9000, 0x1000, CRC(08a56798) SHA1(a8ed010c2cc466edf63f0866d87a20ac8cf587d8) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "manpac.5e",    0x0000, 0x1000, CRC(0f2493ad) SHA1(8101d2931adacea4c5629fb531f7be2b8f18a2a7) )
+	ROM_LOAD( "manpac.5f",    0x1000, 0x1000, CRC(964a83df) SHA1(4ad35a0b5e0ac971c879b5e5d8bbd183bfcc2e2b) )
+
+	ROM_REGION( 0x0120, "proms", 0 )
+	ROM_LOAD( "manpac.7f",    0x0000, 0x0020, CRC(4e5ca597) SHA1(4c8f0988f09982fb0ed878a6e720576a28ba6b55) )
+	ROM_LOAD( "manpac.4a",    0x0020, 0x0100, CRC(db6343b4) SHA1(24752b3c7324765941d859272ad2d2ec1a2b2ded) )
+
+	ROM_REGION( 0x0200, "namco", 0 )
+	ROM_LOAD( "manpac.1m",    0x0000, 0x0100, CRC(c310be6c) SHA1(ff41683453a847cbd680ff5329ae223f304bb58f) )
+	ROM_LOAD( "manpac.3m",    0x0100, 0x0100, CRC(c310be6c) SHA1(ff41683453a847cbd680ff5329ae223f304bb58f) )
+ROM_END
+
 ROM_START( mrpacman )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "boot1",        0x0000, 0x1000, CRC(d16b31b7) SHA1(bc2247ec946b639dd1f00bfc603fa157d0baaa97) )
@@ -2725,6 +2747,7 @@ GAME( 2000, faststrm, mspacman, woodpek,  mspacpls, puckman_state, empty_init,  
 GAME( 2000, fstmsatk, mspacman, woodpek,  mspacpls, puckman_state, empty_init,  ROT90, "[Midway]", "Ms. Pacman Attack [f]", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, heartbn2, mspacman, woodpek,  mspacman, puckman_state, empty_init,  ROT90, "PacHack", "Ms. Heart Burn", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, heartbrn, mspacman, woodpek,  mspacman, puckman_state, empty_init,  ROT90, "TwoBit Score", "Ms. Heart Burn (set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2021, manpac,   mspacman, woodpek,  mspacpls, puckman_state, empty_init,  ROT90, "Mr McScrewup", "Man-Pac", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, msatk2ad, mspacman, woodpek,  mspacpls, puckman_state, empty_init,  ROT90, "[Midway]", "Ms. Pacman Plus / Attack After Dark [c]", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, msatkad,  mspacman, woodpek,  mspacpls, puckman_state, empty_init,  ROT90, "[Midway]", "Ms. Pacman Plus After Dark [c]", MACHINE_SUPPORTS_SAVE )
 GAME( 2000, msdstorm, mspacman, woodpek,  mspacman, puckman_state, empty_init,  ROT90, "Mike Naylor", "Ms. Desert Storm", MACHINE_SUPPORTS_SAVE )
@@ -2776,7 +2799,7 @@ GAME( 2018, mspacii2,    mspacman, woodpek,  mspacman, puckman_state, empty_init
 GAME( 2018, ms2600a,     mspacman, woodpek,  mspacman, puckman_state, empty_init,  ROT90, "MamePlus", "Ms. Pacman (Atari look)", MACHINE_SUPPORTS_SAVE )
 
 
-
+#if 0
 // LOST ROMS - Crazy Otto - Below is the official list of Crazy Otto & Super Pacman roms with their hashes, and the supplied documentation
 //             All roms with names beginning with "otto" or "sp4" are missing.
 
@@ -2943,13 +2966,7 @@ GAME( 1981, otto1020, otto1012, otto1012, mspacman, puckman_state, empty_init,  
 GAME( 1981, otto1029, otto1012, otto1012, mspacman, puckman_state, init_otto1029, ROT90,  "General Computer", "Crazy Otto (prototype of 29 Oct 1981)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, sp4n1029, otto1012, otto1012, mspacman, puckman_state, init_otto1029, ROT90,  "General Computer", "Super Pac-Man (prototype of 29 Oct 1981 with Crazy Otto monsters)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, sp4o1029, otto1012, otto1012, mspacman, puckman_state, init_otto1029, ROT90,  "General Computer", "Super Pac-Man (prototype of 29 Oct 1981 with Pac-Man monsters)", MACHINE_SUPPORTS_SAVE )
-
-
-
-
- /********************************************
-        Proyecto Shadows Arcade Plus
-**********************************************/
+#endif
 
 ROM_START( mspacmab2 )
 	ROM_REGION( 0x10000, "maincpu", 0 )
@@ -3013,6 +3030,27 @@ ROM_START( mspacmanbco )
 	ROM_REGION( 0x0200, "namco", 0 )    /* sound PROMs */
 	ROM_LOAD( "82s129-1.a9",    0x0000, 0x0100, CRC(a9cc86bf) SHA1(bbcec0570aeceb582ff8238a4bc8546a23430081) ) // == 82s126.1m
 	ROM_LOAD( "82s129-2.c9",    0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) ) /* timing - not used */ // == 82s126.3m
+ROM_END
+
+ROM_START( mspacmanbg )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "9.g5",  0x0000, 0x4000, CRC(97c64918) SHA1(a46ca4822e6cd7b9a5603d5d06a78fd489dc0b96) )
+	ROM_CONTINUE(0x8000,0x4000) // blocks 5+6 are repeated twice in here
+
+	ROM_REGION( 0x8000, "gfx1", 0 )
+	ROM_LOAD( "10.e5",    0x0000, 0x0800, CRC(f2c5da43) SHA1(6a6de2ecc313a11ad12d8d1712c05f923984f668) )
+	ROM_CONTINUE(0x1000,0x800)
+	ROM_CONTINUE(0x0800,0x800)
+	ROM_CONTINUE(0x1800,0x800)
+	ROM_IGNORE(0x6000) // this also contains regular pacman gfx, ignore them for now at least
+
+	ROM_REGION( 0x0120, "proms", 0 )
+	ROM_LOAD( "82s123.h7",    0x0000, 0x0020, CRC(3545e7e9) SHA1(b866b02579438afb11296e5c53a32c6425bd044d) ) // slightly different to original (verified)
+	ROM_LOAD( "82s129-3.d1",  0x0020, 0x0100, CRC(3eb3a8e4) SHA1(19097b5f60d1030f8b82d9f1d3a241f93e5c75d6) ) // == 82s126.4a
+
+	ROM_REGION( 0x0200, "namco", 0 )    // Sound PROMs
+	ROM_LOAD( "82s129-1.a9",    0x0000, 0x0100, CRC(a9cc86bf) SHA1(bbcec0570aeceb582ff8238a4bc8546a23430081) ) // == 82s126.1m
+	ROM_LOAD( "82s129-2.c9",    0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) ) // Timing - not used // == 82s126.3m
 ROM_END
 
 ROM_START( mspacmanbg2 )
@@ -3240,17 +3278,43 @@ ROM_START( mspacmanblt2 ) // very small differences to the above
 	ROM_LOAD( "82s129-2.c9", 0x0100, 0x0100, BAD_DUMP CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) )
 ROM_END
 
-/*    YEAR  NAME            PARENT    MACHINE        INPUT       INIT             MONITOR COMPANY                 FULLNAME FLAGS */
-GAME( 1981, mspacmab2,    mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg", "Ms. Pac-Man (bootleg, set 2)", MACHINE_SUPPORTS_SAVE )
+ROM_START( mspacmanlai )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "1-cpu.6e", 0x0000, 0x1000, CRC(d16b31b7) SHA1(bc2247ec946b639dd1f00bfc603fa157d0baaa97) )
+	ROM_LOAD( "2-cpu.6f", 0x1000, 0x1000, CRC(0d32de5e) SHA1(13ea0c343de072508908be885e6a2a217bbb3047) )
+	ROM_LOAD( "3-cpu.6h", 0x2000, 0x1000, CRC(1821ee0b) SHA1(5ea4d907dbb2690698db72c4e0b5be4d3e9a7786) )
+	ROM_LOAD( "4-cpu.6j", 0x3000, 0x1000, CRC(e30f2dae) SHA1(74f696f05771fb77e7afb45575ce107ead2c7780) )
+	ROM_LOAD( "5-cpu.6k", 0x8000, 0x1000, CRC(8c3e6de6) SHA1(fed6e9a2b210b07e7189a18574f6b8c4ec5bb49b) )
+	ROM_LOAD( "6-cpu.6m", 0x9000, 0x0800, CRC(286041cf) SHA1(5a5fc97ea66a59895b3403b2982940b755076667) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "4-vid.5e", 0x0000, 0x0800, CRC(93933d1d) SHA1(fa38d2cb87e872bb9a3158a4df98f38360dc85ec) )
+	ROM_LOAD( "2-vid.5h", 0x0800, 0x0800, CRC(ec7caeba) SHA1(51b95bbd52028b91b5da947cb053231b2729983a) )
+	ROM_LOAD( "3-vid.5f", 0x1000, 0x0800, CRC(22b0188a) SHA1(a9ed9ca8b36a60081fd364abc9bc23963932cc0b) )
+	ROM_LOAD( "1-vid.5j", 0x1800, 0x0800, CRC(50c7477d) SHA1(c04ec282a8cb528df5e38ad750d12ee71612695d) )
+
+	ROM_REGION( 0x0120, "proms", 0 )
+	ROM_LOAD( "82s123-cpu.7f",    0x0000, 0x0020, CRC(2fc650bd) SHA1(8d0268dee78e47c712202b0ec4f1f51109b1f2a5) )
+	ROM_LOAD( "82s129-vid.4a",    0x0020, 0x0100, CRC(3eb3a8e4) SHA1(19097b5f60d1030f8b82d9f1d3a241f93e5c75d6) )
+
+	ROM_REGION( 0x0200, "namco", 0 )    // Sound PROMs
+	ROM_LOAD( "82s129-vid.1m",    0x0000, 0x0100, CRC(a9cc86bf) SHA1(bbcec0570aeceb582ff8238a4bc8546a23430081) )
+	ROM_LOAD( "82s129-vid.3m",    0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) )    // Timing - not used
+ROM_END
+
+/* Update */
+GAME( 1981, mspacmab2,    mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg",            "Ms. Pac-Man (bootleg, set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 1991, mspacmanbcc,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Tecnausa)", "Come-Cocos (Ms. Pac-Man) ('Made in Greece' Tecnausa bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, mspacmanbco,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Cocamatic)","Come-Cocos (Ms. Pac-Man) (Cocamatic bootleg)", MACHINE_IMPERFECT_COLORS | MACHINE_SUPPORTS_SAVE )
+GAME( 198?, mspacmanbg,   mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg",            "Ms. Pac-Man ('Made in Greece' bootleg, set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, mspacmanbg2,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg",            "Ms. Pac-Man ('Made in Greece' bootleg, set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, mspacmanbgd,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Datamat)",  "Miss Pukman ('Made in Greece' Datamat bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 1991, mspacmanbhe,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Herle SA)", "Come-Cocos (Ms. Pac-Man) ('Made in Greece' Herle SA bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, mspacmanblt,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Triunvi)",  "Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, mspacmancr,   mspacman,mspacman, mspacman, puckman_state,  init_mspacman, ROT90,  "bootleg", "Ms. Pac-Man (bootleg on Crush Roller Hardware)", MACHINE_SUPPORTS_SAVE )
+GAME( 1981, mspacmancr,   mspacman,mspacman, mspacman, puckman_state,  init_mspacman, ROT90,  "bootleg",        "Ms. Pac-Man (bootleg on Crush Roller Hardware)", MACHINE_SUPPORTS_SAVE )
 GAME( 1982, mspacmbmc,    mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Marti Colls)", "Ms. Pac-Man (Marti Colls bootleg)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, pacgal2,      mspacman,mspacman, mspacman, puckman_state,  init_mspacman, ROT90,  "bootleg", "Pac-Gal (set 2)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, mspacii3,     mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Orca)", "Ms. Pac-Man II (Orca bootleg set 1)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, mspacmab4,    mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg", "Ms. Pac-Man (bootleg, set 4)", MACHINE_SUPPORTS_SAVE )
-GAME( 1992, mspacmanblt2, mspacman, woodpek, mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Triunvi)", "Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 1981, pacgal2,      mspacman,mspacman, mspacman, puckman_state,  init_mspacman, ROT90,  "bootleg",        "Pac-Gal (set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 1981, mspacii3,     mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Orca)",     "Ms. Pac-Man II (Orca bootleg set 1)", MACHINE_SUPPORTS_SAVE )
+GAME( 1981, mspacmab4,    mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg",            "Ms. Pac-Man (bootleg, set 4)", MACHINE_SUPPORTS_SAVE )
+GAME( 1992, mspacmanblt2, mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Triunvi)",  "Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 1982, mspacmanlai,  mspacman,woodpek,  mspacman, puckman_state,  empty_init,    ROT90,  "bootleg (Leisure and Allied)", "Ms. Pac-Man (Leisure and Allied bootleg)", MACHINE_SUPPORTS_SAVE )

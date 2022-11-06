@@ -33,6 +33,7 @@
 #include "emuopts.h"
 #include "mameopts.h"
 #include "drivenum.h"
+#include "fileio.h"
 #include "natkeyboard.h"
 #include "render.h"
 #include "cheat.h"
@@ -179,9 +180,11 @@ mame_ui_manager::mame_ui_manager(running_machine &machine)
 	, m_mouse_bitmap(32, 32)
 	, m_mouse_arrow_texture(nullptr)
 	, m_mouse_show(false)
+	, m_show_time(false)	// MAMEFX
 	, m_target_font_height(0)
 	, m_has_warnings(false)
 	, m_unthrottle_mute(false)
+	, m_image_display_enabled(true)
 	, m_machine_info()
 	, m_unemulated_features()
 	, m_imperfect_features()
@@ -201,8 +204,6 @@ void mame_ui_manager::init()
 	ui::system_list::instance().cache_data(options());
 
 	// initialize the other UI bits
-	ui_gfx_init(machine());
-
 	m_ui_colors.refresh(options());
 
 	// update font row info from setting
@@ -552,7 +553,7 @@ void mame_ui_manager::display_startup_screens(bool first_time)
 			if (!mandatory_images.empty() && show_mandatory_fileman)
 			{
 				std::ostringstream warning;
-				warning << _("This driver requires images to be loaded in the following device(s): ");
+				warning << _("This system requires media images to be mounted for the following device(s): ");
 
 				output_joined_collection(mandatory_images,
 						[&warning](const std::reference_wrapper<const std::string> &img)    { warning << "\"" << img.get() << "\""; },
@@ -673,8 +674,7 @@ void mame_ui_manager::update_and_render(render_container &container)
 		m_popup_text_end = 0;
 
 	// display the internal mouse cursor
-	if (machine().options().ui_mouse() && (m_mouse_show || is_menu_active())) //MESSUI - (NEWUI) system pointer always on; MAME pointer always off
-//	if (m_mouse_show || (is_menu_active() && machine().options().ui_mouse()))
+	if (m_mouse_show || (is_menu_active() && machine().options().ui_mouse()))
 	{
 		int32_t mouse_target_x, mouse_target_y;
 		bool mouse_button;
@@ -686,7 +686,7 @@ void mame_ui_manager::update_and_render(render_container &container)
 			if (mouse_target->map_point_container(mouse_target_x, mouse_target_y, container, mouse_x, mouse_y))
 			{
 				const float cursor_size = 0.6 * get_line_height();
-				container.add_quad(mouse_x, mouse_y, mouse_x + cursor_size * container.manager().ui_aspect(&container), mouse_y + cursor_size, colors().text_color(), m_mouse_arrow_texture, PRIMFLAG_ANTIALIAS(1) | PRIMFLAG_BLENDMODE(BLENDMODE_ALPHA));
+				container.add_quad(mouse_x, mouse_y, mouse_x + cursor_size * container.manager().ui_aspect(&container), mouse_y + cursor_size, rgb_t::white(), m_mouse_arrow_texture, PRIMFLAG_ANTIALIAS(1) | PRIMFLAG_BLENDMODE(BLENDMODE_ALPHA));
 			}
 		}
 	}
@@ -1182,7 +1182,7 @@ void mame_ui_manager::start_load_state()
 void mame_ui_manager::image_handler_ingame()
 {
 	// run display routine for devices
-	if (machine().phase() == machine_phase::RUNNING)
+	if (m_image_display_enabled && machine().phase() == machine_phase::RUNNING)
 	{
 		auto layout = create_layout(machine().render().ui_container());
 
@@ -1223,6 +1223,23 @@ uint32_t mame_ui_manager::handler_ingame(render_container &container)
 	// draw the profiler if visible
 	if (show_profiler())
 		draw_profiler(container);
+
+	// MAMEFX start
+	if (show_time())
+	{
+		char buf[20];
+		time_t ltime;
+		struct tm *today;
+		float line_height = get_line_height();
+
+		time(&ltime);
+		today = localtime(&ltime);
+
+		snprintf(buf, std::size(buf), "%02d:%02d:%02d", today->tm_hour, today->tm_min, today->tm_sec);
+		draw_text_full(container, buf, 0.0f, 1.0f - line_height, 1.0f, ui::text_layout::text_justify::RIGHT,    // MAMEFX
+			ui::text_layout::word_wrapping::WORD, OPAQUE_, rgb_t::white(), rgb_t::black(), nullptr, nullptr);   // MAMEFX
+	}
+	// MAMEFX end
 
 	// if we're single-stepping, pause now
 	if (single_step())
@@ -1401,6 +1418,11 @@ uint32_t mame_ui_manager::handler_ingame(render_container &container)
 			machine().sound().ui_mute(!new_throttle_state);
 	}
 
+	// MAMEFX start
+//	if (machine().ui_input().pressed(IPT_UI_SHOW_TIME))
+//		set_show_time(!show_time());
+	// MAMEFX end
+
 	// check for fast forward
 	if (machine().ioport().type_pressed(IPT_UI_FAST_FORWARD))
 	{
@@ -1485,12 +1507,12 @@ std::vector<ui::menu_item> mame_ui_manager::slider_init(running_machine &machine
 	}
 
 	// add CPU overclocking (cheat only)
-//	if (machine.options().cheat()) // HBMAME
+	//if (machine.options().cheat())
 	{
 		for (device_execute_interface &exec : execute_interface_enumerator(machine.root_device()))
 		{
 			std::string str = string_format(_("Overclock CPU %1$s"), exec.device().tag());
-			slider_alloc(std::move(str), 100, 1000, 4000, 10, std::bind(&mame_ui_manager::slider_overclock, this, std::ref(exec.device()), _1, _2));
+			slider_alloc(std::move(str), 10, 1000, 4000, 10, std::bind(&mame_ui_manager::slider_overclock, this, std::ref(exec.device()), _1, _2)); // MAMEFX
 		}
 		for (device_sound_interface &snd : sound_interface_enumerator(machine.root_device()))
 		{
@@ -1514,7 +1536,7 @@ std::vector<ui::menu_item> mame_ui_manager::slider_init(running_machine &machine
 		std::string screen_desc = machine_info().get_screen_desc(screen);
 
 		// add refresh rate tweaker
-//		if (machine.options().cheat()) // HBMAME
+//		if (machine.options().cheat())
 		{
 			std::string str = string_format(_("%1$s Refresh Rate"), screen_desc);
 			slider_alloc(std::move(str), -10000, 0, 10000, 1000, std::bind(&mame_ui_manager::slider_refresh, this, std::ref(screen), _1, _2));
@@ -2172,7 +2194,7 @@ void mame_ui_manager::save_main_option()
 			return;
 		}
 	}
-	popup_time(3, "%s", _("\n    Configuration saved    \n\n"));
+	popup_time(3, "%s", _("\n    Settings saved    \n\n"));
 }
 
 void mame_ui_manager::menu_reset()

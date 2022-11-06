@@ -1,9 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 ##
 ## license:BSD-3-Clause
 ## copyright-holders:Aaron Giles, Andrew Gardner
-
-from __future__ import with_statement
 
 import io
 import re
@@ -28,7 +26,7 @@ def parse_args():
             format = 'plist'
         elif flags and (sys.argv[i] == '-b'):
             i += 1
-            if (i >= len(sys.argv)):
+            if i >= len(sys.argv):
                 usage()
             else:
                 target = sys.argv[i]
@@ -101,24 +99,24 @@ if build == "mess":
     bundle_identifier = "org.mamedev.mess"
 elif build == "hbmame":
     # HBMAME
-    author = "Gaston90, Robbbert and the MAME team"
+    author = "Robbbert and the MAME team"
     legal_copyright = author
-    comments = "Proyecto Shadow Arcade Plus+"
+    comments = "Homebrew MAME"
     company_name = "MAME Team"
-    file_description = "PSArcadeplus+"
-    internal_name = "PSArcadeplus+"
-    original_filename = "PSArcadeplus+"
-    product_name = "PSArcadeplus+"
-    bundle_identifier = "org.mamedev.PSArcadeplus+"
+    file_description = "HBMAME"
+    internal_name = "HBMAME"
+    original_filename = "HBMAME"
+    product_name = "HBMAME"
+    bundle_identifier = "org.mamedev.hbmame"
 else:
     # MAME
-    author = "Nicola Salmoria and the MAME Team"
-    comments = "Multi-purpose emulation framework"
+    author = "Gaston90"
+    comments = "Proyecto Shadow Arcade Plus"
     company_name = "MAME Team"
-    file_description = "MAME"
-    internal_name = "MAME" if build == "mame" else build
-    original_filename = "MAME" if build == "mame" else build
-    product_name = "MAME" if build == "mame" else build
+    file_description = "PSArcade Plus"
+    internal_name = "PSArcade Plus"
+    original_filename = "PSArcade Plus"
+    product_name = "PSArcade Plus"
     bundle_identifier = "org.mamedev." + build
 
 if outfmt == 'rc':

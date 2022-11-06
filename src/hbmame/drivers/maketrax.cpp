@@ -616,7 +616,7 @@ ROM_START( pacmatri )
 	PACMAN_PROMS
 ROM_END
 
-ROM_START( pactest )
+ROM_START( pacmtest )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "pactest.1",    0x0000, 0x1000, CRC(c0423406) SHA1(51630780dd7fa32a827d81a060906130fbe57345) )
 
@@ -783,19 +783,7 @@ ROM_START( seq2 )
 	PACMAN_PROMS
 ROM_END
 
-ROM_START( snakes ) // No text, no scores. Need 2 joysticks (2nd stick is RDFG keys). If you run the snake next to an edge, gfx break.
-	ROM_REGION( 0x10000, "maincpu", 0 )
-	ROM_LOAD( "snakes.6e",    0x0000, 0x1000, CRC(5cba3718) SHA1(c093acd0f38e24d68c5dd618b742360976f1a3fa) )
-	ROM_REGION( 0x2000, "gfx1", 0 )
-	ROM_LOAD( "puckman.5e",   0x0000, 0x0800, CRC(2066a0b7) SHA1(6d4ccc27d6be185589e08aa9f18702b679e49a4a) )
-	ROM_LOAD( "puckman.5h",   0x0800, 0x0800, CRC(3591b89d) SHA1(79bb456be6c39c1ccd7d077fbe181523131fb300) )
-	ROM_LOAD( "puckman.5f",   0x1000, 0x0800, CRC(9e39323a) SHA1(be933e691df4dbe7d12123913c3b7b7b585b7a35) )
-	ROM_LOAD( "puckman.5j",   0x1800, 0x0800, CRC(1b1d9096) SHA1(53771c573051db43e7185b1d188533056290a620) )
-
-	PACMAN_PROMS
-ROM_END
-
-ROM_START( snakes2 ) // No text, no scores. Need 2 joysticks (2nd stick is RDFG keys).
+ROM_START( snakes ) // No text, no scores. Need 2 joysticks (2nd stick is RDFG keys).
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "snakes2.6e",   0x0000, 0x1000, CRC(6737be9c) SHA1(69a04dc9e9f08d78a6ad0a206b2af9126bfbe40c) )
 	ROM_REGION( 0x2000, "gfx1", 0 )
@@ -823,10 +811,21 @@ ROM_START( tinyworld )
 	PACMAN_SOUND_PROMS
 ROM_END
 
-/* note: the original rom was only 3154 bytes with a CRC of 0E67D062 - the one here is padded out to normal size */
-ROM_START( tst_pacm )
+/* note: the original rom was only 3154 (0xC52) bytes with a CRC of 0E67D062 - the one here is padded out to normal size */
+ROM_START( pacmtest1 )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "test.6e",      0x0000, 0x1000, CRC(fb645998) SHA1(ff57155533e1ec0fdc5c407dce8d270e86d33882) )
+
+	ROM_REGION( 0x2000, "gfx1", 0 )
+	ROM_LOAD( "pacman.5e",    0x0000, 0x1000, CRC(0c944964) SHA1(06ef227747a440831c9a3a613b76693d52a2f0a9) )
+	ROM_LOAD( "pacman.5f",    0x1000, 0x1000, CRC(958fedf9) SHA1(4a937ac02216ea8c96477d4a15522070507fb599) )
+
+	PACMAN_PROMS
+ROM_END
+
+ROM_START( pacmtest2 )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "pacmtest2.1",  0x0000, 0x0530, CRC(3c33cbeb) SHA1(b26f4fcad7042f93e6df29af73c3ee91a7333837) )
 
 	ROM_REGION( 0x2000, "gfx1", 0 )
 	ROM_LOAD( "pacman.5e",    0x0000, 0x1000, CRC(0c944964) SHA1(06ef227747a440831c9a3a613b76693d52a2f0a9) )
@@ -895,7 +894,7 @@ GAME( 2003, kangaroh,  0,        woodpek,  mspacpls, puckman_state, empty_init, 
 GAME( 2003, ladybugh,  lazybug,  woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Ladybug on Pacman Hardware", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, lazybug,   0,        woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Lazy Bug", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, lazybug1,  lazybug,  woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Lazy Bug (Slower)", MACHINE_SUPPORTS_SAVE )
-GAME( 19??, pactest,   0,        woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Test - Pacman board test", MACHINE_SUPPORTS_SAVE )
+GAME( 19??, pacmtest,  puckman,  woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Pacman Test Rom (set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 2003, ppong,     0,        woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Ping Pong demo (Pacman Hardware)", MACHINE_SUPPORTS_SAVE )
 GAME( 2003, ppong2,    ppong,    woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Ping Pong demo (Pacman Hardware) v2", MACHINE_SUPPORTS_SAVE )
 GAME( 2003, rainboh,   0,        pacman,   mspacpls, puckman_state, empty_init,          ROT90,  "David Widel", "Rainbow (Incomplete)", MACHINE_IS_INCOMPLETE | MACHINE_SUPPORTS_SAVE )
@@ -919,15 +918,15 @@ GAME( 2002, alienres,  0,        pacman,   pacman,   puckman_state, empty_init, 
 GAME( 2002, alienresp, alienres, pacman,   pacman,   puckman_state, empty_init,          ROT90,  "MonstersGoBoom", "Alien Rescue (non-working prototype)", MACHINE_SUPPORTS_SAVE )
 GAME( 2002, crashh,    0,        woodpek,  mspacpls, puckman_state, empty_init,          ROT90,  "hack", "Crash (Pac-Man)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, mtturbo,   0,        maketrax, maketrax, puckman_state, init_maketrax,       ROT270, "Tim Arcadecollecting", "Make Trax (Turbo Hack)", MACHINE_SUPPORTS_SAVE ) // http://www.arcadecollecting.com/hacks/maketrax
-GAME( 1999, tst_pacm,  0,        pacman,   mspacpls, puckman_state, empty_init,          ROT90,  "David Caldwell", "Test - Pacman Hardware", MACHINE_SUPPORTS_SAVE ) // http://www.porkrind.org/arcade/
+GAME( 1999, pacmtest1, puckman,  pacman,   mspacpls, puckman_state, empty_init,          ROT90,  "David Caldwell", "Pacman Test Rom (set 2)", MACHINE_SUPPORTS_SAVE ) // http://www.porkrind.org/arcade/
+GAME( 2020, pacmtest2, puckman,  pacman,   mspacpls, puckman_state, empty_init,          ROT90,  "Phil Murray", "Pacman Test Rom (set 3)", MACHINE_SUPPORTS_SAVE )
 GAME( 1982, eyesb,     eyes,     pacman,   eyes,     puckman_state, init_eyes,           ROT90,  "bootleg", "Eyes (unknown bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 2016, ghohunt,   puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "Ghost Hunt", MACHINE_SUPPORTS_SAVE )
 GAME( 2012, pactetris, puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Ben Leperchey", "Tetris on Pacman hardware (incomplete)", MACHINE_SUPPORTS_SAVE )
 GAME( 2017, deathstar, puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Death Star", MACHINE_SUPPORTS_SAVE )
 GAME( 2019, deathstar2,puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Death Star v2", MACHINE_SUPPORTS_SAVE )
 GAME( 2017, scroller,  puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "Scroller", MACHINE_SUPPORTS_SAVE )
-GAME( 2017, snakes,    puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Snakes", MACHINE_SUPPORTS_SAVE )
-GAME( 2019, snakes2,   puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Snakes v2", MACHINE_SUPPORTS_SAVE )
+GAME( 2019, snakes,    puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Stefano Bodrato", "Snakes", MACHINE_SUPPORTS_SAVE )
 GAME( 2021, 100doors,  puckman,  pacman,   pacman0,  puckman_state, empty_init,          ROT90,  "Hurray Banana", "100 doors", MACHINE_SUPPORTS_SAVE )
 
 
@@ -1016,11 +1015,6 @@ ROM_START( theglobpb )
 ROM_END
 
 GAME( 1999, theglobpb, 0, pacman, theglobp, puckman_state,  empty_init,    ROT90,  "chaneman", "Super Glob (English conversion of sprglbpg)", MACHINE_SUPPORTS_SAVE )
-
-
- /********************************************
-        Proyecto Shadows Arcade Plus
-**********************************************/
 
 static INPUT_PORTS_START( paintrlr )
 	PORT_START("IN0")
@@ -1352,36 +1346,6 @@ ROM_START( maketrxb )
 	ROM_LOAD( "82s126.3m",    0x0100, 0x0100, CRC(77245b66) SHA1(0c4d0bee858b97632411c440bea6948a74759746) )    /* timing - not used */
 ROM_END
 
-ROM_START( mspacmab3 ) // main PCB with GDP-02 auxiliary card
-	ROM_REGION( 0x10000, "maincpu",0 )
-	ROM_LOAD( "p1.6ef",  0x0000, 0x1000, CRC(50b38941) SHA1(c798fe6efe7ec6d15add74986d72d9ea8676d14a) ) // could also be d instead of p
-	ROM_LOAD( "p2.7ef",  0x1000, 0x1000, CRC(195883b8) SHA1(3395fd2f9963b1809fc55a4f1c998673de75793b) ) // could also be d instead of p
-	ROM_LOAD( "p3.bin",  0x2000, 0x1000, CRC(124a4507) SHA1(a7c82970ac53129c7a642322214adee4206298ff) ) // could also be d instead of p
-	ROM_LOAD( "p4.bin",  0x3000, 0x1000, CRC(08ac65da) SHA1(745d9d054c33df96a7f27a1f4575f8770d92ac10) ) // could also be d instead of p
-	ROM_LOAD( "d5.6fh",  0x8000, 0x1000, CRC(50b29f09) SHA1(27ca2cdf57b96d628b1811210d254b107e2f324e) )
-	ROM_LOAD( "d6.6j",   0x9000, 0x0800, CRC(33b09ed9) SHA1(a2a3e069cce442c3b179315e90476cd431c604c2) )
-
-	ROM_REGION( 0x2000, "gfx1" , 0 )
-	ROM_LOAD( "d7.5de", 0x0000, 0x0800, CRC(b5d8c872) SHA1(d137b0cff8635a6a02f9334b7fa72dc1a623fe9b) )
-	ROM_LOAD( "d9.5fh", 0x0800, 0x0800, CRC(9b2b936c) SHA1(d6f57d0ce6fba37d4838cdcace7e2e02c94b1ba1) )
-	ROM_LOAD( "d8.5ef", 0x1000, 0x0800, CRC(a70a6ac4) SHA1(81b0c56697bb671cc43928133446da74e74b4982) )
-	ROM_LOAD( "d10.5j", 0x1800, 0x0800, CRC(53368498) SHA1(0409288fe59c2bbf2730c31e4c7817392a544165) )
-
-	ROM_REGION( 0x0120, "proms", 0 )
-	ROM_LOAD( "6331.8h", 0x0000, 0x0020, CRC(2fc650bd) SHA1(8d0268dee78e47c712202b0ec4f1f51109b1f2a5) )
-	ROM_LOAD( "6301.4a", 0x0020, 0x0100, CRC(720528b4) SHA1(1f8fee1b8dec02cb19e706ca807438cec512479c) ) // 11xxxxxxx = 0x00
-	ROM_IGNORE(                  0x0100 )
-
-	ROM_REGION( 0x0200, "namco", 0 ) // sound PROMs
-	ROM_LOAD( "63s141.1k", 0x0000, 0x0100, CRC(459d2618) SHA1(14ba61caada575909b4dbd57e7342dc84722325d) )
-	ROM_IGNORE(                    0x0100 ) // 1xxxxxxxx = 0x00
-	ROM_LOAD( "63s141.3k", 0x0100, 0x0100, CRC(fcc24d5d) SHA1(7ae2523f92cccdbd8db8bda80c613a2f90220807) )  // timing - not used
-	ROM_IGNORE(                    0x0100 ) // 11xxxxxxx = 0x00
-
-	ROM_REGION( 0x0200, "gdp02_prom", 0 ) // currently not used by the emulation
-	ROM_LOAD( "82s141.i14", 0x0000, 0x0200, CRC(8d43d0a6) SHA1(be4e0d86ce4c6f1833cc0efc18277b4e04dc458f) ) // 1ST AND 2ND HALF IDENTICAL
-ROM_END
-
 ROM_START( painter )
 	ROM_REGION( 0x10000, "maincpu", 0 )
 	ROM_LOAD( "pain1.6e",           0x0000, 0x1000, CRC(fb2eb6dc) SHA1(377075cb64c7ccc0bd2b0185848d4798428bceb2) )
@@ -1415,5 +1379,4 @@ GAME( 1982, eyeszacb, eyes,     pacman,   eyes,     puckman_state,  empty_init, 
 GAME( 1982, eyesb2,   eyes,     pacman,   eyes,     puckman_state,  init_eyes,     ROT90,  "bootleg", "Eyes (bootleg set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, maketrax, crush,    maketrax, maketrax, puckman_state,  init_maketrax, ROT270, "Alpha Denshi Co. / Kural (Williams license)", "Make Trax (US set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, maketrxb, crush,    maketrax, maketrax, puckman_state,  init_maketrax, ROT270, "Alpha Denshi Co. / Kural (Williams license)", "Make Trax (US set 2)", MACHINE_SUPPORTS_SAVE )
-GAME( 1981, mspacmab3,puckman,  piranha,  mspacman, puckman_state,  init_eyes,     ROT90,  "bootleg", "Ms. Pac-Man (bootleg, set 3)", MACHINE_SUPPORTS_SAVE )
-GAME( 1984, painter,  crush,    pacman,   paintrlr, puckman_state,  empty_init,    ROT90,  "hack (Monshine Ent. Co.)",                      "Painter (hack of Crush Roller)",         MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE ) // currently shows Paintei due to bad sprite ROM
+GAME( 1984, painter,  crush,    pacman,   paintrlr, puckman_state,  empty_init,    ROT90,  "hack (Monshine Ent. Co.)", "Painter (hack of Crush Roller)", MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )

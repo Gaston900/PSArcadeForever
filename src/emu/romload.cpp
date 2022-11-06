@@ -11,11 +11,13 @@
 #include "emu.h"
 #include "romload.h"
 
-#include "corestr.h"
-#include "emuopts.h"
 #include "drivenum.h"
+#include "emuopts.h"
+#include "fileio.h"
 #include "softlist_dev.h"
 #include "ui/uimain.h"
+
+#include "corestr.h"
 
 #include <algorithm>
 #include <set>
@@ -365,10 +367,12 @@ void rom_load_manager::determine_bios_rom(device_t &device, const char *specbios
 	if (specbios && *specbios && core_stricmp(specbios, "default"))
 	{
 		bool found(false);
+		int count = 0;  // MESSUI
 		for (const rom_entry &rom : device.rom_region_vector())
 		{
 			if (ROMENTRY_ISSYSTEM_BIOS(&rom))
 			{
+				count++;  // MESSUI
 				char const *const biosname = ROM_GETNAME(&rom);
 				int const bios_flags = ROM_GETBIOSFLAGS(&rom);
 				char bios_number[20];
@@ -385,7 +389,7 @@ void rom_load_manager::determine_bios_rom(device_t &device, const char *specbios
 		}
 
 		// if we got neither an empty string nor 'default' then warn the user
-		if (!found)
+		if (!found && count)  // MESSUI (only applies to command-line, i.e. MESS)
 		{
 			m_errorstring.append(util::string_format("%s: invalid BIOS \"%s\", reverting to default\n", device.tag(), specbios));
 			m_warnings++;
@@ -1070,7 +1074,13 @@ void rom_load_manager::process_disk_entries(std::initializer_list<std::reference
 			err = do_open_disk(machine().options(), searchpath, romp, chd->orig_chd(), next_parent);
 			if (err)
 			{
-				handle_missing_file(romp, std::vector<std::string>(), err);
+				std::vector<std::string> tried;
+				for (auto const &paths : searchpath)
+				{
+					for (std::string const &path : paths.get())
+						tried.emplace_back(path);
+				}
+				handle_missing_file(romp, tried, err);
 				chd = nullptr;
 				continue;
 			}
@@ -1220,7 +1230,7 @@ void rom_load_manager::load_software_part_region(device_t &device, software_list
 	const software_info *const swinfo = swlist.find(std::string(swname));
 	if (swinfo)
 	{
-		// dispay a warning for unsupported software
+		// display a warning for unsupported software
 		// TODO: list supported clones like we do for machines?
 		if (swinfo->supported() == software_support::PARTIALLY_SUPPORTED)
 		{

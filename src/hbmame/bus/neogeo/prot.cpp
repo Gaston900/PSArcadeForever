@@ -664,7 +664,7 @@ void ngbootleg_prot_device::install_ms5plus_protection(cpu_device* maincpu, neog
 	m_bankdev = bankdev;
 }
 
-
+//By Remikare [kuroma_mameui]
 /* Metal Slug 5 (bootleg) */
 
 void ngbootleg_prot_device::mslug5b_vx_decrypt(u8* ymsndrom, u32 ymsndrom_size)
@@ -2772,8 +2772,8 @@ void sma_prot_device::mslug3_bankswitch_w(u16 data)
 	m_bankdev->neogeo_set_main_cpu_bank_address(bankaddress);
 }
 
-
-void sma_prot_device::mslug3a_bankswitch_w(u16 data)
+// By Remikare [kuroma_mameui]
+void sma_prot_device::mslug3a_bankswitch_w(u16 data) 
 {
 	/* thanks to Razoola and Mr K for the info */
 	static const int bankoffset[64] =
@@ -2799,7 +2799,6 @@ void sma_prot_device::mslug3a_bankswitch_w(u16 data)
 	int bankaddress = 0x100000 + bankoffset[data];
 	m_bankdev->neogeo_set_main_cpu_bank_address(bankaddress);
 }
-
 
 void sma_prot_device::kof2000_bankswitch_w(u16 data)
 {
@@ -2895,7 +2894,7 @@ void sma_prot_device::mslug3_install_protection(cpu_device* maincpu, neogeo_bank
 //  sma_install_random_read_handler(maincpu, 0x2ffff8, 0x2ffffa);
 }
 
-
+ //By Remikare [kuroma_mameui]
 void sma_prot_device::mslug3a_install_protection(cpu_device* maincpu, neogeo_banked_cart_device* bankdev)
 {
 	maincpu->space(AS_PROGRAM).install_write_handler(0x2fffe4, 0x2fffe5, write16smo_delegate(*this, FUNC(sma_prot_device::mslug3a_bankswitch_w)));
@@ -3022,7 +3021,7 @@ void sma_prot_device::mslug3_decrypt_68k(u8* base)
 	}
 }
 
-
+ //By Remikare [kuroma_mameui]
 void sma_prot_device::mslug3a_decrypt_68k(u8* base)
 {
 	int i,j;
