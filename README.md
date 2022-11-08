@@ -30,7 +30,7 @@ Logo, Manuals, Marquees, Pcb, Roms, Samples, Scores, Select, Snap, Titles, Versu
 How to compile
 --------------
 
-To be able to compile this version we will need the source codes, for this we will place it in the folder docs/Source Code [HBMame Old]/hbmame-tag245.7z.001, once located we will start to decompress the files it will take a few minutes, once decompressed we will have a folder with the name store1-tag232.7z, we will rename it to “src”, now we will paste the remains of the files that we have left “scripts, src and makefile” in the src folder, the system will ask to replace it we will say yes .
+To be able to compile this version we will need the source codes, for this we will place it in the folder docs/Source Code [HBMame Old]/hbmame-tag245.7z.001, once located we will start to decompress the files it will take a few minutes, once decompressed we will have a folder with the name hbmame-tag245.7z, we will rename it to “src”, now we will paste the remains of the files that we have left “scripts, src and makefile” in the src folder, the system will ask to replace it we will say yes .
 
 Now we will locate the folder where the compiler that we want to use is located, being msys64. Now we will paste the “src” folder.
 
@@ -39,7 +39,7 @@ And we will apply this command to start the compilation, this command is for Win
 make PTR64=1 TARGET=mame OSD=winui NOWERROR=1 STRIP_SYMBOLS=1
 ```
 
-I recommend downloading the compilation tool, whether it is the version msys64-32 that is from the year 2019-03-25, since this version is much more comfortable to compile for this version.
+I recommend downloading the compilation tool, whether it is the version msys64-32 that is from the year 2020-11-03, since this version is much more comfortable to compile for this version.
 
 The build tools will be located on the MAMEDEV github website:
 https://github.com/mamedev/buildtools/releases
