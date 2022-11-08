@@ -117,7 +117,7 @@ else:
     internal_name = "PSArcade Forever"
     original_filename = "PSArcade Forever"
     product_name = "PSArcade Forever"
-    bundle_identifier = "org.mamedev." + build
+    bundle_identifier = "org.mamedev."
 
 if outfmt == 'rc':
     fp.write('VS_VERSION_INFO VERSIONINFO\n')

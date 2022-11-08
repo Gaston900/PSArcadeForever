@@ -15462,6 +15462,7 @@ xeviblk		/* Xevious Black */
 sxeviouss01
 
 @source:galaxian.cpp
+galnamco    //Parent HB
 amidarf		/* ArkaMAME */
 amidargr	/* GreekRoms 2004 */
 amidars01
@@ -17877,7 +17878,6 @@ ncommandd				// 0050 (c) 1992 Alpha Denshi Co.
 wh1d					// 0053 (c) 1992 Alpha Denshi Co.
 
 @source:mhavoc.cpp
-mhavoc					//parent
 mhavocrv				//HB Jess M. Askey
 
 @source:midtunit.cpp
@@ -17979,7 +17979,7 @@ mrpacb
 newdigdo			/* Vic 20 George and Jerky hack of... */
 stickydo			/* Marcks Hacks */
 
-@source:mslug.cpp
+@source:neogeo.cpp
 msboot
 mslugeh
 mslugps01
@@ -18013,7 +18013,7 @@ mslugrmhp03
 mslugrmhp04
 mslugunity
 
-@source:mslug2.cpp
+@source:neogeo.cpp
 mslug2eh
 mslug2eh0
 mslug2eh1
@@ -18110,7 +18110,7 @@ mslug2rmhbhv01
 mslug2rmhbhv02
 mslug2unity
 
-@source:mslug3.cpp
+@source:neogeo.cpp
 mslug3e02
 mslug3e03
 mslug3e04
@@ -18409,7 +18409,7 @@ mslug3rmg04
 //mslug3rmh04
 mslug3unity
 
-@source:mslug4.cpp
+@source:neogeo.cpp
 mslug4a
 mslug4ar
 mslug4eh2
@@ -18578,7 +18578,7 @@ mslug4rmc21
 mslug4rmc22
 mslug4unity
 
-@source:mslug5.cpp
+@source:neogeo.cpp
 mslug5b
 mslug5d
 mslug5d1
@@ -18830,7 +18830,7 @@ mslug5ervx16
 mslug5unity
 mslug5ast
 
-@source:mslug6.cpp
+@source:neogeo.cpp
 mslug6h01
 mslug6h02
 mslug6h03
@@ -18905,7 +18905,7 @@ mslug6pf02
 mslug6pf03
 mslug6pf04
 
-@source:mslugx.cpp
+@source:neogeo.cpp
 mslugxce
 mslugxeb
 mslugxeh1

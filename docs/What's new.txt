@@ -1,10 +1,14 @@
 ﻿What's new in PSARCADE FOREVER
-====================
+===============================
 
-2022-11-XX
+2022-11-08
 
-- Added compatibility Gui system ARCADE64
-- Updated all current PSMame Plus Metal Slug Forever. 
+- Latest version that is compiled.
+- The combination of source codes is started from scratch to compile this version, 
+  since the previous version had many errors, it was not stable to continue updating it.
+- The emulator was renamed to PSMAME PLUS to PSMAME FOREVER.
+- The special hack roms that were included in the previous version were missing, in the current version it is not included.
+- Added compatibility Gui system ARCADE64.
+- Fixed many bugs in previous versions
 - Updated all current roms HBMame and Arcade64 0.245.
 
----------------------------------
