@@ -111,12 +111,12 @@ elif build == "hbmame":
 else:
     # MAME
     author = "Gaston90"
-    comments = "Proyecto Shadow Arcade Plus"
+    comments = "Proyecto Shadow Arcade Forever"
     company_name = "MAME Team"
-    file_description = "PSArcade Plus"
-    internal_name = "PSArcade Plus"
-    original_filename = "PSArcade Plus"
-    product_name = "PSArcade Plus"
+    file_description = "PSArcade Forever"
+    internal_name = "PSArcade Forever"
+    original_filename = "PSArcade Forever"
+    product_name = "PSArcade Forever"
     bundle_identifier = "org.mamedev." + build
 
 if outfmt == 'rc':

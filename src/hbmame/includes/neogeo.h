@@ -157,7 +157,9 @@ public:
 	void init_matrmehc();
 	void init_mslug3();
 	void init_mslug3a();
-	void init_mslug3b6();
+	void init_mslug6();
+	void init_mslug3d();
+	void init_mslug3fr();
 	void init_mslug3h();
 	void init_mslug3n();
 	void init_mslug4();
@@ -171,7 +173,7 @@ public:
 	void init_ms5pcb();
 	void init_ms5pcbd();
 	void init_ms5plus();
-	void init_mslug3n6p();
+	void init_ms6();
 	void init_mp2s39();
 	void init_neogeo();
 	void init_nitd();

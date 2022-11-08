@@ -3095,7 +3095,13 @@ files {
 	MAME_DIR .. "src/hbmame/drivers/kof2002.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/kof2003.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/mgd2.cpp", --HBMAME
-	MAME_DIR .. "src/hbmame/drivers/mslughb.cpp", --PSMAMEPLUS
+	MAME_DIR .. "src/hbmame/drivers/mslug.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslug2.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslug3.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslug4.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslug5.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslug6.cpp", --HBMAME
+	MAME_DIR .. "src/hbmame/drivers/mslugx.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/ngdoubledr.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/nggaroup.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/ngkofmisc.cpp", --HBMAME

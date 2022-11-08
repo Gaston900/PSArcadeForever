@@ -4992,7 +4992,7 @@ ROM_START( magdrp3e )
 	ROM_LOAD16_BYTE( "233e.c4", 0xc00001, 0x200000, CRC(f55dddf3) SHA1(fec0930e5cb26be4d73bfa8c76ef37eb4bbec60a) )
 	ROM_CONTINUE(         0x800001, 0x200000 )
 ROM_END
-#if 0
+
 ROM_START( msluge )
 	ROM_REGION( 0x200000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "201.p1", 0x100000, 0x100000, CRC(08d8daa5) SHA1(b888993dbb7e9f0a28a01d7d2e1da00ef9cf6f38) )
@@ -5016,7 +5016,7 @@ ROM_START( msluge )
 	ROM_LOAD16_BYTE( "201e.c4", 0xc00001, 0x200000, CRC(5ac1d497) SHA1(313249ea47b3553974cde1c4c36f1ff3adeb07d1) )
 	ROM_CONTINUE(         0x800001, 0x200000 )
 ROM_END
-#endif
+
 ROM_START( neobombee )
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "093.p1", 0x000000, 0x100000, CRC(a1a71d0d) SHA1(059284c84f61a825923d86d2f29c91baa2c439cd) )
@@ -5535,7 +5535,7 @@ GAME( 1995, kabukikle,   kabukikl, neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1995, kof95e,      kof95,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "The King of Fighters '95 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, kotm2e,      kotm2,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "King of the Monsters 2 - The Next Thing (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, magdrp3e,    magdrop3, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Data East Corporation", "Magical Drop III (Earlier)", MACHINE_SUPPORTS_SAVE )
-//GAME( 1996, msluge,      mslug,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Metal Slug - Super Vehicle-001 (Earlier)", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, msluge,      mslug,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Metal Slug - Super Vehicle-001 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, neobombee,   neobombe, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Hudson", "Neo Bomberman (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, neodrifte,   neodrift, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Visco", "Neo Drift Out - New Technology (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, ninjamse,    ninjamas, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK", "Ninja Master's - haoh-ninpo-cho (Earlier)", MACHINE_SUPPORTS_SAVE )

@@ -1392,7 +1392,7 @@ ROM_START( looptris )
 	ROM_LOAD16_BYTE( "433.c1", 0x000000, 0x080000, CRC(b9413f13) SHA1(5e7175dff9510dad55f8f05e9b307c3c05d92209) )
 	ROM_LOAD16_BYTE( "433.c2", 0x000001, 0x080000, CRC(9409dbe8) SHA1(1e9562aa34f6202e8012104ab79916453fec072e) )
 ROM_END
-#if 0
+
 // 436 : Neo Pang by CeL
 ROM_START( neopang )
 	ROM_REGION( 0x100000, "maincpu", 0 )
@@ -1409,7 +1409,7 @@ ROM_START( neopang )
 	ROM_LOAD16_BYTE( "436.c1", 0x000000, 0x100000, CRC(62f5405c) SHA1(f9eb8d1838da9953aecf40c3314c608ab655cb8f) )
 	ROM_LOAD16_BYTE( "436.c2", 0x000001, 0x100000, CRC(e1183030) SHA1(60262d53ab12314db5e5c00a94463500abe3e8b0) )
 ROM_END
-#endif
+
 // 443 : Santaball by M.Priewe.
 // Press 1 to play a game of Pong.
 // If the game misbehaves, read the FAQ.
@@ -3249,7 +3249,7 @@ GAME( 2002, neonopon,     neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init
 GAME( 2002, neonopon_d1,  neonopon, neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Neo No Panepon (demo 1, 2002-07-07)", MACHINE_NOT_WORKING | MACHINE_IS_INCOMPLETE | MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )
 GAME( 2002, neonopon_d2,  neonopon, neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Neo No Panepon (demo 2, 2002-07-07)", MACHINE_NOT_WORKING | MACHINE_IS_INCOMPLETE | MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )
 GAME( 2002, neonopon_d3,  neonopon, neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Neo No Panepon (demo 3, 2002-08-22)", MACHINE_NOT_WORKING | MACHINE_IS_INCOMPLETE | MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )
-//GAME( 2010, neopang,      neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "CeL", "Neo Pang", MACHINE_SUPPORTS_SAVE )
+GAME( 2010, neopang,      neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "CeL", "Neo Pang", MACHINE_SUPPORTS_SAVE )
 GAME( 2002, neopong,      neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Neodev", "Neo Pong (v1.1)", MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )
 GAME( 2002, neoponga,     neopong,  no_watchdog,     neogeo,  neogeo_state, init_neogeo,   ROT0, "Neodev", "Neo Pong (v1.0)", MACHINE_IMPERFECT_GRAPHICS | MACHINE_SUPPORTS_SAVE )
 GAME( 2010, neoromjb,     neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "CeL", "Neo Rom Jukebox", MACHINE_SUPPORTS_SAVE )

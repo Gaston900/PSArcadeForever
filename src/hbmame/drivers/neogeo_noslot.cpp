@@ -3634,7 +3634,7 @@ ROM_END
  . NGH-201
  NEO-AEG PROGBK1Y / NEO-AEG CHA256RY
 ****************************************/
-#if 0
+
 ROM_START( mslug )
 	ROM_REGION( 0x200000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "201.p1", 0x100000, 0x100000, CRC(08d8daa5) SHA1(b888993dbb7e9f0a28a01d7d2e1da00ef9cf6f38) )
@@ -3654,7 +3654,7 @@ ROM_START( mslug )
 	ROM_LOAD16_BYTE( "201.c3", 0x800000, 0x400000, CRC(5121456a) SHA1(0a7a27d603d1bb2520b5570ebf5b34a106e255a6) )
 	ROM_LOAD16_BYTE( "201.c4", 0x800001, 0x400000, CRC(f4ad59a3) SHA1(4e94fda8ee63abf0f92afe08060a488546e5c280) )
 ROM_END
-#endif
+
 /****************************************
  ID-0202
  . ??M-202
@@ -4910,7 +4910,7 @@ ROM_END
  . NGH-2410
  NEO-AEG PROGBK1Y / NEO-AEG CHA512Y
 ****************************************/
-#if 0
+
 ROM_START( mslug2 ) /* MVS AND AES VERSION */
 	ROM_REGION( 0x300000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "241.p1",  0x000000, 0x100000, CRC(2a53c5da) SHA1(5a6aba482cac588a6c2c51179c95b487c6e11899) )
@@ -4930,7 +4930,7 @@ ROM_START( mslug2 ) /* MVS AND AES VERSION */
 	ROM_LOAD16_BYTE( "241.c3", 0x1000000, 0x800000, CRC(9f6bfa6f) SHA1(a4319b48004e723f81a980887678e3e296049a53) )
 	ROM_LOAD16_BYTE( "241.c4", 0x1000001, 0x800000, CRC(7d3e306f) SHA1(1499316fb381775218d897b81a6a0c3465d1a37c) )
 ROM_END
-#endif
+
 /****************************************
  ID-0242
  . NGM-2420
@@ -5267,7 +5267,7 @@ ROM_END
  . NGH-2500
  NEO-AEG PROGEOP (1999.4.2) / NEO-AEG CHA512Y
 ****************************************/
-#if 0
+
 ROM_START( mslugx ) /* MVS AND AES VERSION */
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "250.p1",  0x000000, 0x100000, CRC(81f1f60b) SHA1(4c19f2e9824e606178ac1c9d4b0516fbaa625035) )
@@ -5290,7 +5290,7 @@ ROM_START( mslugx ) /* MVS AND AES VERSION */
 	ROM_LOAD16_BYTE( "250.c5", 0x2000000, 0x800000, CRC(a4b56124) SHA1(d41069856df990a1a99d39fb263c8303389d5475) )
 	ROM_LOAD16_BYTE( "250.c6", 0x2000001, 0x800000, CRC(83e3e69d) SHA1(39be66287696829d243fb71b3fb8b7dc2bc3298f) )
 ROM_END
-#endif
+
 /****************************************
  ID-0251
  . NGM-2510
@@ -5629,7 +5629,7 @@ ROM_END
  . NGH-2560
  NEO-AEG PROGLBA (1999.7.6) (NEO-SMA)(LBA-SUB) / NEO-AEG CHAFIO (1999.8.10) (NEO-CMC 7042)
 ****************************************/
-#if 0
+
 ROM_START( mslug3 ) /* Original Version - Encrypted Code & GFX */ /* revision 2000.4.1 */ /* MVS VERSION */
 	ROM_REGION( 0x900000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "neo-sma",    0x0c0000, 0x040000, CRC(9cd55736) SHA1(d6efb2b313127c2911d47d9324626b3f1e7c6ccb) )
@@ -5682,7 +5682,7 @@ ROM_START( mslug3h ) /* Original Version - Encrypted GFX */ /* revision 2000.3.1
 	ROM_LOAD16_BYTE( "256.c7", 0x3000000, 0x800000, CRC(cfceddd2) SHA1(7def666adf8bd1703f40c61f182fc040b6362dc9) )
 	ROM_LOAD16_BYTE( "256.c8", 0x3000001, 0x800000, CRC(4d9be34c) SHA1(a737bdfa2b815aea7067e7af2636e83a9409c414) )
 ROM_END
-#endif
+
 /****************************************
  ID-0257
  . NGM-2570
@@ -5896,7 +5896,7 @@ ROM_END
  . NGH-2630
  NEO-AEG PROGBK2 (2002.4.1) (NEO-PCM2 SNK) / NEO-AEG CHAFIO (1999.8.10) (NEO-CMC 7050)
 ****************************************/
-#if 0
+
 ROM_START( mslug4 ) /* Original Version - Encrypted GFX */ /* MVS VERSION */
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "263.p1",  0x000000, 0x100000, CRC(27e4def3) SHA1(a08785e8145981bb6b5332a3b2df7eb321253cca) )
@@ -5940,7 +5940,7 @@ ROM_START( mslug4h ) /* Original Version - Encrypted GFX */ /* AES VERSION */
 	ROM_LOAD16_BYTE( "263.c5", 0x2000000, 0x800000, CRC(a748854f) SHA1(2611bbedf9b5d8e82c6b2c99b88f842c46434d41) )
 	ROM_LOAD16_BYTE( "263.c6", 0x2000001, 0x800000, CRC(5c8ba116) SHA1(6034db09c8706d4ddbcefc053efbc47a0953eb92) )
 ROM_END
-#endif
+
 /****************************************
  ID-0264
  . NGM-264?
@@ -6072,7 +6072,7 @@ ROM_END
  . NGH-2680
  NEO-AEG PROGBK3S (2003.10.6) (NEO-PCM2 PLAYMORE) (NEO-PVC) / NEO-AEG CHAFIO (2003.7.24) (NEO-CMC 7050)
 ****************************************/
-#if 0
+
 ROM_START( mslug5 ) /* Encrypted Set */ /* MVS VERSION */
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD32_WORD_SWAP( "268.p1", 0x000000, 0x400000, CRC(d0466792) SHA1(880819933d997fab398f91061e9dbccb959ae8a1) )
@@ -6120,7 +6120,7 @@ ROM_START( mslug5h ) /* Encrypted Set */ /* AES release of the game but is also 
 	ROM_LOAD16_BYTE( "268.c7", 0x3000000, 0x800000, CRC(6d72a969) SHA1(968dd9a4d1209b770b9b85ea6532fa24d262a262) )
 	ROM_LOAD16_BYTE( "268.c8", 0x3000001, 0x800000, CRC(551d720e) SHA1(ebf69e334fcaba0fda6fd432fd0970283a365d12) )
 ROM_END
-#endif
+
 /****************************************
  ID-0269
  . NGM-2690
@@ -6440,7 +6440,7 @@ ROM_END
  . MV-0 ????
  NEO-MVH MVOBR 2003.8.4
 ****************************************/
-#if 0
+
 ROM_START( ms5pcb ) /* Encrypted Set, JAMMA PCB */
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD32_WORD_SWAP( "268.p1", 0x000000, 0x400000, CRC(d0466792) SHA1(880819933d997fab398f91061e9dbccb959ae8a1) )
@@ -6465,7 +6465,7 @@ ROM_START( ms5pcb ) /* Encrypted Set, JAMMA PCB */
 	ROM_LOAD32_WORD( "268c.c3", 0x2000000, 0x1000000, BAD_DUMP CRC(0f3f59e3) SHA1(8cc751dc7d4e94864a9ce3346f23b8f011082fcc) )
 	ROM_LOAD32_WORD( "268c.c4", 0x2000002, 0x1000000, BAD_DUMP CRC(3ad8435a) SHA1(b333c8993c9b4c4ea59450ad0a3560e0b28056bc) )
 ROM_END
-#endif
+
 /****************************************
  ID-2690
  . MV-0 ????
@@ -6728,7 +6728,7 @@ ROM_START( garoubl ) /* bootleg of garoup */
 ROM_END
 
 /* Metal Slug 3 bootleg */
-#if 0
+
 ROM_START( mslug3b6 ) /* This "Metal Slug 6" is a hack/bootleg of Metal Slug 3, the real Metal Slug 6 is on Atomiswave Hardware */
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "299-p1.bin", 0x000000, 0x200000, CRC(5f2fe228) SHA1(747775a2dfc0da87ad2ddd4f57ce5b2522f23fa5) )
@@ -6754,7 +6754,7 @@ ROM_START( mslug3b6 ) /* This "Metal Slug 6" is a hack/bootleg of Metal Slug 3, 
 	ROM_LOAD16_BYTE( "256.c7", 0x3000000, 0x800000, CRC(cfceddd2) SHA1(7def666adf8bd1703f40c61f182fc040b6362dc9) )
 	ROM_LOAD16_BYTE( "256.c8", 0x3000001, 0x800000, CRC(4d9be34c) SHA1(a737bdfa2b815aea7067e7af2636e83a9409c414) )
 ROM_END
-#endif
+
 /* Nightmare in the Dark bootleg */
 
 ROM_START( nitdbl )
@@ -6862,7 +6862,7 @@ ROM_START( ct2k3sa ) /* Protected hack/bootleg of kof2001 Phenixsoft, alternate 
 ROM_END
 
 /* Metal Slug 4 bootleg */
-#if 0
+
 ROM_START( ms4plus )
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "ms4-p1p.bin", 0x000000, 0x100000, CRC(806a6e04) SHA1(df503772d607271ea51285154c9fd68e18b143ce) )
@@ -6884,7 +6884,7 @@ ROM_START( ms4plus )
 	ROM_LOAD16_BYTE( "263.c5", 0x2000000, 0x800000, CRC(a748854f) SHA1(2611bbedf9b5d8e82c6b2c99b88f842c46434d41) )
 	ROM_LOAD16_BYTE( "263.c6", 0x2000001, 0x800000, CRC(5c8ba116) SHA1(6034db09c8706d4ddbcefc053efbc47a0953eb92) )
 ROM_END
-#endif
+
 /* The King of Fighters 2002 bootlegs */
 
 ROM_START( kof2002b )
@@ -7158,7 +7158,7 @@ ROM_START( matrimbl )
 ROM_END
 
 /* Metal Slug 5 bootleg */
-#if 0
+
 ROM_START( ms5plus )
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "ms5-p1p.bin", 0x000000, 0x100000, CRC(106b276f) SHA1(0e840df95f3813145e5043573483c7610d2d3e68) )
@@ -7183,7 +7183,7 @@ ROM_START( ms5plus )
 	ROM_LOAD16_BYTE( "268-c7c.c7", 0x3000000, 0x800000, CRC(6d72a969) SHA1(968dd9a4d1209b770b9b85ea6532fa24d262a262) )
 	ROM_LOAD16_BYTE( "268-c8c.c8", 0x3000001, 0x800000, CRC(551d720e) SHA1(ebf69e334fcaba0fda6fd432fd0970283a365d12) )
 ROM_END
-#endif
+
 /* Puzzle Bobble / Bust-A-Move (Neo-Geo) bootleg */
 
 ROM_START( pbobblenb )
@@ -7979,7 +7979,7 @@ GAME( 1997, irrmaze,    neogeo,   neogeo_imaze,    irrmaze,neogeo_state, init_ne
 GAME( 1998, rbff2,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Real Bout Fatal Fury 2 - The Newcomers / Real Bout Garou Densetsu 2 - the newcomers (NGM-2400)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, rbff2h,     rbff2,    neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Real Bout Fatal Fury 2 - The Newcomers / Real Bout Garou Densetsu 2 - the newcomers (NGH-2400)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, rbff2k,     rbff2,    neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Real Bout Fatal Fury 2 - The Newcomers (Korean release)", MACHINE_SUPPORTS_SAVE ) // no Japanese title / mode
-//GAME( 1998, mslug2,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Metal Slug 2 - Super Vehicle-001/II (NGM-2410)(NGH-2410)", MACHINE_SUPPORTS_SAVE )
+GAME( 1998, mslug2,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Metal Slug 2 - Super Vehicle-001/II (NGM-2410)(NGH-2410)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, kof98,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_kof98,    ROT0, "SNK", "The King of Fighters '98 - The Slugfest / King of Fighters '98 - dream match never ends (NGM-2420)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, kof98a,     kof98,    neogeo_noslot,   neogeo, neogeo_state, init_kof98,    ROT0, "SNK", "The King of Fighters '98 - The Slugfest / King of Fighters '98 - dream match never ends (NGM-2420, alternate board)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, kof98k,     kof98,    neogeo_noslot,   neogeo, neogeo_state, init_kof98,    ROT0, "SNK", "The King of Fighters '98 - The Slugfest / King of Fighters '98 - dream match never ends (Korean board)", MACHINE_SUPPORTS_SAVE )
@@ -7987,7 +7987,7 @@ GAME( 1998, kof98ka,    kof98,    neogeo_noslot,   neogeo, neogeo_state, init_ko
 GAME( 1998, kof98h,     kof98,    neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "The King of Fighters '98 - The Slugfest / King of Fighters '98 - dream match never ends (NGH-2420)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, lastbld2,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "The Last Blade 2 / Bakumatsu Roman - Dai Ni Maku Gekka no Kenshi (NGM-2430)(NGH-2430)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, neocup98,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Neo-Geo Cup '98 - The Road to the Victory", MACHINE_SUPPORTS_SAVE )
-//GAME( 1999, mslugx,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslugx,   ROT0, "SNK", "Metal Slug X - Super Vehicle-001 (NGM-2500)(NGH-2500)", MACHINE_SUPPORTS_SAVE )
+GAME( 1999, mslugx,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslugx,   ROT0, "SNK", "Metal Slug X - Super Vehicle-001 (NGM-2500)(NGH-2500)", MACHINE_SUPPORTS_SAVE )
 GAME( 1999, kof99,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_kof99,    ROT0, "SNK", "The King of Fighters '99 - Millennium Battle (NGM-2510)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
 GAME( 1999, kof99h,     kof99,    neogeo_noslot,   neogeo, neogeo_state, init_kof99,    ROT0, "SNK", "The King of Fighters '99 - Millennium Battle (NGH-2510)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX, crashes going into attract demo */
 GAME( 1999, kof99e,     kof99,    neogeo_noslot,   neogeo, neogeo_state, init_kof99,    ROT0, "SNK", "The King of Fighters '99 - Millennium Battle (earlier)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
@@ -7997,9 +7997,9 @@ GAME( 1999, garou,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ga
 GAME( 1999, garouh,     garou,    neogeo_noslot,   neogeo, neogeo_state, init_garouh,   ROT0, "SNK", "Garou - Mark of the Wolves (NGM-2530)(NGH-2530)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
 GAME( 1999, garoup,     garou,    neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Garou - Mark of the Wolves (prototype)", MACHINE_SUPPORTS_SAVE )
 GAME( 1999, garoubl,    garou,    neogeo_noslot,   neogeo, neogeo_state, init_garoubl,  ROT0, "bootleg", "Garou - Mark of the Wolves (bootleg)", MACHINE_SUPPORTS_SAVE ) /* Bootleg of garoup */
-//GAME( 2000, mslug3,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug3,   ROT0, "SNK", "Metal Slug 3 (NGM-2560)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
-//GAME( 2000, mslug3h,    mslug3,   neogeo_noslot,   neogeo, neogeo_state, init_mslug3h,  ROT0, "SNK", "Metal Slug 3 (NGH-2560)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted GFX */
-//GAME( 2000, mslug3b6,   mslug3,   neogeo_noslot,   neogeo, neogeo_state, init_mslug3b6, ROT0, "bootleg", "Metal Slug 6 (Metal Slug 3 bootleg)", MACHINE_SUPPORTS_SAVE ) /* real Metal Slug 6 is an Atomiswave HW game, see naomi.c ;-) */
+GAME( 2000, mslug3,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug3,   ROT0, "SNK", "Metal Slug 3 (NGM-2560)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
+GAME( 2000, mslug3h,    mslug3,   neogeo_noslot,   neogeo, neogeo_state, init_mslug3h,  ROT0, "SNK", "Metal Slug 3 (NGH-2560)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted GFX */
+GAME( 2000, mslug3b6,   mslug3,   neogeo_noslot,   neogeo, neogeo_state, init_mslug6,   ROT0, "bootleg", "Metal Slug 6 (Metal Slug 3 bootleg)", MACHINE_SUPPORTS_SAVE ) /* real Metal Slug 6 is an Atomiswave HW game, see naomi.c ;-) */
 GAME( 2000, kof2000,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_kof2000,  ROT0, "SNK", "The King of Fighters 2000 (NGM-2570) (NGH-2570)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX */
 GAME( 2000, kof2000n,   kof2000,  neogeo_noslot,   neogeo, neogeo_state, init_kof2000,  ROT0, "SNK", "The King of Fighters 2000 (not encrypted)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted GFX */
 GAME( 2001, zupapa,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_zupapa,   ROT0, "SNK", "Zupapa!" , MACHINE_SUPPORTS_SAVE ) /* Encrypted GFX */
@@ -8019,10 +8019,10 @@ GAME( 2002, kof10th,    kof2002,  neogeo_noslot,   neogeo, neogeo_state, init_ko
 GAME( 2005, kf10thep,   kof2002,  neogeo_noslot,   neogeo, neogeo_state, init_kf10thep, ROT0, "bootleg", "The King of Fighters 10th Anniversary Extra Plus (The King of Fighters 2002 bootleg)", MACHINE_SUPPORTS_SAVE ) // fake SNK copyright
 GAME( 2004, kf2k5uni,   kof2002,  neogeo_noslot,   neogeo, neogeo_state, init_kf2k5uni, ROT0, "bootleg", "The King of Fighters 10th Anniversary 2005 Unique (The King of Fighters 2002 bootleg)", MACHINE_SUPPORTS_SAVE ) // fake SNK copyright
 GAME( 2004, kof2k4se,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_kof2k4se, ROT0, "bootleg", "The King of Fighters Special Edition 2004 (The King of Fighters 2002 bootleg)", MACHINE_SUPPORTS_SAVE ) /* Hack / Bootleg of kof2002 */
-//GAME( 2003, mslug5,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug5,   ROT0, "SNK Playmore", "Metal Slug 5 (NGM-2680)", MACHINE_SUPPORTS_SAVE )
-//GAME( 2003, mslug5h,    mslug5,   neogeo_noslot,   neogeo, neogeo_state, init_mslug5,   ROT0, "SNK Playmore", "Metal Slug 5 (NGH-2680)", MACHINE_SUPPORTS_SAVE ) /* Also found in later MVS carts */
-//GAME( 2003, ms5pcb,     0,        neogeo_noslot,   dualbios, neogeo_state, init_ms5pcb,      ROT0, "SNK Playmore", "Metal Slug 5 (JAMMA PCB)", MACHINE_SUPPORTS_SAVE )
-//GAME( 2003, ms5plus,    mslug5,   neogeo_noslot,   neogeo, neogeo_state, init_ms5plus,  ROT0, "bootleg", "Metal Slug 5 Plus (bootleg)", MACHINE_SUPPORTS_SAVE )
+GAME( 2003, mslug5,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug5,   ROT0, "SNK Playmore", "Metal Slug 5 (NGM-2680)", MACHINE_SUPPORTS_SAVE )
+GAME( 2003, mslug5h,    mslug5,   neogeo_noslot,   neogeo, neogeo_state, init_mslug5,   ROT0, "SNK Playmore", "Metal Slug 5 (NGH-2680)", MACHINE_SUPPORTS_SAVE ) /* Also found in later MVS carts */
+GAME( 2003, ms5pcb,     0,        neogeo_noslot,   dualbios, neogeo_state, init_ms5pcb,      ROT0, "SNK Playmore", "Metal Slug 5 (JAMMA PCB)", MACHINE_SUPPORTS_SAVE )
+GAME( 2003, ms5plus,    mslug5,   neogeo_noslot,   neogeo, neogeo_state, init_ms5plus,  ROT0, "bootleg", "Metal Slug 5 Plus (bootleg)", MACHINE_SUPPORTS_SAVE )
 GAME( 2003, svcpcb,     0,        neogeo_noslot,   dualbios, neogeo_state, init_svcpcb, ROT0, "SNK Playmore", "SNK vs. Capcom - SVC Chaos (JAMMA PCB, set 1)", MACHINE_SUPPORTS_SAVE ) // not a clone of neogeo because it's NOT a neogeo cart.
 GAME( 2003, svcpcba,    svcpcb,   neogeo_noslot,   dualbios, neogeo_state, init_svcpcb, ROT0, "SNK Playmore", "SNK vs. Capcom - SVC Chaos (JAMMA PCB, set 2)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code */
 GAME( 2003, svc,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_svc,      ROT0, "SNK Playmore", "SNK vs. Capcom - SVC Chaos (NGM-2690)(NGH-2690)", MACHINE_SUPPORTS_SAVE )
@@ -8102,7 +8102,7 @@ GAME( 1991, bakatono,   neogeo,   neogeo_mj,       mjneogeo, neogeo_state, init_
 
 /* Nazca (later acquired by SNK) */
 GAME( 1996, turfmast,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Neo Turf Masters / Big Tournament Golf", MACHINE_SUPPORTS_SAVE )
-//GAME( 1996, mslug,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Metal Slug - Super Vehicle-001", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, mslug,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Metal Slug - Super Vehicle-001", MACHINE_SUPPORTS_SAVE )
 
 /* NMK */
 GAME( 1994, zedblade,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "NMK", "Zed Blade / Operation Ragnarok", MACHINE_SUPPORTS_SAVE )
@@ -8171,9 +8171,9 @@ GAME( 2000, bangbead,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ba
 GAME( 2010, b2b,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Visco", "Bang Bang Busters (2010 NCI release)" , MACHINE_SUPPORTS_SAVE )
 
 /* Mega Enterprise */
-//GAME( 2002, mslug4,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug4,   ROT0, "Mega / Playmore", "Metal Slug 4 (NGM-2630)", MACHINE_SUPPORTS_SAVE )
-//GAME( 2002, mslug4h,    mslug4,   neogeo_noslot,   neogeo, neogeo_state, init_mslug4,   ROT0, "Mega / Playmore", "Metal Slug 4 (NGH-2630)", MACHINE_SUPPORTS_SAVE )
-//GAME( 2002, ms4plus,    mslug4,   neogeo_noslot,   neogeo, neogeo_state, init_ms4plus,  ROT0, "bootleg", "Metal Slug 4 Plus (bootleg)", MACHINE_SUPPORTS_SAVE )
+GAME( 2002, mslug4,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_mslug4,   ROT0, "Mega / Playmore", "Metal Slug 4 (NGM-2630)", MACHINE_SUPPORTS_SAVE )
+GAME( 2002, mslug4h,    mslug4,   neogeo_noslot,   neogeo, neogeo_state, init_mslug4,   ROT0, "Mega / Playmore", "Metal Slug 4 (NGH-2630)", MACHINE_SUPPORTS_SAVE )
+GAME( 2002, ms4plus,    mslug4,   neogeo_noslot,   neogeo, neogeo_state, init_ms4plus,  ROT0, "bootleg", "Metal Slug 4 Plus (bootleg)", MACHINE_SUPPORTS_SAVE )
 
 /* Evoga */
 GAME( 2002, rotd,       neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_rotd,     ROT0, "Evoga / Playmore", "Rage of the Dragons (NGM-264?)", MACHINE_SUPPORTS_SAVE )
@@ -8752,7 +8752,7 @@ ROM_START( froman2b )
 	ROM_LOAD16_BYTE( "098.c1", 0x0000000, 0x400000, CRC(29148bf7) SHA1(75097fbe8877720afbcbe4dbe30bc600466d759f) )
 	ROM_LOAD16_BYTE( "098.c2", 0x0000001, 0x400000, CRC(226b1263) SHA1(dee6a4a0a727c1d8a6d298cb38ed1b9901992d5b) )
 ROM_END
-#if 0
+
 ROM_START( mslug3a ) /* Original Version - Encrypted Code & GFX */ /* MVS VERSION */
 	ROM_REGION( 0x900000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "white.neo-sma",    0x0c0000, 0x040000, CRC(c60d29b2) SHA1(1647260ccbda833b35005608ef1fdc82fba02f04) ) /* stored in the custom SMA chip, the SMA has a white colour marking */
@@ -8821,7 +8821,7 @@ ROM_START( mslug5b )
 	ROM_LOAD16_BYTE( "ms5b-c7.bin", 0x3000000, 0x800000, CRC(57f4e53f) SHA1(813d98175288045c0750d45afe03c74973d70cee) ) /* M59PW064  64Mbit  3.3v */
 	ROM_LOAD16_BYTE( "ms5b-c8.bin", 0x3000001, 0x800000, CRC(9d59ff7c) SHA1(ff90dc79598de0880df17624c76df81c92f267ce) ) /* M59PW064  64Mbit  3.3v */
 ROM_END
-#endif
+
 /* Update */
 GAME( 2003, samsho5a,   samsho5,  neogeo_noslot,   neogeo, neogeo_state,   init_samsho5,  ROT0, "Yuki Enterprise / SNK Playmore", "Samurai Shodown V / Samurai Spirits Zero (NGM-2700, set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 2001, sengoku3a,  sengoku3, neogeo_noslot,   neogeo, neogeo_state,   init_sengoku3, ROT0, "Noise Factory / SNK", "Sengoku 3 / Sengoku Densho 2001 (set 2)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted GFX */
@@ -8846,5 +8846,5 @@ GAME( 2003, pnyaaa,     pnyaa,    neogeo_noslot,   neogeo, neogeo_state,   init_
 GAME( 1992, viewpoinp,  viewpoin, neogeo_noslot,   neogeo, neogeo_state,   init_neogeo,   ROT0, "Sammy / Aicom", "Viewpoint (prototype)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, stakwindev, neogeo,   no_watchdog,     neogeo, neogeo_state,   init_neogeo,   ROT0, "Saurus", "Stakes Winner (early development board)", MACHINE_SUPPORTS_SAVE | MACHINE_NOT_WORKING | MACHINE_IS_INCOMPLETE )
 GAME( 1995, froman2b,   neogeo,   neogeo_noslot,   neogeo, neogeo_state,   init_neogeo,   ROT0, "bootleg", "Idol Mahjong Final Romance 2 (Neo-Geo, bootleg of CD version)", MACHINE_SUPPORTS_SAVE )
-//GAME( 2000, mslug3a,    mslug3,   neogeo_noslot,   neogeo, neogeo_state,   init_mslug3a,  ROT0, "SNK", "Metal Slug 3 (NGM-2560, earlier)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX - revision Mar/17/2000 1:36 (from SMA rom) */
-//GAME( 2003, mslug5b,    mslug5,   neogeo_noslot,   neogeo, neogeo_state,   init_mslug5b,  ROT0, "bootleg", "Metal Slug 5 (bootleg)", MACHINE_SUPPORTS_SAVE )
+GAME( 2000, mslug3a,    mslug3,   neogeo_noslot,   neogeo, neogeo_state,   init_mslug3a,  ROT0, "SNK", "Metal Slug 3 (NGM-2560, earlier)" , MACHINE_SUPPORTS_SAVE ) /* Encrypted Code & GFX - revision Mar/17/2000 1:36 (from SMA rom) */
+GAME( 2003, mslug5b,    mslug5,   neogeo_noslot,   neogeo, neogeo_state,   init_mslug5b,  ROT0, "bootleg", "Metal Slug 5 (bootleg)", MACHINE_SUPPORTS_SAVE )
