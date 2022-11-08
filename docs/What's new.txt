@@ -9,6 +9,7 @@
 - The emulator was renamed to PSMAME PLUS to PSMAME FOREVER.
 - The special hack roms that were included in the previous version were missing, in the current version it is not included.
 - Added compatibility Gui system ARCADE64.
+- The PSMAME PLUS (Metal Slug Forever Special Edition Final) version is no longer included, it is unstable with this version of the emulator.
 - Fixed many bugs in previous versions
 - Updated all current roms HBMame and Arcade64 0.245.
 
