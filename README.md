@@ -1,6 +1,6 @@
-What is PSMAMEFOREVER?
+What is PSMAMEFOREVER+?
 ===================
-It is called Project Shadow Arcade Forever, it is a project that began in the middle of 2016, it is currently being used as a base system of version 0.245 [HBMAME], it focuses on combining the Arcade + HBMAME source code in order to achieve unique control systems had all the features in a single version, but to achieve all this it has been going through many stages of development, demo, prototype, beta until being able to get an official version.
+It is called Project Shadow Arcade Forever+, it is a project that began in the middle of 2016, it is currently being used as a base system of version 0.245 [HBMAME], it focuses on combining the Arcade + HBMAME source code in order to achieve unique control systems had all the features in a single version, but to achieve all this it has been going through many stages of development, demo, prototype, beta until being able to get an official version.
 
 I am only giving support for the Windows XP, Windows 7, Windows 8, Windows 10 and Windows 11 operating systems, for the 86/64 bit cpu of the compatible microprocessors.
 
