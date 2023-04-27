@@ -11,9 +11,7 @@ The command of all the game systems was optimized, now it is much more practical
 
 Removed the black border on NeoGeo systems, now has full screen.
 
-Removed warning screen.
-
-Removed Startups, Loading, Decryption screen texts.
+Removed warning screen, startups, Loading, Decryption screen texts.
 
 Removed the following annoying messages: “WRONG LENGTH”, “NO_DUMP”, “WRONG CHECKSUMS”, “BAD_DUMP” And “THE PARENT FILE DOES NOT EXIST”.
 
