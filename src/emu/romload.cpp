@@ -508,6 +508,7 @@ void rom_load_manager::dump_wrong_and_correct_checksums(const util::hash_collect
 
 void rom_load_manager::verify_length_and_hash(emu_file *file, std::string_view name, u32 explength, const util::hash_collection &hashes)
 {
+/* 
 	// we've already complained if there is no file
 	if (!file)
 		return;
@@ -547,6 +548,7 @@ void rom_load_manager::verify_length_and_hash(emu_file *file, std::string_view n
 			m_knownbad++;
 		}
 	}
+ */
 }
 
 

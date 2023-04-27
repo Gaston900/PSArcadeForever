@@ -175,32 +175,32 @@ void menu_main::populate(float &customtop, float &custombottom)
 	}
 
 // MAMEFX items commented out
-//	item_append(menu_item_type::SEPARATOR);
+	item_append(menu_item_type::SEPARATOR);
 
 	/* add favorite menu */
-//	if (!mame_machine_manager::instance()->favorite().is_favorite(machine()))
-//		item_append(_("menu-main", "Add To Favorites"), 0, (void *)ADD_FAVORITE);
-//	else
-//		item_append(_("menu-main", "Remove From Favorites"), 0, (void *)REMOVE_FAVORITE);
+	if (!mame_machine_manager::instance()->favorite().is_favorite(machine()))
+		item_append(_("menu-main", "Add To Favorites"), 0, (void *)ADD_FAVORITE);
+	else
+		item_append(_("menu-main", "Remove From Favorites"), 0, (void *)REMOVE_FAVORITE);
 
 //	item_append(menu_item_type::SEPARATOR);
 
 //	item_append(_("Quit from Machine"), "", 0, (void *)QUIT_GAME);
 //	item_append(string_format(_("menu-main", "About %1$s"), emulator_info::get_appname()), 0, (void *)ABOUT);
 
-//	item_append(menu_item_type::SEPARATOR);
+	item_append(menu_item_type::SEPARATOR);
 
-//  item_append(_("menu-main", "Quit from System"), 0, (void *)QUIT_GAME);
+    item_append(_("menu-main", "Quit from System"), 0, (void *)QUIT_GAME);
 
-//	if (machine_phase::INIT == m_phase)
-//	{
-//		item_append(_("menu-main", "Start System"), 0, (void *)DISMISS);
-//	}
-//	else
-//	{
-//		item_append(_("menu-main", "Select New System"), 0, (void *)SELECT_GAME);
-//		item_append(_("menu-main", "Close Menu"), 0, (void *)DISMISS);
-//	}
+	if (machine_phase::INIT == m_phase)
+	{
+		item_append(_("menu-main", "Start System"), 0, (void *)DISMISS);
+	}
+	else
+	{
+		item_append(_("menu-main", "Select New System"), 0, (void *)SELECT_GAME);
+		item_append(_("menu-main", "Close Menu"), 0, (void *)DISMISS);
+	}
 }
 
 

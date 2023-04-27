@@ -78,9 +78,9 @@
 #endif
 
 #ifdef PTR64
-#define MAMEUINAME			"PSArcade Forever 64X"
+#define MAMEUINAME			"PSArcade Forever"
 #else
-#define MAMEUINAME			"PSArcade Forever 32X"
+#define MAMEUINAME			"PSArcade Forever"
 #endif
 #define MAMENAME			"PSArcade Forever"
 
