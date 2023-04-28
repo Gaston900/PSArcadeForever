@@ -5550,7 +5550,7 @@ GAME( 1995, sonicw3e,    sonicwi3, neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1996, ssidek4e,    ssideki4, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "The Ultimate 11 - The SNK Football Championship / Tokuten Ou - Honoo no Libero (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, turfmste,    turfmast, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Neo Turf Masters / Big Tournament Golf (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, twinspre,    twinspri, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK", "Twinkle Star Sprites (Earlier)", MACHINE_SUPPORTS_SAVE )
-GAME( 1996, tws96e,      tws96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96 (Earlier)", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, tws96e,      twsoc96,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, wakuwk7e,    wakuwak7, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Sunsoft", "Waku Waku 7 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, whpe,        whp,      neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK", "World Heroes Perfect (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, wjammere,    wjammers, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Data East Corporation", "Windjammers / Flying Power Disc (Earlier)", MACHINE_SUPPORTS_SAVE )
