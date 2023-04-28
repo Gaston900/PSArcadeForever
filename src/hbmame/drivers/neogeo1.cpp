@@ -2732,9 +2732,9 @@ ROM_START( tpgolfcd )
 ROM_END
 
 
-ROM_START( trallycd ) // title screen is corrupt
+ROM_START( trallycd ) // Rally Chase
 	ROM_REGION( 0x100000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "038.p1", 0x000000, 0x080000, CRC(1e52a576) SHA1(a1cb56354c3378e955b0cd482c3c41ae15add952) )
+	ROM_LOAD16_WORD_SWAP( "038cd.p1",  0x000000, 0x080000, CRC(430c531b) SHA1(731348fbbb320506918abdc8f12fb86a52287cdb) )
 	ROM_LOAD16_WORD_SWAP( "038cd.p2",  0x080000, 0x080000, CRC(9facb7fb) SHA1(96b4edbdddbd9ba642d0d046b33349c95559badd) )
 
 	NEO_SFIX_128K( "038cd.s1", CRC(81022312) SHA1(bdb8ae4cd43f196f1b185a48e25980565226bb71) )
@@ -3088,7 +3088,7 @@ GAME( 1990, superspycd,    superspy, neogeo_noslot, neogeo, neogeo_state, init_n
 
 GAME( 1994, tophuntrpx,    tophuntr, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Xyahzhs", "Top Hunter (Plus Max)", MACHINE_SUPPORTS_SAVE )
 GAME( 2007, tpgolfcd,      tpgolf,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CD_conv", "Top Player's Golf (CD conversion)", MACHINE_SUPPORTS_SAVE )
-GAME( 1991, trallycd,      trally,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CD_conv", "Thrash Rally (CD conversion)", MACHINE_SUPPORTS_SAVE )
+GAME( 1991, trallycd,      trally,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CD_conv", "Rally Chase (CD conversion)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, twinsprih,     twinspri, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Yumeji", "Twinkle Star Sprites (Enable Hidden Characters)", MACHINE_SUPPORTS_SAVE )
 
 GAME( 2004, viewpoinf,     viewpoin, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Shyma.X", "Viewpoint (French Traduction, 2004-07-29)", MACHINE_SUPPORTS_SAVE )
@@ -5550,8 +5550,9 @@ GAME( 1995, sonicw3e,    sonicwi3, neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1996, ssidek4e,    ssideki4, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "The Ultimate 11 - The SNK Football Championship / Tokuten Ou - Honoo no Libero (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, turfmste,    turfmast, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Nazca", "Neo Turf Masters / Big Tournament Golf (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, twinspre,    twinspri, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK", "Twinkle Star Sprites (Earlier)", MACHINE_SUPPORTS_SAVE )
-GAME( 1996, tws96e,      twsoc96,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96 (Earlier)", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, tws96e,      tws96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, wakuwk7e,    wakuwak7, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Sunsoft", "Waku Waku 7 (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, whpe,        whp,      neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK", "World Heroes Perfect (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, wjammere,    wjammers, neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Data East Corporation", "Windjammers / Flying Power Disc (Earlier)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, stakwindev,  neogeo,   no_watchdog,   neogeo, neogeo_state, init_neogeo,   ROT0, "Saurus", "Stakes Winner (early development board)", MACHINE_SUPPORTS_SAVE | MACHINE_NOT_WORKING | MACHINE_IS_INCOMPLETE )
+

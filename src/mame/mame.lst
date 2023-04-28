@@ -2,7 +2,7 @@
 // copyright-holders:Gaston90
 // copyright-holders:Robbbert
 /*******************************************
- PSARCADE PLUS+ // MAME 0.245
+ PSARCADE FOREVER+ // MAME 0.245
  List of all drivers enabled in the system.
 **********************************************/
 
@@ -715,6 +715,7 @@ forgottnue                      // 7/1988 (c) 1988 (USA)
 forgottnuaa                     // 7/1988 (c) 1988 (USA)
 ganbare                         // 11/04/2000 (c) 2000 (Japan)
 ghouls                          // 12/1988 (c) 1988 (World)
+//hkittymp
 ghoulsu                         // 12/1988 (c) 1988 (USA)
 gulunpa                         //
 knights                         // 27/11/1991 (c) 1991 (World)
@@ -2150,6 +2151,8 @@ mexico86a                       // bootleg
 
 @source:neogeo.cpp
 neogeo                          // NeoGeo MV-6F
+ngmvs                           // multimvs support
+ngneo                           // .neo support
 2020bb                          // 0030 (c) 1991 SNK / Pallas
 2020bba                         // 0030 (c) 1991 SNK / Pallas
 2020bbh                         // 0030 (c) 1991 SNK / Pallas
@@ -14049,7 +14052,7 @@ wmg                             // Williams 6in1 Multigame, Clay Cowgill
 yumefuda                        // (c) 198? Alba
 
 /*******************************************
- HomeBrew //HBMAME 0.245.8
+ HBMAME 0.245.11
  List of all drivers enabled in the system.
 **********************************************/
 
@@ -14061,7 +14064,7 @@ galagax 		/* Jerky - Chris Moore hack of 1942 */
 @source:1943.cpp
 1943h			/* Hacked to have the vendor name and phone number */
 1943kais01
-1943b2			// from FBA
+1943b2			// from FBN
 
 @source:arkanoid.cpp
 akblc2dx		/* hack */
@@ -14163,11 +14166,9 @@ theroes01
 cballfix                               // MASH (fixed) gfx rom
 
 @source:cclimber.cpp
-tongypac
-ckongfix		/* Graphics Fix */
-ckonga2
-ckonga3
-cclimbrm		/* Tim Arcadecollecting Modded Version */
+cclimbrm                               // Tim Arcadecollecting Modded Version
+ckong01                                // Graphics Fix
+ckongpt2s01
 
 @source:centiped.cpp
 astroped	/* Twisty Hack of Centipede */
@@ -14750,7 +14751,9 @@ sf2mix99
 sf2mix99a
 sf2mix100
 sf2mix110
+sf2mix120
 sf2mix
+sf2mkot01
 sf2reds01
 sf2reds02
 sf2reds03
@@ -15296,34 +15299,39 @@ sfiii3ns13
 sfiii3ns14
 
 @source:cv1k.cpp
-deathsmlh01
+deathsml01
 sdojak
 sdoja
 sdojb
 akatana
 ddpsdoj
 ddpsdojo
+ibaracs
+ibarablkcs
+futari15bc
+futariblc
+futaribljc
 
 @source:ddragon.cpp
-ddragon2b2
+ddragon2s01
 
 @source:deco32.cpp
-fghthistas01
+fghthist01
 
 @source:dbz.cpp
-dbzs01
-dbz2h01
-dbz2h02
+dbz01
+dbz2s01
+dbz2s02
 
 @source:ddenlovr.cpp
-mjmysters01
+mjmyster01
 mjreach1s01
-mjdchukas01
+mjdchuka01
 
 @source:dec0.cpp
-baddudef				// Arkatrad
-decodemo				// Charles Doty
-robocopbs01
+baddudef
+decodemo
+robocopb01
 
 @source:deco_mlc.cpp
 avengrgs01
@@ -15334,6 +15342,21 @@ dkong01
 dkong02
 dkong03
 dkong04
+dkong05
+dkong06
+dkong07
+dkong08
+dkong09
+dkong10
+dkong11
+dkong12
+dkong13
+dkong14
+dkong15
+dkong16
+dkong17
+dkong19
+dkong20
 dkong2m
 dkongbcc				//Jeffs Rom Hacks
 dkongex					//Jeffs Hack with Foundry Level
@@ -15352,9 +15375,9 @@ dkrdemo
 dkchrmx					// Sock Master - Christmas Remix 2017
 dkchrte
 dkspkyrmx				// Sock Master - Spooky Remix Halloween Tournament 2018
-dktrainer
+dktrain
+dktrain2
 dkpace
-kong2600				// Vic Twenty George hack of Donkey Kong
 nadkong					//
 dkcbarrel				// Paul Goes
 dkfreerun				// Paul Goes
@@ -15480,6 +15503,7 @@ trukker		/* Grimlick hack of Frogger */
 scobtest
 kingball01
 cosmicw
+pandajump                              // HB
 andromd		/* hack - Renamed to avoid confusion with andromed (ex TestDriver) */
 buglaxn		/* The Dog hack of Galaxian */
 galaxiabh	/* unknown hack of Galaxian */
@@ -15493,6 +15517,7 @@ jumpbugx	// extra sounds
 vectrgal	/* T-Bone hack of Galaxian */
 wbeast		/* Bootleg of War-of-Bug */
 //multigameb                           // skeleton
+//scramblemk                           // skeleton
 
 @source:gauntlet.cpp
 gaunt2ls	// Orange Elf - new levels
@@ -17788,6 +17813,7 @@ absurd			/* HB - scott - nonworking alpha ver 3 */
 alienres		// HB
 alienresp		// HB nw
 bace			/* HB - Widel Games */
+chuckie
 crashh			/* HB - PacMAME Hacks */
 deathstar		// HB
 deathstar2		// HB
@@ -17804,6 +17830,7 @@ pacmtest
 pacmtest1
 pacmtest2
 pactetris		// HB
+pollen          // HB
 ppong			/* HB - Widel Games */
 ppong2			/* HB - Widel Games */
 rainboh			/* HB - Widel Games */
@@ -17963,6 +17990,9 @@ missilet			// Tesla variant
 @source:mitchell.cpp
 mitcdemo			/* Charles Doty */
 pangbolds01
+
+@source:model1.cpp
+vr01
 
 @source:model2.cpp
 srallyp				// Kyle Hodgetts Sega Rally Pro Drivin
@@ -19213,6 +19243,7 @@ heartbn2	/* PacMAME Hacks */
 heartbrn	/* unknown hack of Ms. Pac-Man */
 horizpab	/* Jerronimo v1.0 2004 */
 horizpac	/* Jerronimo */
+pacjrz80
 manpac
 mrmrspac
 mrpacman
@@ -19386,6 +19417,7 @@ spcloneo	// v0.7.2.2
 @source:neogeo.cpp
 19yy
 19yy01
+240ptest
 abyssal
 abyssal1
 akiradmo
@@ -19432,8 +19464,10 @@ lhcdba
 //lhopecd                              // broken; not working
 //lhopecdh                             // broken; not working
 looptris
+looptrsp
 ltorb
 ndo_a_td
+neo2048
 neo2500		/* Blastar */
 neo3d		// Oxygene
 neocstlv	// BarfHappy
@@ -19462,6 +19496,7 @@ ng4ptest
 ngem2k
 ngftdemo	// CeL
 ngmontst
+ngmontst3
 ngtd2
 ngtetris
 ngym2610
@@ -19478,6 +19513,7 @@ poknightfr
 rci			/* Robocop intro */
 samantha
 santabll
+sbpf
 seafight
 shaman16
 //shaman17
@@ -19513,6 +19549,7 @@ twister		// Blastar 2015
 //vlad2000
 //ww2demo
 xeno
+xeviousn
 xmas2017
 zintrckbh
 zintrkcd
@@ -21317,6 +21354,7 @@ s1945iiis02
 soldivids01
 
 @source:puckman.cpp
+pacyuyu
 mcpacman
 bevpac
 invispac
@@ -21744,6 +21782,7 @@ grdians37
 grdians38
 grdians39
 grdians40
+grdians41
 
 @source:shadfrce.cpp
 shadfrces01
@@ -21787,6 +21826,7 @@ survartss01
 wbml01
 wbml02
 wbml03
+pitfall2u01
 
 @source:system16.cpp
 sys16dem                               // HB
