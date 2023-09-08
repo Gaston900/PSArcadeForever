@@ -50,7 +50,10 @@ constexpr char32_t UCHAR_SHIFT_2 = UCHAR_PRIVATE + 1;
 constexpr char32_t UCHAR_SHIFT_BEGIN = UCHAR_SHIFT_1;
 constexpr char32_t UCHAR_SHIFT_END = UCHAR_SHIFT_2;
 constexpr char32_t UCHAR_MAMEKEY_BEGIN = UCHAR_PRIVATE + 2;
-
+#define AUTOFIRE_ON			1	/* Autofire enable bit */
+#define AUTOFIRE_TOGGLE			2	/* Autofire toggle enable bit */
+#define MAX_CUSTOM_BUTTONS		4
+#define MAX_NORMAL_BUTTONS		10
 
 // sequence types for input_port_seq() call
 enum input_seq_type
@@ -196,6 +199,14 @@ enum ioport_type
 	IPT_BUTTON14,
 	IPT_BUTTON15,
 	IPT_BUTTON16,
+
+	// autofire control buttons
+	IPT_TOGGLE_AUTOFIRE,
+	// custom action buttons
+	IPT_CUSTOM1,
+	IPT_CUSTOM2,
+	IPT_CUSTOM3,
+	IPT_CUSTOM4,
 
 	// mahjong inputs
 	IPT_MAHJONG_FIRST,
@@ -1094,6 +1105,7 @@ public:
 	struct user_settings
 	{
 		ioport_value    value = 0;              // for DIP switches
+		int             autofire;               // autofire
 		input_seq       seq[SEQ_TYPE_TOTAL];    // sequences of all types
 		std::string     cfg[SEQ_TYPE_TOTAL];    // configuration strings of all types
 		s32             sensitivity = 0;        // for analog controls
@@ -1170,6 +1182,9 @@ struct ioport_field_live
 	bool                    last;               // were we pressed last time?
 	bool                    toggle;             // current toggle setting
 	digital_joystick::direction_t joydir;       // digital joystick direction index
+	u8                 	    autofire_toggle;    // autofire current toggle state
+	int                     autofire;           // autofire
+	int                     autopressed;        // autofire status
 	bool                    lockout;            // user lockout
 	std::string             name;               // overridden name
 	std::string             cfg[SEQ_TYPE_TOTAL];// configuration strings
@@ -1187,6 +1202,7 @@ public:
 	ioport_list() { }
 
 	void append(device_t &device, std::string &errorbuf);
+	void append_custom(device_t &device, std::string &errorbuf);
 };
 
 
@@ -1400,6 +1416,10 @@ public:
 	s32 frame_interpolate(s32 oldval, s32 newval);
 	ioport_type token_to_input_type(const char *string, int &player) const;
 	std::string input_type_to_token(ioport_type type, int player);
+	bool auto_pressed(ioport_field *field);
+	int get_autofiredelay(int player) { return m_autofiredelay[player]; };
+	void set_autofiredelay(int player, int delay) { m_autofiredelay[player] = delay; };
+	u16 m_custom_button[MAX_PLAYERS][MAX_CUSTOM_BUTTONS];
 
 private:
 	// internal helpers
@@ -1441,6 +1461,9 @@ private:
 	running_machine &       m_machine;              // reference to owning machine
 	bool                    m_safe_to_read;         // clear at start; set after state is loaded
 	ioport_list             m_portlist;             // list of input port configurations
+	ioport_field *          m_custom_button_info[MAX_PLAYERS][MAX_CUSTOM_BUTTONS];
+	int                     m_autofiredelay[MAX_PLAYERS];
+	int                     m_autofiretoggle[MAX_PLAYERS];
 
 	// types
 	std::vector<input_type_entry> m_typelist;       // list of live type states

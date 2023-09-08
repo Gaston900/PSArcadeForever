@@ -44,6 +44,8 @@
 namespace ui {
 
 enum : unsigned {
+	AUTOFIRE,
+	CUSTOM_BUTTON,
 	INPUT_OPTIONS,
 	SETTINGS_DIP_SWITCHES,
 	SETTINGS_DRIVER_CONFIG,
@@ -121,6 +123,10 @@ void menu_main::populate(float &customtop, float &custombottom)
 	item_append(_("menu-main", "Bookkeeping Info"), 0, (void *)BOOKKEEPING);
 
 	item_append(_("menu-main", "System Information"), 0, (void *)GAME_INFO);
+
+	item_append(_("menu-main", "Autofire Setting"), 0, (void *)AUTOFIRE);
+
+	item_append(_("menu-main", "Custom Buttons"), 0, (void *)CUSTOM_BUTTON);
 
 	if (ui().found_machine_warnings())
 		item_append(_("menu-main", "Warning Information"), 0, (void *)WARN_INFO);
@@ -217,6 +223,14 @@ void menu_main::handle(event const *ev)
 		{
 		case INPUT_OPTIONS:
 			menu::stack_push<menu_input_options>(ui(), container());
+			break;
+
+		case AUTOFIRE:
+			menu::stack_push<menu_autofire>(ui(), container());
+			break;
+
+		case CUSTOM_BUTTON:
+			menu::stack_push<menu_custom_button>(ui(), container());		
 			break;
 
 		case SETTINGS_DIP_SWITCHES:
