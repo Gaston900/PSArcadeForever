@@ -71,17 +71,17 @@ const options_entry winui_options::s_option_entries[] =
 	{ MUIOPTION_LIST_COLOR,					"255,255,255",  core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_HISTORY_COLOR,				"255,255,255",  core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_TREE_COLOR,					"255,255,255",  core_options::option_type::INTEGER, nullptr },
-	{ MUIOPTION_TREEBG_COLOR,				"154,13,13",    core_options::option_type::INTEGER, nullptr },
-	{ MUIOPTION_LISTBG_COLOR,				"0,0,0",    core_options::option_type::INTEGER, nullptr },
-	{ MUIOPTION_HISTORYBG_COLOR,			"0,0,0",    core_options::option_type::INTEGER, nullptr },
+	{ MUIOPTION_TREEBG_COLOR,				"0,32,65",    core_options::option_type::INTEGER, nullptr },
+	{ MUIOPTION_LISTBG_COLOR,				"0,32,65",    core_options::option_type::INTEGER, nullptr },
+	{ MUIOPTION_HISTORYBG_COLOR,			"0,32,65",    core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_CUSTOM_COLOR,				"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_LIST_MODE,					"1",        core_options::option_type::INTEGER, nullptr },
-	{ MUIOPTION_SPLITTERS,					"150,649",  core_options::option_type::STRING, nullptr },
+	{ MUIOPTION_SPLITTERS,					"150,778",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_GUI_FONT,					"-11,0,0,0,400,0,0,0,0,3,2,1,34,Tahoma", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_LIST_FONT,					"-11,0,0,0,400,0,0,0,0,3,2,1,34,Tahoma", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_HISTORY_FONT,				"-11,0,0,0,400,0,0,0,0,3,2,1,34,Verdana", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_TREE_FONT,					"-11,0,0,0,400,0,0,0,0,3,2,1,34,Tahoma", core_options::option_type::STRING, nullptr },
-	{ MUIOPTION_COLUMN_WIDTHS,				"499,77,121,140,39,160,60,70", core_options::option_type::STRING, nullptr },
+	{ MUIOPTION_COLUMN_WIDTHS,				"452,77,108,140,39,160,60,70", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_COLUMN_ORDER,				"0,4,1,2,5,3,6,7", core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_COLUMN_SHOWN,				"1,1,1,1,1,1,1,1", core_options::option_type::STRING, nullptr },
 
@@ -123,7 +123,7 @@ const options_entry winui_options::s_option_entries[] =
 	{ MUIOPTION_TITLE_DIRECTORY,			"support/titles",     core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_VERSUS_DIRECTORY,			"support/versus",     core_options::option_type::STRING, nullptr },
 
-	{ nullptr,								nullptr,        core_options::option_type::HEADER, "NAVIGATION JOYSTICK CODES" },
+	{ nullptr,								nullptr,    core_options::option_type::HEADER, "NAVIGATION JOYSTICK CODES" },
 	{ MUIOPTION_UI_JOY_UP,					"1,1,1,1",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_UI_JOY_DOWN,				"1,1,1,2",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_UI_JOY_LEFT,				"1,1,2,1",  core_options::option_type::STRING, nullptr },
@@ -136,6 +136,9 @@ const options_entry winui_options::s_option_entries[] =
 	{ MUIOPTION_UI_JOY_SS_CHANGE,			"2,0,3,0",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_UI_JOY_HISTORY_UP,			"2,0,4,0",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_UI_JOY_HISTORY_DOWN,		"2,0,1,0",  core_options::option_type::STRING, nullptr },
+
+	{ nullptr,								nullptr,	core_options::option_type::HEADER, "Korean GAME List" },
+	{ MUIOPTION_USECHINESE_GAMELIST,			"1",	core_options::option_type::BOOLEAN, nullptr },
 	{ nullptr }
 };
 
@@ -449,6 +452,17 @@ void SetShowFolderList(bool val)
 bool GetShowFolderList(void)
 {
 	return winui_opts.bool_value(MUIOPTION_SHOW_FOLDER_SECTION);
+}
+
+// USE_KLIST
+void SetUsechineseList(bool val)
+{
+	winui_opts.set_value(MUIOPTION_USECHINESE_GAMELIST, val, OPTION_PRIORITY_CMDLINE);
+}
+
+bool GetUsechineseList(void)
+{
+	return winui_opts.bool_value(MUIOPTION_USECHINESE_GAMELIST);
 }
 
 static void GetsShowFolderFlags(LPBITS bits)

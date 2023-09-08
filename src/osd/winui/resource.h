@@ -162,6 +162,15 @@
 #define IDI_MISC2SHEET                  282
 #define IDI_SNAPSHEET                   283
 #define IDI_SHADER                      284
+#define IDB_CLIST						285	//USE_KLIST
+#define IDI_FOLDER_NEOGEO				286
+#define IDI_FOLDER_CAPCOM				292
+#define IDI_FOLDER_PGM					297
+#define IDI_FOLDER_NAMCO				287	
+#define IDI_FOLDER_TAITO				288
+#define IDI_FOLDER_KONAMI				289
+#define IDI_FOLDER_SEGA 				290
+#define IDI_FOLDER_CAVE 				291
 #define IDC_LIST                        1000
 #define IDC_JOYSTICK                    1003
 #define IDC_SIZES                       1005
@@ -585,5 +594,5 @@
 #define ID_TOGGLE_TAB_CONTROL_PANEL     40154
 #define ID_TOGGLE_TAB_PCB               40155
 #define ID_TOGGLE_TAB_HISTORY           40156
-#define ID_RC_CLEAN                     40157
+#define ID_CHINESE_GAMELIST             40157 //USE_KLIST
 #define IDC_STATIC                      1

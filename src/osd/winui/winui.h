@@ -135,7 +135,7 @@
 #define MIN_VIEW_WIDTH		10
 
 #define NUM_TOOLBUTTONS     std::size(tbb)
-#define NUM_TOOLTIPS 		(13)
+#define NUM_TOOLTIPS 		(14)
 
 enum
 {
@@ -196,7 +196,11 @@ int GetParentRomSetIndex(const game_driver *driver);
 void SetStatusBarText(int part_index, const char *message);
 void SetStatusBarTextF(int part_index, const char *fmt, ...);
 const char * GetSearchText(void);
+char *GetGameNameByIndex(int nIndex, bool bUse);// USE_CLIST
+char *GetDescriptionByIndex(int nIndex, bool bUse);// USE_CLIST	
+char *GetGameManufactureByIndex(int nIndex, bool bUse);
 
+int GetNumGames(void);
 
 char *core_strdup(const char *str);
 
