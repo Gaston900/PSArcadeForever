@@ -44,7 +44,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Grouped\tCtrl+G",                     ID_ENABLE_INDENT        
         MENUITEM SEPARATOR
-		MENUITEM "Game list", 				            ID_CHINESE_GAMELIST // USE_KLIST
+		MENUITEM "Toggle game list", 				    ID_CHINESE_GAMELIST // USE_KLIST
         MENUITEM SEPARATOR
         POPUP "Sort games list by"
         BEGIN
