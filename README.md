@@ -41,7 +41,7 @@ Optimized UI + added the Toggle Game List option.
  * sega
  * cave
 
-Two new folder sections called “config” and “support” were added that independently group the configurations + extra content, so that everything is kept in order in a single folder.
+Two new folder sections called “config” and “support” were added that independently group the configurations and extra content, so that everything is kept in order in a single folder.
 
 In the Config folders it is incorporated by:
 
