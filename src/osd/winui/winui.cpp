@@ -683,9 +683,7 @@ int MameUIMain(HINSTANCE hInstance, LPWSTR lpCmdLine)
 	if (__argc != 1)
 	{
 		extern int main_(int argc, char *argv[]);
-		int result = main_(__argc, __argv);
-		printf("exit result = %d\n",result);
-		exit(result);
+		exit(main_(__argc, __argv));
 	}
 
 	// No printf's allowed before here, otherwise they get into queries from mame, such as listxml.
