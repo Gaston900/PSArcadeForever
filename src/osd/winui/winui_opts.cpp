@@ -50,7 +50,7 @@ const options_entry winui_options::s_option_entries[] =
 	{ nullptr,								nullptr,    core_options::option_type::HEADER, "APPLICATION VERSION" },
 
 	{ nullptr,								nullptr,    core_options::option_type::HEADER, "DISPLAY STATE OPTIONS" },
-	{ MUIOPTION_DEFAULT_GAME,				"mslugxat10",  core_options::option_type::STRING, nullptr },
+	{ MUIOPTION_DEFAULT_GAME,				"88games",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_DEFAULT_FOLDER_ID,			"0",        core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_SHOW_IMAGE_SECTION,			"1",        core_options::option_type::BOOLEAN, nullptr },
 	{ MUIOPTION_CURRENT_TAB,				"0",        core_options::option_type::STRING, nullptr },

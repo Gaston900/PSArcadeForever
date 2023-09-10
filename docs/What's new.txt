@@ -1,7 +1,7 @@
 ﻿What's new in PSARCADE FOREVER
 ===============================
 
-2023-09-XX Optimization Edition
+2023-09-11 Optimization Edition
 -------------------------------
 - Added custom buttons and auto fire.
 - Now automatically use the game's main cheat file when the cloned game does not have a cheat file.
