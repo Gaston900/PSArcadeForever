@@ -59,7 +59,7 @@ const options_entry winui_options::s_option_entries[] =
 	{ MUIOPTION_HIDE_FOLDERS,				nullptr,        core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_SHOW_FOLDER_SECTION,		"1",        core_options::option_type::BOOLEAN, nullptr },
 	{ MUIOPTION_SHOW_TABS,					"1",        core_options::option_type::BOOLEAN, nullptr },
-	{ MUIOPTION_HIDE_TABS,					"title, scores, howto, select, versus, boss, end, gameover, logo, artpreview, flyer, cabinet, marquee, cpanel, pcb, history",         core_options::option_type::STRING, nullptr },
+	{ MUIOPTION_HIDE_TABS,					"history",  core_options::option_type::STRING, nullptr },
 	{ MUIOPTION_HISTORY_TAB,				"0",        core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_SORT_COLUMN,				"0",        core_options::option_type::INTEGER, nullptr },
 	{ MUIOPTION_SORT_REVERSED,				"0",        core_options::option_type::BOOLEAN, nullptr },
