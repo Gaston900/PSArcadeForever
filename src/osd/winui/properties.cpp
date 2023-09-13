@@ -423,11 +423,7 @@ void InitPropertyPage(HINSTANCE hInst, HWND hWnd, OPTIONS_TYPE opt_type, int fol
 	switch(opt_type)
 	{
 		case OPTIONS_GAME:
-//#ifdef USE_KLIST
-			snprintf(tmp, std::size(tmp), "Properties for %s", GetDescriptionByIndex(g_nGame,GetUsechineseList()));
-//else			
-//			snprintf(tmp, std::size(tmp), "Properties for %s", GetDriverGameTitle(g_nGame));
-//#endif
+			snprintf(tmp, std::size(tmp), "Properties for %s", GetDriverGameTitle(g_nGame));
 			break;
 
 		case OPTIONS_RASTER:
@@ -744,11 +740,8 @@ static char *GameInfoTitle(OPTIONS_TYPE opt_type, int nIndex)
 	else if (OPTIONS_SOURCE == opt_type)
 		strcpy(buffer, "Driver options\r\nDefault options used by all games in the driver");
 	else
-//#ifdef USE_KLIST
-//		snprintf(buffer, std::size(buffer), "%s - \"%s\"", GetDescriptionByIndex(nIndex,GetUsechineseList()), GetGameNameByIndex(nIndex,GetUsechineseList()));
-//#else
 		snprintf(buffer, std::size(buffer), "%s - \"%s\"", GetDriverGameTitle(nIndex), GetDriverGameName(nIndex));
-//#endif
+
 	return buffer;
 }
 
@@ -762,11 +755,7 @@ static char *GameInfoCloneOf(int nIndex)
 	if (DriverIsClone(nIndex))
 	{
 		int nParentIndex = GetParentIndex(&driver_list::driver(nIndex));
-//#ifdef USE_KLIST
-//		snprintf(buffer, std::size(buffer), "%s - \"%s\"", GetDescriptionByIndex(nParentIndex,GetUsechineseList()), GetGameNameByIndex(nParentIndex,GetUsechineseList()));
-//#else
 		snprintf(buffer, std::size(buffer), "%s - \"%s\"", GetDriverGameTitle(nParentIndex), GetDriverGameName(nParentIndex));
-//#endif
 	}
 
 	return buffer;
@@ -1167,17 +1156,9 @@ intptr_t CALLBACK GamePropertiesDialogProc(HWND hDlg, UINT uMsg, WPARAM wParam, 
 			hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MAMEUI_ICON));
 			SendMessage(hDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
 			hBrushDlg = CreateSolidBrush(RGB(240, 240, 240));
-			//#ifdef USE_KLIST
-			snprintf(tmp, std::size(tmp), "Information for \"%s\"", (char *)GetGameNameByIndex(index,GetUsechineseList()));
-//#else
-//			snprintf(tmp, std::size(tmp), "Information for \"%s\"", GetDriverGameName(index));
-//#endif
+			snprintf(tmp, std::size(tmp), "Information for \"%s\"", GetDriverGameName(index));
 			winui_set_window_text_utf8(hDlg, tmp);
-//#ifdef USE_KLIST
-			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_TITLE), GetDescriptionByIndex(index,GetUsechineseList()));
-//#else
-//			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_TITLE), GetDriverGameTitle(index));
-//#endif
+			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_TITLE), GetDriverGameTitle(index));
 			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_MANUFACTURED), GameInfoManufactured(index));
 			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_STATUS), GameInfoStatus(index));
 			winui_set_window_text_utf8(GetDlgItem(hDlg, IDC_PROP_CPU), GameInfoCPU(index));
@@ -2436,7 +2417,6 @@ static void BuildDataMap(void)
 //#ifdef USE_FIX60FPS	
 	datamap_add(properties_datamap, IDC_60FPS,					DM_BOOL,	OPTION_60FPS);//60fps
 //#endif
-
 	// core opengl - bgfx options
 	datamap_add(properties_datamap, IDC_GLSLPOW,				DM_BOOL,	OSDOPTION_GL_FORCEPOW2TEXTURE);
 	datamap_add(properties_datamap, IDC_GLSLTEXTURE,			DM_BOOL,	OSDOPTION_GL_NOTEXTURERECT);
