@@ -2425,9 +2425,17 @@ static void EnableSelection(int nGame)
 	mmi.cch = _tcslen(mmi.dwTypeData);
 
 	SetMenuItemInfo(hMenu, ID_FILE_PLAY, false, &mmi);
-	const char *pText = GetDriverGameTitle(nGame);
+//#ifdef USE_CLIST
+	const char *pText = GetDescriptionByIndex(nGame, GetUsechineseList());
+//#else	
+//	const char *pText = GetDriverGameTitle(nGame);
+//#endif		 
 	SetStatusBarText(0, pText);
-	const char *pName = GetDriverGameName(nGame);
+//#ifdef USE_CLIST
+	const char *pName = GetGameNameByIndex(nGame,GetUsechineseList());
+//#else
+//	const char *pName = GetDriverGameName(nGame);
+//#endif
 	SetStatusBarText(1, pName);
 	SendMessage(hStatusBar, SB_SETICON, 1, (LPARAM)GetSelectedPickItemIconSmall());
 	char *pStatus = GameInfoStatusBar(nGame);
@@ -2439,7 +2447,10 @@ static void EnableSelection(int nGame)
 	EnableMenuItem(hMenu, ID_GAME_PROPERTIES, 	MF_ENABLED);
 
 	if (bProgressShown && bListReady == true)
-        SetDefaultGame(GetDriverGameName(nGame));
+//#ifdef USE_CLIST																
+		SetDefaultGame(GetGameNameByIndex(nGame, GetUsechineseList())); 
+//#end
+//        SetDefaultGame(GetDriverGameName(nGame));
 
 	have_selection = true;
 	UpdateScreenShot();
@@ -2453,7 +2464,10 @@ static const char* GetCloneParentName(int nItem)
 		int nParentIndex = GetParentIndex(&driver_list::driver(nItem));
 
 		if( nParentIndex >= 0)
-			return GetDriverGameTitle(nParentIndex);
+//#ifdef USE_CLIST	
+			return (char*)GetDescriptionByIndex(nParentIndex,GetUsechineseList());
+//#end
+//			return GetDriverGameTitle(nParentIndex);
 	}
 
 	return "";
@@ -3822,7 +3836,10 @@ const wchar_t *GamePicker_GetItemString(HWND hwndPicker, int nItem, int nColumn,
 	{
 		case COLUMN_GAMES:
 			/* Driver description */
-			utf8_s = GetDriverGameTitle(nItem);
+//#ifdef USE_CLIST
+			utf8_s = GetDescriptionByIndex(nItem, GetUsechineseList());
+//#endif
+//			utf8_s = GetDriverGameTitle(nItem);
 			break;
 
 		case COLUMN_ROMNAME:
@@ -4121,7 +4138,10 @@ int GamePicker_Compare(HWND hwndPicker, int index1, int index2, int sort_subitem
 	switch (sort_subitem)
 	{
 		case COLUMN_GAMES:
- 		   value = core_stricmp(GetDriverGameTitle(index1), GetDriverGameTitle(index2));
+//#ifdef USE_CLIST
+  		   value = core_stricmp(GetDescriptionByIndex(index1,GetUsechineseList()), GetDescriptionByIndex(index2, GetUsechineseList()));
+//#endif
+// 		   value = core_stricmp(GetDriverGameTitle(index1), GetDriverGameTitle(index2));
 			break;
 
 		case COLUMN_ROMNAME:
@@ -4877,8 +4897,10 @@ static void UpdateMenu(HMENU hMenu)
 	{
 		wchar_t buf[200];
 		int nGame = Picker_GetSelectedItem(hWndList);			  
-		
-		wchar_t *t_description = win_wstring_from_utf8(ConvertAmpersandString(GetDriverGameTitle(nGame)));
+
+//#ifdef USE_CLIST						 
+        wchar_t *t_description = win_wstring_from_utf8(ConvertAmpersandString(GetDescriptionByIndex(nGame, GetUsechineseList())));
+//		wchar_t *t_description = win_wstring_from_utf8(ConvertAmpersandString(GetDriverGameTitle(nGame)));
 
 		if( !t_description )
 			return;
