@@ -29,7 +29,11 @@ Now automatically use the game's main cheat file when the cloned game does not h
 
 Added the default option to force games to run at 60 FPS.
 
-Optimized UI + added the Toggle Game List option.
+Supports game list lst language files. The list language can be edited freely.
+
+CPS 1, 2, NEOGEO, PGM, driver supports key combination settings.
+
+Optimized UI.
 
 8 new folders with their respective icons were added by default, each folder has a filter of the most popular arcade system.
  * Neogeo
