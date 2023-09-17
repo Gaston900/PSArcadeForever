@@ -25,7 +25,7 @@ The Arcade64 “GUI” was modernized with new icons, a custom default configura
 
 It is already pre-configured, enforce aspect ratio is disabled, full screen mode and tricks are already enabled by default.
 
-Now automatically use the game's main cheat file when the cloned game does not have a cheat file.
+The cheat reference function, if the cloned game does not have a cheat file, it will reference the cheat file of the main ROM.
 
 Added the default option to force games to run at 60 FPS.
 
