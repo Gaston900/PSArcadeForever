@@ -6,7 +6,8 @@ XXXX-XX-XX Optimization Edition
 - CPS 1, 2, NEOGEO, PGM, driver supports key combination settings.
 - Neo geo command fixed
 - Settings menu simplified
-
+- HBMAME has been updated to version 0.245.14
+- The arcade.flt file has been restored, a filter list game from Arcade version 0.259 has been used
 
 
 2023-09-11 Optimization Edition

@@ -159,7 +159,37 @@ void galaxian_hbmame::tst_frog(machine_config &config)
 ***************************************************************************/
 
 
+ROM_START( galap2 ) // real dump - same as galap4, except for a gfx hack to change the manufacturer name
+	ROM_REGION( 0x4000, "maincpu", 0 )
+	ROM_LOAD( "galnamco.u",   0x0000, 0x0800, CRC(acfde501) SHA1(4b72c1ffecaccadc541da2367f3ef70a2a9aed64) )
+	ROM_LOAD( "galnamco.v",   0x0800, 0x0800, CRC(65cf3c77) SHA1(1c5249815816b395e1e04bf6a7dbb63e40faa0e3) )
+	ROM_LOAD( "galnamco.w",   0x1000, 0x0800, CRC(9eef9ae6) SHA1(b2282e4edb8911e6aabfa936c3526f90381e1320) )
+	ROM_LOAD( "galnamco.y",   0x1800, 0x0800, CRC(56a5ddd1) SHA1(1f87f647ebdffba28d5957f195448f6bce17f4d5) )
+	ROM_LOAD( "galnamco.z",   0x2000, 0x0800, CRC(f4bc7262) SHA1(c4b70e474d49f45cec96f7c250bd77e01e18601a) )
 
+	ROM_REGION( 0x1000, "gfx1", 0 )
+	ROM_LOAD( "galap2.c1",    0x0000, 0x0800, CRC(3dcdb3d2) SHA1(60f7052a1b97adf035a7497e6204ca70651f4f11) )
+	ROM_LOAD( "galap2.c2",    0x0800, 0x0800, CRC(25789c21) SHA1(d7c9d711c6bb7331ecde310c27c45a2626677223) )
+
+	ROM_REGION( 0x0020, "proms", 0 )
+	ROM_LOAD( "6l.bpr",       0x0000, 0x0020, CRC(c3ac9467) SHA1(f382ad5a34d282056c78a5ec00c30ec43772bae2) )
+ROM_END
+
+ROM_START( galaxian3 ) // real dump
+	ROM_REGION( 0x4000, "maincpu", 0 )
+	ROM_LOAD( "galaxian3.u",    0x0000, 0x0800, CRC(e8f3aa67) SHA1(a0e9576784dbe602dd9780e667f01f31defd7c00) )
+	ROM_LOAD( "galaxian3.v",    0x0800, 0x0800, CRC(f58283e3) SHA1(edc6e72516c50fd3402281d9936574d276581ce9) )
+	ROM_LOAD( "galaxian3.w",    0x1000, 0x0800, CRC(ddeabdae) SHA1(daa5109a32c7c9a80bdb212dc3e4e3e3c104a731) )
+	ROM_LOAD( "galaxian3.y",    0x1800, 0x0800, CRC(87b24ab8) SHA1(f7202213b5c635a27041fc7ebb8f13a71b742d74) )
+	ROM_LOAD( "galaxian3.7l",   0x2000, 0x0800, CRC(b960abbd) SHA1(0182dc84c93e02fa7c15db1dfdad638f33ec508f) )
+
+	ROM_REGION( 0x1000, "gfx1", 0 )
+	ROM_LOAD( "galaxian3.1h",   0x0000, 0x0800, CRC(84decf98) SHA1(2e565cb6057b1816a6b4541e6dfadd3c3762fa36) )
+	ROM_LOAD( "galaxian3.1k",   0x0800, 0x0800, CRC(c31ada9e) SHA1(237ebb48549b34ca59a13cc2706512d957413ec4) )
+
+	ROM_REGION( 0x0020, "proms", 0 )
+	ROM_LOAD( "6l.bpr",         0x0000, 0x0020, CRC(c3ac9467) SHA1(f382ad5a34d282056c78a5ec00c30ec43772bae2) )
+ROM_END
 
 /* this looks exactly like Galaxian, the word "Andromeda" never appears. The dipswitches are different. */
 ROM_START( andromd )
@@ -720,6 +750,25 @@ ROM_START( frogtest2 )
 	ROM_LOAD( "pr-91.6l",     0x0000, 0x0020, CRC(413703bf) SHA1(66648b2b28d3dcbda5bdb2605d1977428939dd3c) )
 ROM_END
 
+ROM_START( froggerp )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "frogger.26",   0x0000, 0x1000, CRC(597696d6) SHA1(e7e021776cad00f095a1ebbef407b7c0a8f5d835) )
+	ROM_LOAD( "frogger.27p",  0x1000, 0x1000, CRC(b05c6d06) SHA1(71f17fdd87dff06b252e0d94b62743c5a23fd4f8) )
+	ROM_LOAD( "frsm3.7p",     0x2000, 0x1000, CRC(098a8093) SHA1(6f2e4ceb49e86f608818db93b5cc6a376abebd1e) )
+
+	ROM_REGION( 0x10000, "audiocpu", 0 )
+	ROM_LOAD( "frogger.608",  0x0000, 0x0800, CRC(e8ab0256) SHA1(f090afcfacf5f13cdfa0dfda8e3feb868c6ce8bc) )
+	ROM_LOAD( "frogger.609",  0x0800, 0x0800, CRC(7380a48f) SHA1(75582a94b696062cbdb66a4c5cf0bc0bb94f81ee) )
+	ROM_LOAD( "frogger.610",  0x1000, 0x0800, CRC(31d7eb27) SHA1(2e1d34ae4da385fd7cac94707d25eeddf4604e1a) )
+
+	ROM_REGION( 0x1000, "gfx1", 0 )
+	ROM_LOAD( "frogger.607",  0x0000, 0x0800, CRC(05f7d883) SHA1(78831fd287da18928651a8adb7e578d291493eff) )
+	ROM_LOAD( "frogger.606",  0x0800, 0x0800, CRC(f524ee30) SHA1(dd768967add61467baa08d5929001f157d6cd911) )
+
+	ROM_REGION( 0x0020, "proms", 0 )
+	ROM_LOAD( "pr-91.6l",     0x0000, 0x0020, CRC(413703bf) SHA1(66648b2b28d3dcbda5bdb2605d1977428939dd3c) )
+ROM_END
+
 /* Wriggly Beasties - bootleg of WarOfBug */
 ROM_START( wbeast )
 	ROM_REGION( 0x10000, "maincpu", 0 )
@@ -813,6 +862,7 @@ GAME( 1981, kazzy,      frogger,  frogger,  frogger,  galaxian_hbmame, init_frog
 GAME( 1999, trukker,    frogger,  frogger,  frogger,  galaxian_hbmame, init_trukker,  ROT90, "Grimlick","Trukker", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, frogtest,   frogger,  tst_frog, frogger,  galaxian_hbmame, init_frogger,  ROT90, "msmcdoug / JROK", "Frogger Sound Test", MACHINE_SUPPORTS_SAVE )
 GAME( 2019, frogtest2,  frogger,  frogger,  frogger,  galaxian_hbmame, init_frogger,  ROT90, "Phil Murray", "Frogger Test Rom (2019-01-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2023, froggerp,   frogger,  frogger,  frogger,  galaxian_state,  init_frogger,  ROT90, "philmurr", "Frogger (fixed)", MACHINE_SUPPORTS_SAVE )
 
 
 // Amidar
@@ -832,6 +882,8 @@ GAME( 2019, scobtest,   scobra,   scobra,   scobra,   galaxian_state,  init_scob
 
 
 // Galaxian
+GAME( 1979, galap2,     galnamco, galaxian, galaxian, galaxian_hbmame, init_galaxian, ROT90, "hack", "GX Part II", MACHINE_SUPPORTS_SAVE)
+GAME( 1979, galaxian3,  galnamco, galaxian, galaxian, galaxian_hbmame, init_galaxian, ROT90, "hack", "Galaxian III", MACHINE_SUPPORTS_SAVE)
 GAME( 1979, andromd,    galnamco, galaxian, superg,   galaxian_hbmame, init_galaxian, ROT90, "hack", "Andromeda", MACHINE_SUPPORTS_SAVE)
 GAME( 1998, buglaxn,    galnamco, galaxian, galaxian, galaxian_hbmame, init_galaxian, ROT90, "The Dog", "Galaxian (Bug sprites)", MACHINE_SUPPORTS_SAVE )
 GAME( 1981, galaxiabh,  galnamco, galaxian, galaxiab, galaxian_hbmame, init_galaxian, ROT90, "bootleg", "Galaxian (Edition Hack)", MACHINE_SUPPORTS_SAVE )

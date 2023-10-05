@@ -2122,6 +2122,7 @@ void CreateCPSFolders(int parent_index)
 		if (!strcmp("cps1bl_pic.cpp", s))			  AddGame(lpFolder, jj);
 		if (!strcmp("cps2.cpp", s))			          AddGame(lpFolder, jj);
 		if (!strcmp("cps2mis.cpp", s))			      AddGame(lpFolder, jj);
+		if (!strcmp("cps2t.cpp", s))			      AddGame(lpFolder, jj);
 		if (!strcmp("cps3.cpp", s))			          AddGame(lpFolder, jj);
 		if (!strcmp("fcrash.cpp", s))			      AddGame(lpFolder, jj);
 	}

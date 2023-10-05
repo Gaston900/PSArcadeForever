@@ -33079,7 +33079,7 @@ matrim                          // 0266 (c) 2002 Atlus
 matrimbl                        // bootleg
 miexchng                        // 0231 (c) 1997 Face
 minasan                         // 0027 (c) 1990 Monolith Corp.
-moshougi                        // 0203 (c) 1995 ADK / SNK
+mosyougi                        // 0203 (c) 1995 ADK / SNK
 ms4plus                         // bootleg
 ms5plus                         // bootleg
 ms5pcb                          // 0268 (c) 2003 Playmore - JAMMA PCB
@@ -33178,7 +33178,7 @@ ssideki                         // 0052 (c) 1992 SNK
 ssideki2                        // 0061 (c) 1994 SNK
 ssideki3                        // 0081 (c) 1995 SNK
 ssideki4                        // 0215 (c) 1996 SNK
-stakwin                         // 0088 (c) 1995 Saurus
+stakwin                         // 0088 (c) 1995 music broken in mame, works here
 stakwindev                      // prototype
 stakwin2                        // 0227 (c) 1996 Saurus
 strhoop                         // 0079 (c) 1994 Data East Corporation
@@ -33196,13 +33196,13 @@ tpgolf                          // 0003 (c) 1990 SNK
 trally                          // 0038 (c) 1991 Alpha Denshi Co.
 turfmast                        // 0200 (c) 1996 Nazca
 twinspri                        // 0224 (c) 1996 ADK
-twsoc96                         // 0086 (c) 1996 Tecmo
+tws96                           // 0086 (c) 1996 Tecmo
 viewpoin                        // 0051 (c) 1992 Sammy
 viewpoinp                       //
 vliner                          //
 vliner7e                        //
 vliner6e                        //
-vliner54                        //
+vlinero                         //
 vliner53                        //
 wakuwak7                        // 0225 (c) 1996 Sunsoft
 wh1                             // 0053 (c) 1992 Alpha Denshi Co.
@@ -44615,7 +44615,7 @@ sc203                           // SC203 - Modular Z180 Computer
 
 
 /*******************************************
- HBMAME 0.245.11
+ HBMAME 0.245.14
  List of all drivers enabled in the system.
 **********************************************/
 
@@ -44633,6 +44633,7 @@ galagax 		/* Jerky - Chris Moore hack of 1942 */
 akblc2dx		/* hack */
 akgcdx			/* hack */
 aktaytdx		/* hack */
+arkcrsn5
 //arkll32                              // broke mid-2022 after Z80 changes
 
 @source:asteroid.cpp
@@ -45773,7 +45774,7 @@ sfz3mix09
 sfz3mix10
 sfz3mix11
 sfz3mix12
-sfz3mix
+sfz3mix13
 sgemfs01
 spf2t01
 ssf2s01
@@ -45792,6 +45793,7 @@ ssf2tnl4
 ssf2tnl5
 ssf2tnl6
 ssf2tnl7
+ssf2tnl71
 ssf2tnl
 ssf2x01
 ssf2x02
@@ -45816,6 +45818,10 @@ xmvsfs05
 xmvsfs06
 xmvsfs07
 //cps2xx
+
+@source:cps2t.cpp
+sfz3mix20
+sfz3mix
 
 @source:cps3.cpp
 jojoan
@@ -45970,11 +45976,14 @@ dkongdu
 dkongdu0
 dkongdu1
 dksprfin
+dksprfin2
+dkbrlbss
 dkwizard
 dkwizard0
 dkwizard1
 dkwizard2
 dkonghh
+dkongacc
 
 @source:docastle.cpp
 sdreturn
@@ -46059,6 +46068,7 @@ starfgh2	/* Bootleg of Pisces */
 offender	/* Chris Henry hack of scramble */
 superdog	/* Jerky Hack Hack of scramble */
 scratest
+froggerp
 frogtest
 frogtest2
 kazzy
@@ -46069,6 +46079,8 @@ cosmicw
 pandajump                              // HB
 andromd		/* hack - Renamed to avoid confusion with andromed (ex TestDriver) */
 buglaxn		/* The Dog hack of Galaxian */
+galap2
+galaxian3
 galaxiabh	/* unknown hack of Galaxian */
 galaxkyo	/* unknown hack of Galaxian Part X */
 galaxni		/* Petaco bootleg of Galaxian Part X */
@@ -49984,6 +49996,7 @@ spcloneo	// v0.7.2.2
 abyssal
 abyssal1
 akiradmo
+amazonn
 badapple			// BEY
 badapplea
 badappleb
@@ -50014,8 +50027,10 @@ ffeastd		// Frog Feast demo
 fr2			// 098 Idol Mahjong - final romance 2
 fr2cd		/* 098 (c) 1995 Video Systems Co. */
 fr2ch		/* 098 (c) 1995 Video Systems Co. */
+galaxiann
 gbi			/* Ghostbusters Intro */
 gxg
+horekidb3
 hypernoid
 //igla
 iocero		// BEY
@@ -52082,7 +52097,7 @@ hmgrenp		/* Blue Justice */
 hmpopey		/*  */
 hmplus		/* Blue Justice */
 homercid	/* David Widel */
-jacman
+jackman
 jpmmunch	/* JPM bootleg */
 mazeman		/* Sil hack of Pac-Man */
 muckpan
@@ -52420,27 +52435,28 @@ runarks01
 thundfoxs01
 
 @source:taito_f3.cpp
-arabianms01
-bubsymphs01
-cleopatrs01
-cleopatrs02
-dankugas01
-dankugas02
-dariusgs01
-elvactrs01
-gekiridns01
-gekiridns02
-gseekers01
-kaiserkns01
-kaiserkns02
-landmakrs01
-landmakrs02
-lightbrs01
+akkanvdr01
+arabianm01
+bubsymph01
+cleopatr01
+cleopatr02
+dankuga01
+dankuga02
+dariusg01
+elvactr01
+gekiridn01
+gekiridn02
+gseeker01
+kaiserkn01
+kaiserkn02
+landmakr01
+landmakr02
+landmakr03
+lightbr01
 pbobble2s01
 pbobble3s01
 pbobble3s02
-akkanvdrs01
-twinqixs01
+twinqix01
 
 @source:taito_l.cpp
 evilstonfr
