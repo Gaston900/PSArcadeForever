@@ -1243,9 +1243,9 @@ GAME( 2009, jojobpow,  jojoba,     jojoba,   cps3_jojo, cps3_hbmame, init_jojoba
 GAME( 2009, jojonbss,  jojo,       jojo,     cps3_jojo, cps3_hbmame, init_jojon,     ROT0, "Pipi899", "JoJo's Venture (Enable Hidden Characters V1 2009-07-09)", 0 )
 GAME( 2009, jojonpow,  jojo,       jojo,     cps3_jojo, cps3_hbmame, init_jojon,     ROT0, "Pipi899", "JoJo's Venture (Infinite Power 2009-07-11)", 0 )
 GAME( 1998, jojoan,    jojo,       jojo,     cps3_jojo, cps3_hbmame, init_jojon,     ROT0, "Capcom", "JoJo's Venture (Asia, 981202, NO CD)", 0 )
-GAME( 1996, redeartn,  0,          redeartn, cps3_ren,  cps3_hbmame, init_redearth,  ROT0, "Capcom", "Red Earth (Asia 961121, NO CD)", 0 )
-GAME( 1996, redeartno, redeartn,   redeartn, cps3_ren,  cps3_hbmame, init_redeartno, ROT0, "Capcom", "Red Earth (Asia 961121, NO CD/Old Set)", 0 )
-GAME( 2009, redearex,  redeartn,   redeartn, cps3_ren,  cps3_hbmame, init_redeartno, ROT0, "Pipi899", "Red Earth (Ex Super Version 2009-09-08)", 0 )
+//GAME( 1996, redeartn,  0,          redeartn, cps3_ren,  cps3_hbmame, init_redearth,  ROT0, "Capcom", "Red Earth (Asia 961121, NO CD)", 0 )
+GAME( 1996, redeartno, redearth,   redeartn, cps3_ren,  cps3_hbmame, init_redeartno, ROT0, "Capcom", "Red Earth (Asia 961121, NO CD/Old Set)", 0 )
+GAME( 2009, redearex,  redearth,   redeartn, cps3_ren,  cps3_hbmame, init_redeartno, ROT0, "Pipi899", "Red Earth (Ex Super Version 2009-09-08)", 0 )
 GAME( 2009, sfiiibhp,  sfiii,      sfiii,    cps3,      cps3_hbmame, init_sfiiin,    ROT0, "Pipi899", "Street Fighter III: New Generation (Enable Hidden Characters V1 2009-08-08)", 0 )
 GAME( 2009, sfiiipmp,  sfiii,      sfiii,    cps3,      cps3_hbmame, init_sfiiin,    ROT0, "Pipi899", "Street Fighter III: New Generation (Infinite Power 2009-07-06)", 0 )
 GAMEL(1997, sfiii2bh,  sfiii2,     sfiii2,   cps3,      cps3_hbmame, init_sfiii2n,   ROT0, "Yumeji", "Street Fighter III 2nd Impact: Giant Attack (Enable Hidden Characters V1)", 0, layout_sfiii2 )
@@ -3386,7 +3386,7 @@ GAME( 2009, jojos04,        jojoba,    jojoba,      cps3_jojo,  cps3_hbmame,    
 GAME( 2009, jojos05,        jojoba,    jojoba,      cps3_jojo,  cps3_hbmame,     init_jojoban,  ROT0,  "hack",    "JoJo's Bizarre Adventure (U.S.A 990913, NO CD)", 0 )
 GAME( 2018, jojos06,        jojoba,    jojoba,      cps3_jojo,  cps3_state,      init_jojoba,   ROT0,  "hack",    "JoJo's Bizarre Adventure (Super Plus)", 0 )
 // Red Earth
-GAME( 1996, redeartns01,    redeartn,   redeartn,    cps3_ren,   cps3_hbmame,     init_redearth, ROT0,  "Capcom",  "Red Earth (Asia 961023, NO CD)", 0 )
+GAME( 1996, redeartns01,    redearth,   redeartn,    cps3_ren,   cps3_hbmame,     init_redearth, ROT0,  "Capcom",  "Red Earth (Asia 961023, NO CD)", 0 )
 // Street Fighter III: New Generation
 GAME( 2016, sfiiins01,      sfiii,      sfiii,       cps3,       cps3_state,      init_sfiii,    ROT0,  "hack",    "Street Fighter III: New Generation (Simple Attack, 2016-01-21)", 0 )
 // Street Fighter III 2nd Impact Giant Attack

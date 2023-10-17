@@ -1367,6 +1367,27 @@ ROM_START( roboarmy )
 	ROM_LOAD16_BYTE( "032.c6", 0x200001, 0x080000, CRC(462571de) SHA1(5c3d610d492f91564423873b3b434dcda700373f) )
 ROM_END
 
+ROM_START( roboarma ) /* MVS AND AES VERSION*/
+	ROM_REGION( 0x100000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "032-epr.p1", 0x000000, 0x080000, CRC(27c773cb) SHA1(597ca73f142b1129cc7780540bb9cfacd47bc6ce) ) /* D27C4000 */
+	/* Found on legitimate Robo Army MVS and AES Carts. Debug code button which check control a sound test has been patched out because in a multislot situation that code could have been enabled
+	that would stop roboarmy from working, sending it into an infinite loop ; correct chip label unknown */
+
+	NEO_SFIX_128K( "032.s1", CRC(ac0daa1b) SHA1(93bae4697dc403fce19422752a514326ccf66a91) ) /* TC531000 */
+
+	NEO_BIOS_AUDIO_128K( "032.m1", CRC(35ec952d) SHA1(8aed30e26d7e2c70dbce5de752df416091066f7b) ) /* TC531001 */
+
+	ROM_REGION( 0x200000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "032.v1", 0x000000, 0x100000, CRC(63791533) SHA1(4479e9308cdc906b9e03b985303f4ebedd00512f) ) /* TC538200 */
+	ROM_LOAD( "032.v2", 0x100000, 0x100000, CRC(eb95de70) SHA1(b34885201116d2b3bbdee15ec7b5961cf5c069e1) ) /* TC538200 */
+
+	ROM_REGION( 0x300000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "032.c1", 0x000000, 0x100000, CRC(97984c6c) SHA1(deea59c0892f05dc7db98cb57b3eb83688dc57f0) ) /* Plane 0,1 */ /* TC538200 */
+	ROM_LOAD16_BYTE( "032.c2", 0x000001, 0x100000, CRC(65773122) SHA1(2c0162a8e971e5e57933e4ae16040bf824ffdefe) ) /* Plane 2,3 */ /* TC538200 */
+	ROM_LOAD16_BYTE( "032.c3", 0x200000, 0x080000, CRC(40adfccd) SHA1(b11f866dd70ba0ed9123424508355cb948b19bdc) ) /* Plane 0,1 */ /* TC534200 */
+	ROM_LOAD16_BYTE( "032.c4", 0x200001, 0x080000, CRC(462571de) SHA1(5c3d610d492f91564423873b3b434dcda700373f) ) /* Plane 2,3 */ /* TC534200 */
+ROM_END
+
 /****************************************
  ID-0033
  . NGM-033
@@ -1774,6 +1795,29 @@ ROM_START( samshoh ) /* AES VERSION */
 	ROM_LOAD16_BYTE( "045.c4", 0x400001, 0x200000, CRC(935c62f0) SHA1(0053d40085fac14096b683f4341f65e543b71dc1) )
 	ROM_LOAD16_BYTE( "045h.c5", 0x800000, 0x080000, CRC(a2bb8284) SHA1(aa118e3b8c062daa219b36758b9a3814c08c69dc) )
 	ROM_LOAD16_BYTE( "045h.c6", 0x800001, 0x080000, CRC(4fa71252) SHA1(afe374a9d1f2d955a59efe7b6196b89e021b164c) )
+ROM_END
+
+ROM_START( samshoa )
+	ROM_REGION( 0x180000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "045b.p1", 0x000000, 0x080000, CRC(80aa6c97) SHA1(6e07a4aa7b4719ae487a10cee9389cb55a370a7a) )
+	ROM_LOAD16_WORD_SWAP( "045b.p3", 0x080000, 0x080000, CRC(71768728) SHA1(9ff0e01d3fb73ad04279d4fdf4c53c3160888179) )
+	ROM_LOAD16_WORD_SWAP( "045b.p2", 0x100000, 0x080000, CRC(38ee9ba9) SHA1(48190699a6be83cb6257365ae81f93fdd23abe09) )
+
+	NEO_SFIX_128K( "045.s1", CRC(9142a4d3) SHA1(54088e99fcfd75fd0f94852890a56350066a05a3) )
+
+	NEO_BIOS_AUDIO_128K( "045.m1", CRC(95170640) SHA1(125c502db0693e8d11cef619b090081c14a9a300) )
+
+	ROM_REGION( 0x400000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "045.v1", 0x000000, 0x200000, CRC(37f78a9b) SHA1(6279b497d12fa90b49ab5ac3aae20fb302ec8b81) )
+	ROM_LOAD( "045.v2", 0x200000, 0x200000, CRC(568b20cf) SHA1(61af858685472a1fad608e230cccc2b108509ddb) )
+
+	ROM_REGION( 0x900000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "045.c1", 0x000000, 0x200000, CRC(2e5873a4) SHA1(65c74c1e2d34390666bbb630df7d1f4c9570c3db) )
+	ROM_LOAD16_BYTE( "045.c2", 0x000001, 0x200000, CRC(04febb10) SHA1(16a8cbf0fd9468e81bf9eab6dbe7a8e3623a843e) )
+	ROM_LOAD16_BYTE( "045.c3", 0x400000, 0x200000, CRC(f3dabd1e) SHA1(c80e52df42be9f8b2e89b467b11ab140a480cee8) )
+	ROM_LOAD16_BYTE( "045.c4", 0x400001, 0x200000, CRC(935c62f0) SHA1(0053d40085fac14096b683f4341f65e543b71dc1) )
+	ROM_LOAD16_BYTE( "045b.c5", 0x800000, 0x080000, CRC(a2bb8284) SHA1(aa118e3b8c062daa219b36758b9a3814c08c69dc) )
+	ROM_LOAD16_BYTE( "045b.c6", 0x800001, 0x080000, CRC(4fa71252) SHA1(afe374a9d1f2d955a59efe7b6196b89e021b164c) )
 ROM_END
 
 /****************************************
@@ -3109,7 +3153,7 @@ ROM_END
  NEO-MVS PROGBK1 / NEO-MVS CHA256B
 ****************************************/
 
-ROM_START( tws96 ) /* MVS ONLY RELEASE */
+ROM_START( twsoc96 ) /* MVS ONLY RELEASE */
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "086.p1", 0x000000, 0x100000, CRC(03e20ab6) SHA1(3a0a5a54649178ce7a6158980cb4445084b40fb5) )
 
@@ -3684,7 +3728,7 @@ ROM_END
  . ADH-010
 ****************************************/
 
-ROM_START( mosyougi )
+ROM_START( moshougi )
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "203.p1", 0x000000, 0x100000, CRC(7ba70e2d) SHA1(945f472cc3e7706f613c52df18de35c986d166e7) )
 
@@ -6402,7 +6446,7 @@ ROM_START( vliner ) /* MVS ONLY RELEASE */
 	ROM_LOAD16_BYTE( "332.c2", 0x000001, 0x80000, CRC(efe9b33e) SHA1(910c651aadce9bf59e51c338ceef62287756d2e8) )
 ROM_END
 
-ROM_START( vlinero ) /* MVS ONLY RELEASE */
+ROM_START( vliner54 ) /* MVS ONLY RELEASE */
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "332o.p1", 0x000000, 0x080000, CRC(172efc18) SHA1(8ca739f8780a9e6fa19ac2c3e931d75871603f58) )
 
@@ -7961,6 +8005,7 @@ GAME( 1991, socbrawl,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1991, socbrawlh,  socbrawl, neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Soccer Brawl (NGH-031)", MACHINE_SUPPORTS_SAVE )
 GAME( 1991, fatfury1,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Fatal Fury - King of Fighters / Garou Densetsu - shukumei no tatakai (NGM-033)(NGH-033)", MACHINE_SUPPORTS_SAVE )
 GAME( 1991, roboarmy,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Robo Army", MACHINE_SUPPORTS_SAVE )
+GAME( 1991, roboarma,   roboarmy, neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Robo Army (NGM-032 ~ NGH-032)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, fbfrenzy,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Football Frenzy (NGM-034)(NGH-034)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, kotm2,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "King of the Monsters 2 - The Next Thing (NGM-039)(NGH-039)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, kotm2p,     kotm2,    neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "King of the Monsters 2 - The Next Thing (prototype)", MACHINE_SUPPORTS_SAVE )
@@ -7971,6 +8016,7 @@ GAME( 1993, 3countb,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1992, aof,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Art of Fighting / Ryuuko no Ken (NGM-044)(NGH-044)", MACHINE_SUPPORTS_SAVE )
 GAME( 1993, samsho,     neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Samurai Shodown / Samurai Spirits (NGM-045)", MACHINE_SUPPORTS_SAVE )
 GAME( 1993, samshoh,    samsho,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Samurai Shodown / Samurai Spirits (NGH-045)", MACHINE_SUPPORTS_SAVE )
+GAME( 1993, samshoa,    samsho,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Samurai Shodown / Samurai Spirits (NGM-045, alternate board)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, tophuntr,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Top Hunter - Roddy & Cathy (NGM-046)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, tophuntrh,  tophuntr, neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Top Hunter - Roddy & Cathy (NGH-046)", MACHINE_SUPPORTS_SAVE )
 GAME( 1992, fatfury2,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_fatfury2, ROT0, "SNK", "Fatal Fury 2 / Garou Densetsu 2 - arata-naru tatakai (NGM-047)(NGH-047)", MACHINE_SUPPORTS_SAVE )
@@ -8099,7 +8145,7 @@ GAME( 1993, wh2,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1994, wh2j,       neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "World Heroes 2 Jet (ADM-007)(ADH-007)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, aodk,       neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Aggressors of Dark Kombat / Tsuukai GANGAN Koushinkyoku (ADM-008)(ADH-008)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, whp,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "World Heroes Perfect", MACHINE_SUPPORTS_SAVE )
-GAME( 1995, mosyougi,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Syougi No Tatsujin - Master of Syougi", MACHINE_SUPPORTS_SAVE )
+GAME( 1995, moshougi,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Syougi No Tatsujin - Master of Syougi", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, overtop,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK",              "Over Top", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, ninjamas,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Ninja Master's - haoh-ninpo-cho", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, twinspri,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Twinkle Star Sprites", MACHINE_SUPPORTS_SAVE )
@@ -8182,7 +8228,7 @@ GAME( 1995, gowcaizr,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1996, sdodgeb,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Technos Japan", "Super Dodge Ball / Kunio no Nekketsu Toukyuu Densetsu", MACHINE_SUPPORTS_SAVE )
 
 /* Tecmo */
-GAME( 1996, tws96,      neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, twsoc96,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96", MACHINE_SUPPORTS_SAVE )
 
 /* Viccom */
 GAME( 1994, fightfev,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Viccom", "Fight Fever (set 1)", MACHINE_SUPPORTS_SAVE )
@@ -8227,7 +8273,7 @@ GAME( 2002, matrimbl,   matrim,   neogeo_noslot,   neogeo, neogeo_state, init_ma
 GAME( 2001, jockeygp,   neogeo,   neogeo_noslot,   jockeygp, neogeo_state, init_jockeygp, ROT0, "Sun Amusement / BrezzaSoft", "Jockey Grand Prix (set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 2001, jockeygpa,  jockeygp, neogeo_noslot,   jockeygp, neogeo_state, init_jockeygp, ROT0, "Sun Amusement / BrezzaSoft", "Jockey Grand Prix (set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 2001, vliner,     neogeo,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.7a)", MACHINE_SUPPORTS_SAVE )
-GAME( 2001, vlinero,    vliner,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.54)", MACHINE_SUPPORTS_SAVE )
+GAME( 2001, vliner54,   vliner,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.54)", MACHINE_SUPPORTS_SAVE )
 
 /* Kyle Hodgetts */
 GAME( 2000, diggerma,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Kyle Hodgetts", "Digger Man (prototype)", MACHINE_SUPPORTS_SAVE )
