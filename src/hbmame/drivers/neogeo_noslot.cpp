@@ -4742,9 +4742,13 @@ ROM_START( irrmaze ) /* MVS ONLY RELEASE */
 	NEO_SFIX_128K( "236.s1", CRC(5d1ca640) SHA1(40a9668a1742a44597a07ce72273d17119815637) )
 
 	ROM_REGION16_BE( 0x20000, "mainbios", 0 )
-	/* special BIOS with trackball support, we only have one Irritating Maze bios and thats asia */
-	ROM_LOAD16_WORD_SWAP("236-bios.sp1", 0x00000, 0x020000, CRC(853e6b96) SHA1(de369cb4a7df147b55168fa7aaf0b98c753b735e) )
-
+	// special BIOS with trackball support, we only have one Irritating Maze bios and that's Asian
+	ROM_SYSTEM_BIOS( 0, "asia-sp1", "Asia MV1B 263" )
+	ROM_LOAD16_WORD_SWAP_BIOS( 0, "236-bios.sp1", 0x00000, 0x020000, CRC(853e6b96) SHA1(de369cb4a7df147b55168fa7aaf0b98c753b735e) )
+	ROM_SYSTEM_BIOS( 1, "japan", "Japan (hack?)" ) // from a 'refurbished' Japanese cabinet, had label of the arcade distributor rather than original sticker however, and looks like a hack of above Asia ROM
+	ROM_LOAD16_WORD_SWAP_BIOS( 1, "236-bios_japan_hack.sp1", 0x00000, 0x020000, CRC(02bf4426) SHA1(f4aa64bfe0b93e5df07b4fe2e0f638d91c7f2e71) )
+	// Universe BIOS 2.2 and later allow joystick play as a cheat
+	NEOGEO_UNIBIOS(2)
 	ROM_REGION( 0x30000, "audiocpu", 0 )
 	ROM_LOAD( "236.m1", 0x00000, 0x20000, CRC(880a1abd) SHA1(905afa157aba700e798243b842792e50729b19a0) )
 	ROM_RELOAD( 0x10000, 0x20000 )
