@@ -6,7 +6,7 @@ XXXX-XX-XX Optimization Edition
 - MAME version 0.245 - 0.259 has been updated.
 - HBMAME has been updated to version 0.245.14.
 - CPS 1, 2, NEOGEO, PGM, driver supports key combination settings.
-- Neo geo command fixed.
+- Neo Geo command fixed.
 - Settings menu simplified.
 - The arcade.flt file has been restored, a filter list game from Arcade version 0.259 has been used.
 - Fixed the problem that some games had a black screen.
