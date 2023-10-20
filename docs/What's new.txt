@@ -3,7 +3,7 @@
 
 XXXX-XX-XX Optimization Edition
 -------------------------------
-- MAME version 0.245 - 0.259 has been updated.
+- MAME version 0.245 - 0.260 has been updated.
 - HBMAME has been updated to version 0.245.14.
 - CPS 1, 2, NEOGEO, PGM, driver supports key combination settings.
 - Neo Geo command fixed.
