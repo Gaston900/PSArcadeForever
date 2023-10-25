@@ -1,7 +1,7 @@
 ﻿What's new in PSARCADE FOREVER
 ===============================
 
-XXXX-XX-XX Optimization Edition
+2023-10-25 Optimization Edition
 -------------------------------
 - MAME version 0.245 - 0.260 has been updated.
 - HBMAME has been updated to version 0.245.14.

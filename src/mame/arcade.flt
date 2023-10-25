@@ -1323,7 +1323,7 @@ system16.cpp
 tagteam.cpp
 tail2nos.cpp
 //taito.cpp        // pinball
-taitoair.cpp
+//taitoair.cpp
 taitogn.cpp
 taitojc.cpp
 taitopjc.cpp
@@ -1393,7 +1393,7 @@ toobin.cpp
 topspeed.cpp
 toratora.cpp
 tourtabl.cpp
-tourvis.cpp
+//tourvis.cpp
 toypop.cpp
 tp84.cpp
 trackfld.cpp
@@ -1799,6 +1799,7 @@ spacmiss.cpp
 -eldoradd
 -feverch
 -super9
+-super9a
 -jkrmast
 -jkrmasta
 -pkrmast
@@ -2099,6 +2100,7 @@ spacmiss.cpp
 -dodgectyc
 -dodgectya
 -dodgectyb
+-unkmerit
 
 //meritm.cpp
 -megat5a
@@ -2942,3 +2944,6 @@ spacmiss.cpp
 -txmenpx  
 -vespovar
 -vfutbol
+
+//joystand.cpp
+//x180ii
