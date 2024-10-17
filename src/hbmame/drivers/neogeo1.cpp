@@ -1833,6 +1833,7 @@ ROM_START( nitdd )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260d.c1", 0x0000000, 0x800000, CRC(f3ff4953) SHA1(0e54548387f3056088e89086a30da05935d08b24) )
@@ -1849,6 +1850,7 @@ ROM_START( nitdfr ) /* Nightmare in the Dark - Translation Hack by NEO-ARC - (Fr
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260fr.c1", 0x0000000, 0x800000, CRC(7c469419) SHA1(06a45016c9493b85fbb8d9ebd33409a0d933ed22) )
@@ -1865,6 +1867,7 @@ ROM_START( nitdfro ) /* Nightmare in the Dark - Translation Hack Older? */
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260fro.c1", 0x0000000, 0x800000, CRC(14c5a25f) SHA1(8b29f7e6920eb1b4a7dc42a063e4c8e6ec9a5700) )
@@ -1881,6 +1884,7 @@ ROM_START( nitdfro1 )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260fro.c1", 0x0000000, 0x800000, CRC(14c5a25f) SHA1(8b29f7e6920eb1b4a7dc42a063e4c8e6ec9a5700) )
@@ -1897,6 +1901,7 @@ ROM_START( nitdpx )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260.c1", 0x0000000, 0x800000, CRC(147b0c7f) SHA1(a647c3a2f6d146ff47521c1d39f58830601f5781) )
@@ -1913,6 +1918,7 @@ ROM_START( nitdsp ) /* Nightmare in the Dark - Translation Hack by UNKNOWN - (Sp
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260.c1", 0x0000000, 0x800000, CRC(147b0c7f) SHA1(a647c3a2f6d146ff47521c1d39f58830601f5781) )
@@ -1929,6 +1935,7 @@ ROM_START( nitdsp1 ) /* Nightmare in the Dark - Translation Hack by UNKNOWN - (S
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260sp1.c1", 0x0000000, 0x800000, CRC(3f7fbd0c) SHA1(2e6cedcb099ae8f5bbdb9d989ca3918d7fb0504f) )
@@ -1945,6 +1952,7 @@ ROM_START( nitdsp2 )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260sp1.c1", 0x0000000, 0x800000, CRC(3f7fbd0c) SHA1(2e6cedcb099ae8f5bbdb9d989ca3918d7fb0504f) )
@@ -1961,6 +1969,7 @@ ROM_START( nitdfro2 )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260s03.c1", 0x0000000, 0x800000, CRC(250010d5) SHA1(514053c16eb7b3e5879ddf02c422e5e923b0d1e6) )
@@ -4194,6 +4203,7 @@ ROM_START( nitds01 )
 
 	ROM_REGION( 0x0400000, "ymsnd:adpcma", 0 )
 	ROM_LOAD( "260.v1", 0x000000, 0x400000, CRC(24b0480c) SHA1(d769e621be52a5cd2e2568891b5f95a48268e1e0) )
+    ROM_FILL(0x50820,1,0x08)  // fix crackle when jumping [Niko] 2023-04-08
 
 	ROM_REGION( 0x1000000, "sprites", 0 )
 	ROM_LOAD16_BYTE( "260s03.c1", 0x0000000, 0x800000, CRC(250010d5) SHA1(514053c16eb7b3e5879ddf02c422e5e923b0d1e6) )
