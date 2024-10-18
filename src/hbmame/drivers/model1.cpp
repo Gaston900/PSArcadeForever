@@ -54,3 +54,4 @@ ROM_START( vr01 )
 ROM_END
 
 GAMEL(2023, vr01, vr, vr, vr, model1_state, empty_init, ROT0, "Sega", "Virtua Racing Rival Edition V7 (2023-02-22)", 0, layout_vr )
+

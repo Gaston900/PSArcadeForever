@@ -2641,6 +2641,7 @@ ROM_START( pacjrz80 )
 	PACMAN_SOUND_PROMS
 ROM_END
 
+
 /*************************************
  *
  *  Game drivers

@@ -5159,7 +5159,7 @@ createMAMEProjects(_target, _subtarget, "homebrow")
 files {
 --	MAME_DIR .. "src/hbmame/drivers/invaders.cpp", --HBMAME
 --	MAME_DIR .. "src/hbmame/drivers/spcenctr.cpp", --HBMAME
---  MAME_DIR .. "src/hbmame/drivers/dt7.cpp", --HBMAME
+    MAME_DIR .. "src/hbmame/drivers/dt7.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/schaser.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/spacmiss.cpp", --HBMAME
 	MAME_DIR .. "src/hbmame/drivers/monaco.cpp", --HBMAME

@@ -3183,7 +3183,7 @@ ROM_END
  NEO-MVS PROGBK1 / NEO-MVS CHA256B
 ****************************************/
 
-ROM_START( twsoc96 ) /* MVS ONLY RELEASE */
+ROM_START( tws96 ) /* MVS ONLY RELEASE */
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "086.p1", 0x000000, 0x100000, CRC(03e20ab6) SHA1(3a0a5a54649178ce7a6158980cb4445084b40fb5) )
 
@@ -3758,7 +3758,7 @@ ROM_END
  . ADH-010
 ****************************************/
 
-ROM_START( moshougi )
+ROM_START( mosyougi )
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "203.p1", 0x000000, 0x100000, CRC(7ba70e2d) SHA1(945f472cc3e7706f613c52df18de35c986d166e7) )
 
@@ -6480,7 +6480,7 @@ ROM_START( vliner ) /* MVS ONLY RELEASE */
 	ROM_LOAD16_BYTE( "332.c2", 0x000001, 0x80000, CRC(efe9b33e) SHA1(910c651aadce9bf59e51c338ceef62287756d2e8) )
 ROM_END
 
-ROM_START( vliner54 ) /* MVS ONLY RELEASE */
+ROM_START( vlinero ) /* MVS ONLY RELEASE */
 	ROM_REGION( 0x100000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "332o.p1", 0x000000, 0x080000, CRC(172efc18) SHA1(8ca739f8780a9e6fa19ac2c3e931d75871603f58) )
 
@@ -8180,7 +8180,7 @@ GAME( 1993, wh2,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1994, wh2j,       neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "World Heroes 2 Jet (ADM-007)(ADH-007)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, aodk,       neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Aggressors of Dark Kombat / Tsuukai GANGAN Koushinkyoku (ADM-008)(ADH-008)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, whp,        neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "World Heroes Perfect", MACHINE_SUPPORTS_SAVE )
-GAME( 1995, moshougi,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Syougi No Tatsujin - Master of Syougi", MACHINE_SUPPORTS_SAVE )
+GAME( 1995, mosyougi,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Syougi No Tatsujin - Master of Syougi", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, overtop,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK",              "Over Top", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, ninjamas,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Ninja Master's - haoh-ninpo-cho", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, twinspri,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "ADK / SNK",        "Twinkle Star Sprites", MACHINE_SUPPORTS_SAVE )
@@ -8263,7 +8263,7 @@ GAME( 1995, gowcaizr,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_ne
 GAME( 1996, sdodgeb,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Technos Japan", "Super Dodge Ball / Kunio no Nekketsu Toukyuu Densetsu", MACHINE_SUPPORTS_SAVE )
 
 /* Tecmo */
-GAME( 1996, twsoc96,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96", MACHINE_SUPPORTS_SAVE )
+GAME( 1996, tws96,    neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Tecmo", "Tecmo World Soccer '96", MACHINE_SUPPORTS_SAVE )
 
 /* Viccom */
 GAME( 1994, fightfev,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Viccom", "Fight Fever (set 1)", MACHINE_SUPPORTS_SAVE )
@@ -8308,7 +8308,7 @@ GAME( 2002, matrimbl,   matrim,   neogeo_noslot,   neogeo, neogeo_state, init_ma
 GAME( 2001, jockeygp,   neogeo,   neogeo_noslot,   jockeygp, neogeo_state, init_jockeygp, ROT0, "Sun Amusement / BrezzaSoft", "Jockey Grand Prix (set 1)", MACHINE_SUPPORTS_SAVE )
 GAME( 2001, jockeygpa,  jockeygp, neogeo_noslot,   jockeygp, neogeo_state, init_jockeygp, ROT0, "Sun Amusement / BrezzaSoft", "Jockey Grand Prix (set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 2001, vliner,     neogeo,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.7a)", MACHINE_SUPPORTS_SAVE )
-GAME( 2001, vliner54,   vliner,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.54)", MACHINE_SUPPORTS_SAVE )
+GAME( 2001, vlinero,   vliner,   neogeo_noctrl,   vliner, neogeo_state,   init_vliner,   ROT0, "Dyna / BrezzaSoft", "V-Liner (v0.54)", MACHINE_SUPPORTS_SAVE )
 
 /* Kyle Hodgetts */
 GAME( 2000, diggerma,   neogeo,   neogeo_noslot,   neogeo, neogeo_state, init_neogeo,   ROT0, "Kyle Hodgetts", "Digger Man (prototype)", MACHINE_SUPPORTS_SAVE )

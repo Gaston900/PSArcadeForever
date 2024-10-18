@@ -33310,7 +33310,7 @@ matrim                          // 0266 (c) 2003 Atlus
 matrimbl                        // bootleg
 miexchng                        // 0231 (c) 1997 Face
 minasan                         // 0027 (c) 1990 Monolith Corp.
-moshougi                        // 0203 (c) 1995 ADK / SNK
+mosyougi                        // 0203 (c) 1995 ADK / SNK
 ms4plus                         // bootleg
 ms5plus                         // bootleg
 ms5pcb                          // 0268 (c) 2003 Playmore - JAMMA PCB
@@ -33430,13 +33430,13 @@ tpgolf                          // 0003 (c) 1990 SNK
 trally                          // 0038 (c) 1991 Alpha Denshi Co.
 turfmast                        // 0200 (c) 1996 Nazca
 twinspri                        // 0224 (c) 1996 ADK
-twsoc96                         // 0086 (c) 1996 Tecmo
+tws96                           // 0086 (c) 1996 Tecmo
 viewpoin                        // 0051 (c) 1992 Sammy
 viewpoinp                       //
 vliner                          //
 vliner7e                        //
 vliner6e                        //
-vliner54                        //
+vlinero                         //
 vliner53                        //
 wakuwak7                        // 0225 (c) 1996 Sunsoft
 wh1                             // 0053 (c) 1992 Alpha Denshi Co.
@@ -44952,7 +44952,7 @@ sc203                           // SC203 - Modular Z180 Computer
 
 
 /*******************************************
- HBMAME 0.245.14
+ HBMAME 0.245.21
  List of all drivers enabled in the system.
 **********************************************/
 
@@ -44989,8 +44989,8 @@ tst_wow3		/* Wow test rom */
 astrofbl		/* Black Background */
 
 @source:asuka.cpp
-asukac			// chinese
-jigkmgris01
+asuka01			// chinese
+jigkmgri01
 
 @source:atarisy1.cpp
 ataris1hw
@@ -45004,7 +45004,7 @@ pickinpi		/* Color Hack by Pi */
 blkdrgonk		/* Korean Translation */
 
 @source:bloodbro.cpp
-bloodbros01
+bloodbro01
 
 @source:bombjack.cpp
 bmbjckgr		/* Vag @ GreekRoms */
@@ -45035,9 +45035,10 @@ bublbobls01
 spacwarp		/* HB Jeff Hendrix - Proto on Space Duel HW */
 
 @source:cabal.cpp
-cabals01
+cabal01
 
 @source:cave.cpp
+ddonpachjd
 ddonpachjh
 pwrinst2h
 pwrinst2z
@@ -45070,6 +45071,7 @@ cballfix                               // MASH (fixed) gfx rom
 cclimbrm                               // Tim Arcadecollecting Modded Version
 ckong01                                // Graphics Fix
 ckongpt2s01
+ckongpt2s02
 
 @source:centiped.cpp
 astroped	/* Twisty Hack of Centipede */
@@ -45090,20 +45092,22 @@ warrior4j1
 warrior4j2
 
 @source:cninja.cpp
-deathbrdh01
+deathbrd01
 
 @source:commando.cpp
 comdelux				/* Twisty Hack */
 comdlux1				/* Twisty Hack */
 
 @source:contra.cpp
-contrajs01
+contraj01
 
 @source:cps1.cpp
 3wonders01
 3wonders02
 3wonders03
 3wonders04
+area88rk
+area88rka
 cawingh01
 captcommh01
 captcommh02
@@ -45116,6 +45120,9 @@ captcommh08
 captcommh09
 captcommh10
 captcommh11
+captcommh12
+captcommh13
+captcommjk
 captcomms01
 captcomms04
 captcomms05
@@ -45221,6 +45228,7 @@ cps1tests                              // HB
 cps1testsa                             // HB
 //cps1xx                               // corrupt gfx
 daimakb
+daimakaik
 dinod01                                // Dinosaur hunter
 dinoj01                                // Cadillacs
 dinoj02
@@ -45235,6 +45243,7 @@ dinoj10
 dinoj11
 dinoj12
 dinoj13
+dinoj14
 dinon01                                // Jurassic 99
 dinon02
 dinon03
@@ -45479,26 +45488,33 @@ dinot07
 dinot08
 dinot09
 dinot10
-ffightaeh01
-ffightaeh02
-ffightaeh03
-ffightaeh04
-ffights01
-ffights02
-ffights03
-ffightjh01
+ffightae
+ffightae01
+ffightae02
+ffightae03
+ffightae04
+ffightaek
+ffight01
+ffight02
+ffight03
+ffight04
+ffightj01
 ffightj2s01
 ffightj2s02
 ffightj2s03
 ffightj2s04
 ffightj1s01
+ffightjk
 forgottnsf2
 ghoulsf2
+kodjk
 kodr01                                 // r = based on kodr1, bad gfx are normal
 kodr02
-koduhc01
-koduhc02
-koduhc03
+kodu01
+kodu02
+kodu03
+kodu04
+knightsk
 knights01
 knights02
 knights03
@@ -45575,71 +45591,74 @@ punisherjs21
 punisherjs22
 punisherjs23
 punisherjs24
-sf2ces01
-sf2ces02
-sf2ces03
-sf2ces04
-sf2ces05
-sf2ces06
-sf2ces07
-sf2ces08
-sf2ces09
-sf2ces10
-sf2ces12
-sf2ces13
-sf2ces14
-sf2ces15
-sf2ces16
-sf2ces17
-sf2ces18
-sf2ces19
-sf2ces20
-sf2ces21
-sf2ces22
-sf2ces23
-sf2ces24
-sf2ces25
-sf2ces26
-sf2ces27
-sf2ces28
-sf2ces29
-sf2ces30
-sf2ces31
-sf2ces32
-sf2ces33
-sf2ces34
-sf2ces35
-sf2ces36
-sf2ces38
-sf2ces37
-sf2ces39
-sf2ces40
-sf2ces41
-sf2ces42
-sf2ces43
-sf2ces44
-sf2ces45
-sf2ces47
-sf2ces48
-sf2ces49
-sf2ces50
-sf2ces51
-sf2ces52
-sf2ces53
-sf2ces54
-sf2ces55
-sf2ces56
-sf2ces57
-sf2hfs01
-sf2hfus01
-sf2hfus02
-sf2hfus03
-sf2hfus04
-sf2hfus05
-sf2koryus01
-sf2koryus02
-sf2koryus03
-sf2koryus04
+rockmank
+sf2ce01
+sf2ce02
+sf2ce03
+sf2ce04
+sf2ce05
+sf2ce06
+sf2ce07
+sf2ce08
+sf2ce09
+sf2ce10
+sf2ce12
+sf2ce13
+sf2ce14
+sf2ce15
+sf2ce16
+sf2ce17
+sf2ce18
+sf2ce19
+sf2ce20
+sf2ce21
+sf2ce22
+sf2ce23
+sf2ce24
+sf2ce25
+sf2ce26
+sf2ce27
+sf2ce28
+sf2ce29
+sf2ce30
+sf2ce31
+sf2ce32
+sf2ce33
+sf2ce34
+sf2ce35
+sf2ce36
+sf2ce38
+sf2ce37
+sf2ce39
+sf2ce40
+sf2ce41
+sf2ce42
+sf2ce43
+sf2ce44
+sf2ce45
+sf2ce47
+sf2ce48
+sf2ce49
+sf2ce50
+sf2ce51
+sf2ce52
+sf2ce53
+sf2ce54
+sf2ce55
+sf2ce56
+sf2ce57
+sf2ce58
+sf2ce59
+sf2hf01
+sf2hfu01
+sf2hfu02
+sf2hfu03
+sf2hfu04
+sf2hfu05
+sf2koryu01
+sf2koryu02
+sf2koryu03
+sf2koryu04
 sf2mix96
 sf2mix96d
 sf2mix97
@@ -45654,12 +45673,13 @@ sf2mix110
 sf2mix120
 sf2mix
 sf2mkot01
-sf2reds01
-sf2reds02
-sf2reds03
-sf2reds04
-sf2reds05
-sf2reds06
+sf2red01
+sf2red02
+sf2red03
+sf2red04
+sf2red05
+sf2red06
+sf2red07
 sf2s01
 sf2s02
 sf2s03
@@ -45675,18 +45695,19 @@ sf2s12
 sf2s13
 sf2s14
 sf2s15
-sf2tlonas01
-sf2tlonas02
-sf2tlonas03
-sf2tlonas04
-sf2tlonas05
-sf2tlonas06
-sf2tlonas07
+sf2tlona01
+sf2tlona02
+sf2tlona03
+sf2tlona04
+sf2tlona05
+sf2tlona06
+sf2tlona07
 sfzchs02
 sfzchs03
 sfzchs04
 sfzchs05
 sfzchs06
+sfzchk
 slammasts01
 slammasts02
 slammasts03
@@ -45696,6 +45717,7 @@ slammasts06
 strider01
 strider02
 strider04
+strider05
 varths01
 varths02
 willows01
@@ -45899,6 +45921,7 @@ tk2h178
 tk2h179
 tk2h180
 tk2h181
+tk2k01
 tk2k1
 tk2w1
 tk2w2
@@ -45938,6 +45961,7 @@ tk2p43
 tk2p44
 tk2p45
 tk2p46
+wofchk
 wofs00
 wofs01
 wofs02
@@ -45969,9 +45993,12 @@ avsps04
 avsps05
 avsps06
 batcirs01
-csclubs01
+csclub01
+csclub02
 cybots01
 cybots02
+ddsomak
+ddsomjk
 ddsoms01
 ddsoms02
 ddsoms03
@@ -45998,6 +46025,7 @@ hsf2s11
 hsf2s12
 hsf2s13
 hsf2s14
+hsf2s15
 mpangj01
 mshs01
 mshs02
@@ -46023,6 +46051,7 @@ pfghtj03
 pfghtj04
 progearj01
 progearj02
+rockman2k
 sfas01
 sfas02
 sfas03
@@ -46036,6 +46065,7 @@ sfzj04
 sfzj05
 sfzj06
 sfzj07
+sfzk
 sfa2s01
 sfa2s02
 sfa2s03
@@ -46046,7 +46076,11 @@ sfa2s07
 sfa2s08
 sfa2s09
 sfa2s10
+sfa2s11
 sfz2j01
+sfz2k01
+sfz2k02
+sfz2alk
 sfz2als01
 sfz2als02
 sfz2als03
@@ -46102,6 +46136,7 @@ sfz3j15
 sfz3j16
 sfz3j17
 sfz3j18
+sfz3j19
 sfz3mix07
 sfz3mix07a
 sfz3mix07b
@@ -46124,12 +46159,15 @@ ssf2t05
 ssf2t06
 ssf2t07
 ssf2t08
+ssf2t09
+ssf2t10
 ssf2tnl3
 ssf2tnl4
 ssf2tnl5
 ssf2tnl6
 ssf2tnl7
 ssf2tnl71
+ssf2tnl8
 ssf2tnl
 ssf2x01
 ssf2x02
@@ -46157,6 +46195,16 @@ xmvsfs07
 
 @source:cps2.cpp
 sfz3mix20
+sfz3mix21
+sfz3mix22
+sfz3mix23
+sfz3mix24
+sfz3mix25
+sfz3mix26
+sfz3mix27
+sfz3mix28
+sfz3mix29
+sfz3mix30
 sfz3mix
 
 @source:cps3.cpp
@@ -46250,7 +46298,7 @@ dkong05
 dkong06
 dkong07
 dkong08
-dkong09
+//dkong09
 dkong10
 dkong11
 dkong12
@@ -46261,23 +46309,32 @@ dkong16
 dkong17
 dkong19
 dkong20
+dkong21
+dkong22
+dkong23
 dkong2m
 dkongbcc				//Jeffs Rom Hacks
 dkongex					//Jeffs Hack with Foundry Level
+dkongf
+dkongjr01
 dkongst
 dkongst2
 dkongss
 dkongp					// Fix for level 22 kill screen by Don Hodges
 dkongpac				// Tim Appleton - Donkey Kong with Pacman graphics
+dkongpe
 dkongce
 dkongklc
 dkongrev
+dkongx
+dkongx11
 dkongte
 dkspkyte
 dkrainbow
 dkrdemo
 dkchrmx					// Sock Master - Christmas Remix 2017
 dkchrte
+dkremix
 dkspkyrmx				// Sock Master - Spooky Remix Halloween Tournament 2018
 dktrain
 dktrain2
@@ -46327,7 +46384,7 @@ sdreturn
 mineswp
 
 @source:dt7.cpp
-//dt7                                    // no inputs
+dt7                                    // press 9 to coin up, sound breaks at end of game
 
 @source:dynax.cpp
 mjelct3s01
@@ -46378,6 +46435,8 @@ galagaef	/* Galaga Terrorist Hack */
 vgalaga		/* Galaga Vector Hack */
 vgalagam
 vgalagaf
+galaga01
+galaga02
 battlesh	/* Battles 2002 */
 gaous		/* Xevious Hack */
 mrdonm		/* Mr Do Nightmare */
@@ -46412,6 +46471,8 @@ scobtest
 kingball01
 cosmicw
 pandajump                              // HB
+pandajump2                             // HB
+ramokromok                             // HB
 andromd		/* hack - Renamed to avoid confusion with andromed (ex TestDriver) */
 buglaxn		/* The Dog hack of Galaxian */
 galaxiabh	/* unknown hack of Galaxian */
@@ -46433,7 +46494,7 @@ gaunt2s		/* Speed Hack */
 gaunt2f		// graphics hack
 
 @source:ginganin.cpp
-ginganins01
+ginganin01
 
 @source:gottlieb.cpp
 711qbert                               // Hack of myqbert
@@ -46499,30 +46560,14 @@ jrspeed
 jryumyum	/* Tim Appleton: Jr.Pacman vs Yum Yum */
 
 @source:kaneko16.cpp
-bloodwars01
-shogwarrs01
-shogwarrbh
-fjbusterbh
+bloodwar01
+shogwarr01
+shogwarr02
+fjbuster01
 
 @source:neogeo.cpp
-kof94b
-kof94bc
-kof94blk
-kof94br
-kof94cg
-kof94cn
-kof94cyk
-kof94eh
-kof94h
 kof94k
 kof94kh
-kof94qaq
-kof94ru
-kof94ruj
-kof94rz
-kof94seh
-kof94sri
-kof94y
 kof94s01
 kof94s02
 kof94s03
@@ -46545,24 +46590,27 @@ kof94s19
 kof94s20
 kof94s21
 kof94s22
+kof94s23
+kof94s24
+kof94s25
+kof94s26
+kof94s27
+kof94s28
+kof94s29
+kof94s30
+kof94s31
+kof94s32
+kof94s33
+kof94s34
+kof94s35
+kof94s36
+kof94s37
+kof94s38
+kof94s39
+kof94s40
 
 @source:neogeo.cpp
-kof95b
-kof95bln
-kof95brz
-kof95ce
-kof95d
-kof95eh
-kof95hp
 kof95k
-kof95neo
-kof95pjc
-kof95ru
-kof95seh
-kof95sp
-kof95sp2
-kof95xg
-kof95y
 kof95s01
 kof95s02
 kof95s03
@@ -46592,6 +46640,21 @@ kof95s28
 kof95s29
 kof95s31
 kof95s32
+kof95s33
+kof95s34
+kof95s35
+kof95s36
+kof95s37
+kof95s38
+kof95s39
+kof95s40
+kof95s41
+kof95s42
+kof95s43
+kof95s44
+kof95s45
+kof95s46
+kof95s47
 
 @source:neogeo.cpp
 kof96a
@@ -46605,20 +46668,17 @@ kof96b
 kof96b1
 kof96bb
 kof96c
-kof96cbi
 kof96ckvs
 kof96cn
+kof96cns01
 kof96cr
 kof96chj
-kof96de
-kof96dr1
 kof96eh
 kof96ep
 kof96ep2
 kof96ep3
 kof96evo
 kof96evoo
-kof96evsp
 kof96ey
 kof96hp
 kof96hp1
@@ -46630,37 +46690,24 @@ kof96k3o
 kof96kt
 kof96lx
 kof96ncd
-kof96oib
-kof96oib2
 kof96oih
-kof96oir
 kof96pch
 kof96pjc
 kof96pm
 kof96rcw
-kof96rf
-kof96rfs
-kof96rfsa
 kof96ri
 kof96ri1
 kof96ri2
 kof96ri3
 kof96ri4
 kof96ri5
-kof96rm
-kof96rp
 kof96rp1
-kof96rss
 kof96ru
 kof96ru2
 kof96rw
-kof96ryu
 kof96seh
 kof96s01
 kof96s02
-kof96s03
-kof96s04
-kof96s05
 kof96s06
 kof96s07
 kof96s08
@@ -46701,7 +46748,6 @@ kof96s47
 kof96s48
 kof96s49
 kof96s50
-kof96cns01
 
 @source:neogeo.cpp
 kof97aa
@@ -46754,6 +46800,7 @@ kof97pl2
 kof97pl3
 kof97pla
 kof97plc
+kof97plskt
 kof97plus
 kof97pm
 kof97ps
@@ -47371,6 +47418,7 @@ kof98fv
 kof98fv2
 kof98gold
 kof98hk
+kof98hkt
 kof98ice
 kof98ico
 kof98iori
@@ -47616,6 +47664,7 @@ kof99lb
 kof99m
 kof99nd
 kof99ndis
+kof99ndkt
 kof99nevo
 kof99ob
 kof99ob2
@@ -47801,6 +47850,7 @@ kof2kgold
 kof2kiori
 kof2kjlc
 kof2kkf1
+kof2kkt
 kof2kkvs
 kof2kkzs
 kof2knd
@@ -48022,6 +48072,7 @@ kof2001s48
 
 @source:neogeo.cpp
 kof200215
+kof2002bs25
 kof2002d
 kof2002x
 kof2k2ath
@@ -48665,20 +48716,20 @@ kof2004upls30
 kof2004upls31
 
 @source:konamigx.cpp
-dragoonas01
-dragoonas02 
-dragoonas03
-dragoonas04
+dragoona01
+dragoona02 
+dragoona03
+dragoona04
 
 @source:kyugo.cpp
-airwolffr	// french
+airwolf01	// french
 
 @source:lkage.cpp
-lkages01
+lkage01
 
 @source:lordgun.cpp
-alienchas01 
-alienchas02
+aliencha01 
+aliencha02
 
 @source:m52.cpp
 spatrol		/* Sponge Patrol - Gatinho 2008 */
@@ -48711,6 +48762,7 @@ nbbatman09
 nbbatman10
 nbbatman11
 uccops01
+uccops02
 
 @source:puckman.cpp
 eyes
@@ -48726,6 +48778,7 @@ crashh			/* HB - PacMAME Hacks */
 deathstar		// HB
 deathstar2		// HB
 dderby			/* HB - Widel Games */
+dilith
 eyesb
 ghohunt			// HB - Hurray Banana
 kangaroh		/* HB - Widel Games */
@@ -48764,7 +48817,7 @@ vectrsup	/* T-Bone hack of Super Pac-Man */
 cenmario 
 
 @source:mcatadv.cpp
-mcatadvs01
+mcatadv01
 
 @source:mcr.cpp
 handiman	/* Bobby Tribble hack of Tron */
@@ -48776,7 +48829,7 @@ stapper1	/* Tapper Simpsons Hack ver .81 */
 sargex		/* Gatinho Sarge x-rated */
 
 @source:kikikai.cpp
-kikikais01
+kikikai01
 
 @source:neogeo.cpp
 bstarsd					// 0002 (c) 1990 SNK
@@ -48830,6 +48883,8 @@ mk2s05
 mk2s06
 nbajam01
 nbajam02                               // NBA Jam Tournament Edition Rewind r1.1
+nbajam03                               // NBA Jam Tournament Edition SE r5.0
+nbajam04                               // NBA Jam Tournament Edition Rewind r1.2
 umk2s01                                // Ultimate MKII Tournament Edition r5.0.050
 umk2s02                                // Ultimate MKII Tournament Edition r5.0.051
 umk2s03                                // Ultimate MKII Tournament Edition r5.0.052
@@ -50326,6 +50381,7 @@ spcloneo	// v0.7.2.2
 19yy
 19yy01
 240ptest
+240ptest1
 abyssal
 abyssal1
 akiradmo
@@ -50348,6 +50404,8 @@ cphd
 columnsn	/* 2000 (c) 1990 Sega */
 columnsncd
 //csw2                                 //not working & roms missing
+cyborg
+cyborg1
 ddsprdmo
 ddsprdmo1
 didemo
@@ -50361,13 +50419,16 @@ fr2			// 098 Idol Mahjong - final romance 2
 fr2cd		/* 098 (c) 1995 Video Systems Co. */
 fr2ch		/* 098 (c) 1995 Video Systems Co. */
 galaxiann
-gbi			/* Ghostbusters Intro */
+gbi
+gladmortd
+gladmortd2
 gxg
 horekidb3
 hypernoid
 //igla
 iocero		// BEY
 knacki		// KnackiBalls by Furrtek
+knightsch
 lernit
 lhbb
 lhcdb		/* 2007 (c) Last Hope CD beta */
@@ -50394,6 +50455,7 @@ neonopon	/* (c) 2002-10-05 Blastar */
 //neonopon_d1 // unplayable demo
 //neonopon_d2 // unplayable demo
 //neonopon_d3 // unplayable demo
+neopang
 neopong		/* (c) 2002 Neodev */
 neoponga	/* (c) 2002 Neodev */
 neoromjb	// CeL
@@ -50462,6 +50524,7 @@ twister		// Blastar 2015
 xeno
 xeviousn
 xmas2017
+yoyoshkn
 zintrckbh
 zintrkcd
 zintrkcd1
@@ -50470,32 +50533,46 @@ zintricks01
 
 @source:neogeo.cpp
 2020bbcd
-androdunpx
+androdun01
+androdun02
 aofbh
-aof2b
-aof2b1
-aof2bh
-aof2br2
+aofkt
+aof2s01
+aof2s02
+aof2s03
+aof2s04
+aof2s05
+aof2s06
+aof2s07
 aof3b
 aof3bh
 bangbeadd
 bangbeadp
 bjourneypx
-breakersbh
-breakersp
-breakersy
-breakrevb
-breakrevpp
-breakrevy
+breakers01
+breakers02
+breakers03
+breakers04
+breakrev01
+breakrev02
+breakrev03
+breakrev04
+breakrev05
+breakrev06
+breakrev07
+breakrev08
 burningfhp
 ctomadaypx
 dragons1
 eightmaneb
-fightfevbs
-fightfevk
+fightfev01
+fightfev02
+fightfev03
+fightfev04
 flipshotk
-galaxyfgb
-galaxyfgbh
+galaxyfg01
+galaxyfg02
+galaxyfg03
 ganryud
 gowcaizrb
 gowcaizrbs
@@ -50508,53 +50585,84 @@ ironcladb
 jockeygpd
 joyjoycd
 joyjoycd1
-kabukiklb
-kabukikleh
-kabukiklgm
-kabukiklgmc
-kabukiklmc
-kabukiklyc
-karnovreh
-karnovrh
-kizunab
-kizunaeh
+kabukikl01
+kabukikl02
+kabukikl03
+kabukikl04
+kabukikl05
+kabukikl06
+kabukikl07
+kabukikl08
+kabukikl09
+kabukikl10
+kabukikl11
+kabukikl12
+kabukikl13
+karnovr01
+karnovr02
+karnovr03
+karnovr04
+kizuna01
+kizuna02
+kizuna03
+kizuna04
+kizuna05
+kizuna06
+kizuna07
+kizuna08
+kizuna09
 lans2k4d
 lbowlingcd
 lresortpx
-magdrop3fr	/* Neo-Arc French Trans */
-magdrop3te
+magdrop3s01
+magdrop3s02
+magdrop3s03
+magdrop3s04
 maglordpx
-matrima
-matrimbh
-matrimd
-matrimdh
-matrimeh
-matrimehc
-matrimnd
-miexchngfr	/* Neo-Arc French Trans */
+matrim01
+matrim02
+matrim03
+matrim04
+matrim05
+matrim06
+matrim07
+matrim08
+matrim09
+matrim10
+matrim11
+matrim12
+matrim13
+matrim14
+matrim15
+miexchng01
 mutnatex
 nam1975g
 nam1975h
 ncombatpk
 ncommandsp
+neobombe01
+neobombe02
 neocup98k
-ninjamasasp
-ninjamaschl
-ninjamaseh
-ninjamasehc
-ninjamasehyc
-ninjamasha
-ninjamashb
-ninjamashc
-nitdd
-nitdfr		/* Neo-Arc French Trans */
-nitdfro		/* Neo-Arc French Trans */
-nitdfro1
-nitdpx
-nitdsp
-nitdsp1
-nitdsp2
-nitdfro2
+ninjamas01
+ninjamas02
+ninjamas03
+ninjamas04
+ninjamas05
+ninjamas06
+ninjamas07
+ninjamas08
+ninjamas09
+ninjamas10
+ninjamas11
+ninjamas12
+nitd01
+nitd02
+nitd03
+nitd04
+nitd05
+nitd06
+nitd07
+nitd08
 pzlcrz
 pbcrazyb1
 pbcrazyb2
@@ -50563,20 +50671,38 @@ pbobblencd
 pbobblendx
 pnyaad
 pnyaadd
-preisle2d
-preisle2px
-ragnagrdbe
-ragnagrdbs
-ragnagrdeh
-ragnagrdsb
-s1945pd
-s1945ph
-s1945pwe
-savagereb
-savageredb
-sdodgebp
-shocktr2px
-shocktr2w
+preisle2s01
+preisle2s02
+preisle2s03
+puzzldprk
+puzzledpk
+ragnagrd01
+ragnagrd02
+ragnagrd03
+ragnagrd04
+ragnagrd05
+ragnagrd06
+ragnagrd07
+ragnagrd08
+ragnagrd09
+s1945p01
+s1945p02
+s1945p03
+s1945p04
+savagere01
+savagere02
+savagere03
+savagere04
+savagere05
+savagere06
+savagere07
+savagere08
+sdodgeb01
+sdodgeb02
+sdodgeb03
+shocktr2s01
+shocktr2s02
+shocktr2s03
 shocktrosp
 sonicwi2eh
 sonicwi2px
@@ -50586,87 +50712,26 @@ sonicwi3px
 spinmasth
 spinmastpx
 ssidekicd
-stakwindev
 strhoopcd
 superspycd
+tophuntrk
 tophuntrpx
 tpgolfcd
 trallycd
 twinsprih
 viewpoinf
 viewpointr
-wakuwak7bh
-wakuwak7h
+wakuwak7s01
+wakuwak7s02
+wakuwak7s03
+wakuwak7s04
+wakuwak7s05
 wjammersf
 wjammersk
 zupapad
 zupapadd
-androduns01
-aof2s01
-aof2s02
-aof2s03
 blazstarcm
-breakers01
-breakrevs01
-breakrevs02
-breakrevs03
-breakrevs04
-fightfevs01
-fightfevs02
-galaxyfs01
-kabukikls01
-kabukikls02
-kabukikls03
-kabukikls04
-kabukikls05
-kabukikls06
-kabukikls07
-karnovrs01
-kizunas01
-kizunas02
-kizunas03
-kizunas04
-kizunas05
-kizunas06
-kizunas07
-magdrop3s01
-magdrop3s02
-matrims01
-matrims02
-matrims03
-matrims04
-matrims05
-matrims06
-matrims07
-matrims08
-miexchngs01
-neobombes01
-neobombes02
 neocup98s01
-ninjamass01
-ninjamass02
-ninjamass03
-ninjamass04
-nitds01
-preisle2s01
-ragnagrds01
-ragnagrds02
-ragnagrds03
-ragnagrds04
-ragnagrds05
-s1945ps01
-savageres01
-savageres02
-savageres03
-savageres04
-savageres05
-savageres06
-sdodgebs01
-sdodgebs02
-sdodgebs03
-shocktr2s01
-wakuwak7s01
-wakuwak7s02
 2020bbe
 3countbe 
 aof3e
@@ -50925,6 +50990,7 @@ lbeh
 lbeh2
 lbeho
 lbha
+lbhmg
 lbseh
 lbsk
 lbsp
@@ -51080,6 +51146,7 @@ samsho2eh
 samsho2emb
 samsho2hy
 samsho2mb
+samsho2pe
 samsho2q
 samsho2s2
 samsho2sp
