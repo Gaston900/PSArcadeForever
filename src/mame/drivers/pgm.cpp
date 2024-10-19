@@ -243,19 +243,19 @@ u8 pgm_state::z80_ram_r(offs_t offset)
 
 void pgm_state::z80_ram_w(offs_t offset, u8 data)
 {
-	const int pc = m_maincpu->pc();
+//	const int pc = m_maincpu->pc();
 
 	m_z80_mainram[offset] = data;
 
-	if (pc != 0xf12 && pc != 0xde2 && pc != 0x100c50 && pc != 0x100b20)
-		if (PGMLOGERROR)
-			logerror("Z80: write %04x, %02x (%06x)\n", offset, data, m_maincpu->pc());
+//	if (pc != 0xf12 && pc != 0xde2 && pc != 0x100c50 && pc != 0x100b20)
+//		if (PGMLOGERROR)
+//			logerror("Z80: write %04x, %02x (%06x)\n", offset, data, m_maincpu->pc());
 }
 
 void pgm_state::z80_reset_w(offs_t offset, u16 data, u16 mem_mask)
 {
-	if (PGMLOGERROR)
-		logerror("Z80: reset %04x @ %04x (%06x)\n", data, mem_mask, m_maincpu->pc());
+//	if (PGMLOGERROR)
+//		logerror("Z80: reset %04x @ %04x (%06x)\n", data, mem_mask, m_maincpu->pc());
 
 	if (data == 0x5050)
 	{
@@ -273,22 +273,22 @@ void pgm_state::z80_reset_w(offs_t offset, u16 data, u16 mem_mask)
 
 void pgm_state::z80_ctrl_w(offs_t offset, u16 data, u16 mem_mask)
 {
-	if (PGMLOGERROR)
-		logerror("Z80: ctrl %04x @ %04x (%06x)\n", data, mem_mask, m_maincpu->pc());
+//	if (PGMLOGERROR)
+//		logerror("Z80: ctrl %04x @ %04x (%06x)\n", data, mem_mask, m_maincpu->pc());
 }
 
 void pgm_state::m68k_l1_w(u8 data)
 {
-	if (PGMLOGERROR)
-		logerror("SL 1 m68.w %02x (%06x) IRQ\n", data, m_maincpu->pc());
+//	if (PGMLOGERROR)
+//		logerror("SL 1 m68.w %02x (%06x) IRQ\n", data, m_maincpu->pc());
 	m_soundlatch->write(data);
 	m_soundcpu->pulse_input_line(INPUT_LINE_NMI, attotime::zero);
 }
 
 void pgm_state::z80_l3_w(u8 data)
 {
-	if (PGMLOGERROR)
-		logerror("SL 3 z80.w %02x (%04x)\n", data, m_soundcpu->pc());
+//	if (PGMLOGERROR)
+//		logerror("SL 3 z80.w %02x (%04x)\n", data, m_soundcpu->pc());
 	m_soundlatch3->write(data);
 }
 
@@ -347,6 +347,7 @@ void pgm_state::pgm_base_mem(address_map &map)
 void pgm_state::pgm_mem(address_map &map)
 {
 	pgm_base_mem(map);
+	// if a cart is not inserted, bios is mirrorred every 0x20000 to 0x7fffff (mirror=0x7e0000)
 	map(0x000000, 0x0fffff).rom();   /* BIOS ROM */
 }
 
@@ -525,7 +526,7 @@ void pgm_state::pgmbase(machine_config &config)
 
 	V3021(config, "rtc");
 
-	/* video hardware */
+	// video hardware
 	screen_device &screen(SCREEN(config, "screen", SCREEN_TYPE_RASTER));
 	screen.set_refresh_hz(60);
 	screen.set_vblank_time(ATTOSECONDS_IN_USEC(0));
@@ -538,7 +539,7 @@ void pgm_state::pgmbase(machine_config &config)
 	GFXDECODE(config, m_gfxdecode, m_palette, gfx_pgm);
 	PALETTE(config, m_palette, palette_device::BLACK).set_format(palette_device::xRGB_555, 0x1200/2);
 
-	/*sound hardware */
+	// sound hardware
 	SPEAKER(config, "mono").front_center();
 
 	GENERIC_LATCH_8(config, m_soundlatch);
@@ -547,7 +548,7 @@ void pgm_state::pgmbase(machine_config &config)
 
 	ICS2115(config, m_ics, 33.8688_MHz_XTAL);
 	m_ics->irq().set_inputline("soundcpu", 0);
-	m_ics->add_route(ALL_OUTPUTS, "mono", 1.0);
+	m_ics->add_route(ALL_OUTPUTS, "mono", 2.0); // HBMAME - wind the volume up to 11
 }
 
 void pgm_state::pgm(machine_config &config)
