@@ -56,16 +56,11 @@ Logo, Manuals, Marquees, Pcb, Roms, Samples, Scores, Select, Snap, Titles, Versu
 How to compile
 --------------
 
-To be able to compile this version we will need the source codes, for this we will place it in the folder docs/Source Code [HBMame Old]/hbmame-tag245.7z.001, once located we will start to decompress the files it will take a few minutes, once decompressed we will have a folder with the name hbmame-tag245.7z, we will rename it to “src”, now we will paste the remains of the files that we have left “scripts, src and makefile” in the src folder, the system will ask to replace it we will say yes .
-
-Now we will locate the folder where the compiler that we want to use is located, being msys64. Now we will paste the “src” folder.
+In order to compile this version we will need the source code, for this we will place it in the folder docs/Source Code[HBMame]/hbmame-tag245.7z.001, once located we will begin to unzip the files it will take a few minutes, once unzipped we will have a folder with the name hbmame-tag245.7z, we will rename it to “src”. Now we will get the latest source code from this Github container once downloaded we will start to unzip and once finished unzipping we will select the files that we had left in the folder “3rdparty, scripts, src and makefile” we will copy them into the src folder, the system will ask us to replace it we will say yes.
 
 And we will apply this command to start the compilation, this command is for Windows 64Bit system:
 ```
 make PTR64=1 SUBTARGET=arcade OSD=winui NOWERROR=1 STRIP_SYMBOLS=1
 ```
 
-I recommend downloading the compilation tool, whether it is the version msys64-32 that is from the year 2020-11-03, since this version is much more comfortable to compile for this version.
-
-The build tools will be located on the MAMEDEV github website:
-https://github.com/mamedev/buildtools/releases
+The compilation [TOOL](https://github.com/mamedev/buildtools/releases) is suggested to be version msys64 2020-11-03.
