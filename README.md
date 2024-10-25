@@ -45,7 +45,7 @@ Two new folder sections called “config” and “support” were added that in
 
 In the Config folders it is incorporated by:
 
-Audio, Bgfx, Cfg, Comments, Crosshair, Diff, Docs, Folders, Glsl, Gui, Hash, Hlsl, Ini, Inp, Language, Nvram, Plugins, Share, Sta.
+Bgfx, Cfg, Comments, Crosshair, Diff, Docs, Folders, Glsl, Gui, Hash, Hlsl, Ini, Inp, Language, Nvram, Plugins, Share, Sta.
 
 In the support folders it is incorporated by:
 
