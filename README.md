@@ -17,7 +17,7 @@ Removed warning screen, startups, Loading, Decryption screen texts.
 
 Removed the following annoying messages: “WRONG LENGTH”, “NO_DUMP”, “WRONG CHECKSUMS”, “BAD_DUMP” And “THE PARENT FILE DOES NOT EXIST”.
 
-Added movement optimization for all fighting games “GSC2007”.
+Added movement optimization for all fighting games (By GSC2007).
 
 Fix screen timings, remove non-existent sprite buffer ram [PGM].
 
