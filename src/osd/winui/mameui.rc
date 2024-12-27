@@ -314,7 +314,6 @@ IDI_CONTROLSHEET        ICON                    "res\\joystick.ico"
 IDI_MISCSHEET           ICON                    "res\\misc.ico"
 IDI_MISC2SHEET          ICON                    "res\\debug.ico"
 IDI_SNAPSHEET           ICON                    "res\\snapshot.ico"
-//#ifdef USE_GAMEFOLDERS
 IDI_FOLDER_NEOGEO		ICON					"res\\fold_neogeo.ico"
 IDI_FOLDER_CAPCOM		ICON				    "res\\fold_cps.ico"
 IDI_FOLDER_PGM			ICON				    "res\\fold_pgm.ico"
@@ -323,6 +322,11 @@ IDI_FOLDER_TAITO		ICON	 				"res\\fold_taito.ico"
 IDI_FOLDER_KONAMI		ICON	 				"res\\fold_konami.ico"
 IDI_FOLDER_SEGA 		ICON	 				"res\\fold_sega.ico"
 IDI_FOLDER_CAVE 		ICON	 				"res\\fold_cave.ico"
+IDI_FOLDER_NINTENDO		ICON					"res\\fold_nintendo.ico"
+IDI_FOLDER_MIDWAY		ICON				    "res\\fold_midway.ico"
+IDI_FOLDER_SETA 		ICON	 				"res\\fold_seta.ico"
+IDI_FOLDER_TOAPLAN		ICON				    "res\\fold_Toaplan.ico"
+IDI_FOLDER_DATAEAST		ICON				    "res\\fold_dataeast.ico"
 //#endif
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -364,7 +368,7 @@ BEGIN
     RTEXT            "",IDC_BUILD,6,4,308,10
     LTEXT            "",IDC_BUILDVER,6,4,120,10
     CONTROL         "",IDC_ABOUT,WC_STATIC,SS_BITMAP,6,16,56,17
-    CTEXT           "PSARCADE FOREVER Copyright (C) 2016-2023 Gaston90",IDC_TEXT1,6,106,310,10
+    CTEXT           "PSARCADE FOREVER Copyright (C) 2016-2024 Gaston90",IDC_TEXT1,6,106,310,10
     CTEXT           "MAMEUI version by Christopher Kirmse and The MAMEUI Team",IDC_TEXT2,6,118,310,10
     CTEXT           "Additional MAMEUI code by Mike Haaland, Andrew Kirmse,",IDC_TEXT3,6,130,310,10
     CTEXT           "Jeff Miller, John Hardy IV and Michael Soderstrom",IDC_TEXT4,6,142,310,10
