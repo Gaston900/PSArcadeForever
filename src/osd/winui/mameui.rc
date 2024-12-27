@@ -314,6 +314,7 @@ IDI_CONTROLSHEET        ICON                    "res\\joystick.ico"
 IDI_MISCSHEET           ICON                    "res\\misc.ico"
 IDI_MISC2SHEET          ICON                    "res\\debug.ico"
 IDI_SNAPSHEET           ICON                    "res\\snapshot.ico"
+//#ifdef USE_GAMEFOLDERS
 IDI_FOLDER_NEOGEO		ICON					"res\\fold_neogeo.ico"
 IDI_FOLDER_CAPCOM		ICON				    "res\\fold_cps.ico"
 IDI_FOLDER_PGM			ICON				    "res\\fold_pgm.ico"
