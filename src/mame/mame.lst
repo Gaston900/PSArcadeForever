@@ -45649,6 +45649,14 @@ sf2ce56
 sf2ce57
 sf2ce58
 sf2ce59
+sf2ce60
+sf2ce61
+sf2ce62
+sf2ce63
+sf2ce64
+sf2ce65
+sf2ce66
+sf2ce67
 sf2hf01
 sf2hfu01
 sf2hfu02
@@ -46216,6 +46224,7 @@ jojonbss
 jojonpow
 redearex
 redeartno				// no-cd version with old roms from multijet
+redearthep
 sfiiibhp
 sfiiipmp
 sfiii2bh
@@ -46437,6 +46446,7 @@ vgalagam
 vgalagaf
 galaga01
 galaga02
+galaga03
 battlesh	/* Battles 2002 */
 gaous		/* Xevious Hack */
 mrdonm		/* Mr Do Nightmare */
@@ -50662,7 +50672,6 @@ nitd04
 nitd05
 nitd06
 nitd07
-nitd08
 pzlcrz
 pbcrazyb1
 pbcrazyb2
@@ -53021,6 +53030,9 @@ sfex01
 sfex2s01
 sfex2p01
 sfexp01
+
+@source:blockhl.cpp
+quarth01
 
 /*******************************************
  PSARCADE CLASSIC+ // ARCADE 0.260

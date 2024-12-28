@@ -2436,7 +2436,7 @@ files {
 	MAME_DIR .. "src/mame/drivers/bladestl.cpp",
 --	MAME_DIR .. "src/mame/includes/bladestl.h",
 	MAME_DIR .. "src/mame/video/bladestl.cpp",
-	MAME_DIR .. "src/mame/drivers/blockhl.cpp",
+	MAME_DIR .. "src/hbmame/drivers/blockhl.cpp", --HBMAME
 	MAME_DIR .. "src/mame/drivers/bottom9.cpp",
 	MAME_DIR .. "src/mame/drivers/chqflag.cpp",
 --	MAME_DIR .. "src/mame/includes/chqflag.h",
