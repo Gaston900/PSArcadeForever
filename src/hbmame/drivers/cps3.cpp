@@ -3439,7 +3439,7 @@ GAME( 2009, jojos04,        jojoba,    jojoba,      cps3_jojo,  cps3_hbmame,    
 GAME( 2009, jojos05,        jojoba,    jojoba,      cps3_jojo,  cps3_hbmame,     init_jojoban,  ROT0,  "hack",    "JoJo's Bizarre Adventure (U.S.A 990913, NO CD)", 0 )
 GAME( 2018, jojos06,        jojoba,    jojoba,      cps3_jojo,  cps3_state,      init_jojoba,   ROT0,  "hack",    "JoJo's Bizarre Adventure (Super Plus)", 0 )
 // Red Earth
-GAME( 1996, redeartns01,    redearth,   redeartn,    cps3_ren,   cps3_hbmame,     init_redearth, ROT0,  "Capcom",  "Red Earth (Asia 961023, NO CD)", 0 )
+GAME( 1996, redeartns01,    redearth,   redeartn,    cps3_ren,   cps3_hbmame,     init_redearth, ROT0,  "Capcom",  "Red Earth (Asia 961023, Ver.Alt/NO CD)", 0 )
 GAME( 2024, redearthep,     redearth,   redeartn,    cps3_ren,   cps3_hbmame,     init_redearth, ROT0,  "HB Productions",  "Red Earth (NO CD, Easy Password)", 0 )
 // Street Fighter III: New Generation
 GAME( 2016, sfiiins01,      sfiii,      sfiii,       cps3,       cps3_state,      init_sfiii,    ROT0,  "hack",    "Street Fighter III: New Generation (Simple Attack, 2016-01-21)", 0 )
