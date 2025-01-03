@@ -2241,6 +2241,9 @@ void CreateNAMCOFolders(int parent_index)
 		if (!strcmp("namcos1.cpp", s))                AddGame(lpFolder, jj);
 		if (!strcmp("namcos1b.cpp", s))               AddGame(lpFolder, jj);
 		if (!strcmp("puckman.cpp", s))                AddGame(lpFolder, jj);
+		if (!strcmp("mspacman.cpp", s))               AddGame(lpFolder, jj);
+		if (!strcmp("multipac.cpp", s))               AddGame(lpFolder, jj);
+		if (!strcmp("maketrax.cpp", s))               AddGame(lpFolder, jj);
 		if (!strcmp("pengo.cpp", s))                  AddGame(lpFolder, jj);
 		if (!strcmp("namcos10.cpp", s))               AddGame(lpFolder, jj);
 		if (!strcmp("namcos11.cpp", s))               AddGame(lpFolder, jj);
@@ -2999,15 +3002,6 @@ void CreateSETAFolders(int parent_index)
 		if (!strcmp("metro.cpp", s))			AddGame(lpFolder, jj);
 		if (!strcmp("rabbit.cpp", s))			AddGame(lpFolder, jj);
 		if (!strcmp("tmmjprd.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("acommand.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("cultures.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("ddealer.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("jalmah.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("macrossp.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("nmk16.cpp", s))		    AddGame(lpFolder, jj);
-		if (!strcmp("powerins.cpp", s))		    AddGame(lpFolder, jj);
-		if (!strcmp("quizdna.cpp", s))			AddGame(lpFolder, jj);
-		if (!strcmp("quizpani.cpp", s))			AddGame(lpFolder, jj);
 		if (!strcmp("psikyo.cpp", s))			AddGame(lpFolder, jj);
 		if (!strcmp("psikyo4.cpp", s))			AddGame(lpFolder, jj);
 		if (!strcmp("psikyosh.cpp", s))			AddGame(lpFolder, jj);
