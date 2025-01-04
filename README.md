@@ -1,8 +1,39 @@
 What is PSMAMEFOREVER+?
 ===================
-It is called Project Shadow Arcade Forever+, it is a project that began in the middle of 2016, it is currently being used as a base system of version 0.245 [HBMAME], it focuses on combining the Arcade + HBMAME source code in order to achieve unique control systems had all the features in a single version, but to achieve all this it has been going through many stages of development, demo, prototype, beta until being able to get an official version.
+It is called Project Shadow Arcade Forever+, it is a project that began in the middle of 2016, it is currently being used as a base system of version 0.245.21 [HBMAME](https://hbmame.1emulation.com/), it focuses on combining the Arcade + HBMAME source code in order to achieve unique control systems had all the features in a single version, but to achieve all this it has been going through many stages of development, demo, prototype, beta until being able to get an official version.
 
 I am only giving support for the Windows XP, Windows 7, Windows 8, Windows 10 and Windows 11 operating systems, for the 86/64 bit cpu of the compatible microprocessors.
+
+Games that have not been included:
+----------------------------------
+
+Does not include mechanical games.
+
+Does not include pinball games.
+
+Does not include crane games.
+
+Does not include trivia games.
+
+Does not include bingo games.
+
+Does not include mahjong games.
+
+Does not include poker games.
+
+Does not include skeleton drivers.
+
+Does not include fruit games.
+
+Does not include slot games or gambling.
+
+Does not include console games.
+
+Does not include games that display a black screen.
+
+It does not include games that are sound test or demo, controls, color palette.
+
+It does not include games of does not work correctly .CHD.
 
 What has been optimized in this version?
 ---------------------------------------
