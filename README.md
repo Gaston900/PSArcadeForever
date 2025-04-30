@@ -2,7 +2,7 @@ What is PSARCDEFOREVER?
 ===================
 It is called Project Shadow Arcade Forever+, it is a project that began in the middle of 2016, it is currently being used as a base system of version 0.245.21 [HBMAME](https://hbmame.1emulation.com/), it focuses on combining the [ARCADE64](https://arcade.mameworld.info/) + [HBMAME](https://hbmame.1emulation.com/) source code in order to achieve unique control systems had all the features in a single version, but to achieve all this it has been going through many stages of development, demo, prototype, beta until being able to get an official version.
 
-I am only giving support for the Windows XP, Windows 7, Windows 8, Windows 10 and Windows 11 operating systems, for the 86/64 bit cpu of the compatible microprocessors.
+I am only supporting the operating systems, Windows 7, Windows 8, Windows 10 and Windows 11.
 
 Games that have not been included:
 ----------------------------------
@@ -38,7 +38,16 @@ It does not include games of does not work correctly .CHD.
 What has been optimized in this version?
 ---------------------------------------
 
-The command of all the game systems was optimized, now it is much more practical to be able to play, the command of the arrow keys "Up, Down, Left, Right" comes by default, this command is used to be able to move and to take actions For shooting or jumping and throwing grenades, the A, S, D key is used and the rest of the keys are used for certain kinds of games Z, X, C, Q, W, E.
+Players 1 and 2 use this controller by default:
+
+* To move, use the arrow keys "Up, Down, Left, Right."
+* To perform actions, use the "A, S, D, Z, X, C, Q, W, E" keys.
+
+The M68000 CPU core has been modified to be compatible with all current types of hack ROMs.
+
+Expand the memory file adpcma rom that can be read to 0x2000000.
+
+Preliminary support for extending adpcma files .v5 (NeoGeo).
 
 Added custom buttons and autofire.
 
@@ -64,6 +73,17 @@ Supports game list lst language files. The list language can be edited freely.
 
 CPS 1, 2, NEOGEO, PGM, driver supports key combination settings.
 
+Two new folder sections called “config” and “support” were added that independently group the configurations and extra content, so that everything is kept in order in a single folder.
+
+In the Config folders it is incorporated by:
+
+Bgfx, Cfg, Comments, Crosshair, Diff, Docs, Folders, Glsl, Gui, Hash, Hlsl, Ini, Inp, Language, Nvram, Plugins, Share, Sta.
+
+In the support folders it is incorporated by:
+
+Artpreview, Artwork, Bosses, Cabinets, Cheat, Cpanel, Ctrlr, Flyers, Gameover, Howto, Icons,
+Logo, Manuals, Marquees, Pcb, Roms, Samples, Scores, Select, Snap, Titles, Versus, Video, Cheat.7z, Command.dat, Gameinit.dat, Hiscore.dat, History.dat, Mameinfo.dat, Story. dat and Sysinfo.dat
+
 Added 13 new UI folders by default.
  * Capcom
  * Dataeast
@@ -78,18 +98,6 @@ Added 13 new UI folders by default.
  * Taito
  * Toaplan
  * Misc
-
-Two new folder sections called “config” and “support” were added that independently group the configurations and extra content, so that everything is kept in order in a single folder.
-
-In the Config folders it is incorporated by:
-
-Bgfx, Cfg, Comments, Crosshair, Diff, Docs, Folders, Glsl, Gui, Hash, Hlsl, Ini, Inp, Language, Nvram, Plugins, Share, Sta.
-
-In the support folders it is incorporated by:
-
-Artpreview, Artwork, Bosses, Cabinets, Cheat, Cpanel, Ctrlr, Flyers, Gameover, Howto, Icons,
-Logo, Manuals, Marquees, Pcb, Roms, Samples, Scores, Select, Snap, Titles, Versus, Video, Cheat.7z, Command.dat, Gameinit.dat, Hiscore.dat, History.dat, Mameinfo.dat, Story. dat and Sysinfo.dat
-
 
 How to compile
 --------------
