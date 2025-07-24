@@ -1,6 +1,12 @@
 ﻿What's new in PSARCADE FOREVER
 ===============================
 
+2025-07-23 Optimization Edition
+-------------------------------
+- Preliminary support for extending adpcma files (HBMAME)
+
+
+
 2023-10-25 Optimization Edition
 -------------------------------
 - MAME version 0.245 - 0.260 has been updated.
